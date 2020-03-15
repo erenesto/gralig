@@ -1,0 +1,152 @@
+strong,
+b {
+  font-weight: $font-bold;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: Consolas, Menlo, Courier, monospace;
+  font-size: 0.875em;
+}
+
+code {
+  padding: $space-xxs $space-xs;
+  border: 1px solid $iron;
+  background-color: $color-code;
+  border-radius: 2px;
+  margin-inline: 1px;
+  @include themify($themes) {
+    border: 1px solid themed("colorBorder");
+    background-color: themed("colorCode");
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $space-m;
+  letter-spacing: -0.15rem;
+}
+
+.heading {
+  font-weight: $font-bold;
+}
+
+.subheading {
+  color: $color-secondary;
+  font-weight: $font-normal;
+  @include themify($themes) {
+    color: themed("colorSecondary");
+  }
+}
+
+h1 {
+  font-size: $h1;
+  line-height: 1.2;
+}
+h2 {
+  font-size: $h2;
+  line-height: 1.25;
+}
+h3 {
+  font-size: $h3;
+  line-height: 1.3;
+}
+h4 {
+  font-size: $h4;
+  line-height: 1.4;
+}
+h5 {
+  font-size: $h5;
+  letter-spacing: -0.05rem;
+  line-height: 1.5;
+}
+h6 {
+  font-size: $h6;
+  letter-spacing: -0.05rem;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: $space-m;
+  font-size: $p-size;
+  &.p-small {
+    margin-bottom: $space-s;
+    font-size: $p-s-size;
+  }
+  &.p-large {
+    margin-bottom: $space-l;
+    font-size: $p-l-size;
+  }
+}
+
+.text {
+  &-secondary {
+    color: $color-secondary;
+    @include themify($themes) {
+      color: themed("colorSecondary");
+    }
+  }
+  &-yellow {
+    color: $color-yellow;
+    &-yellow-light {
+    }
+    &-yellow-lighter {
+    }
+    &-yellow-dark {
+    }
+    &-yellow-darker {
+    }
+  }
+  &-red {
+    color: $color-red;
+    &-red-light {
+    }
+    &-red-lighter {
+    }
+    &-red-dark {
+    }
+    &-red-darker {
+    }
+  }
+  &-green {
+    color: $color-green;
+    &-green-light {
+    }
+    &-green-lighter {
+    }
+    &-green-dark {
+    }
+    &-green-darker {
+    }
+  }
+  &-blue {
+    color: $color-blue;
+    &-blue-light {
+    }
+    &-blue-lighter {
+    }
+    &-blue-dark {
+    }
+    &-blue-darker {
+    }
+  }
+  &-mute {
+    color: $color-mute;
+    @include themify($themes) {
+      color: themed("colorMute");
+    }
+  }
+  &-mark {
+    background-color: $color-mark;
+
+    @include themify($themes) {
+      color: themed("colorFont");
+    }
+  }
+}

@@ -1,0 +1,165 @@
+//**********************
+/* GLOBAL VARIABLES
+***********************/
+// Colors
+$blackpearl: hsl(206, 19%, 7%);
+$woodsmoke: hsl(200, 7%, 8%);
+$shark: hsl(207, 13%, 14%);
+
+$abbey: hsl(205, 7%, 40%);
+$raven: lighten($abbey, 8%);
+$oslo: lighten($abbey, 18%);
+$mischka: lighten($abbey, 28%);
+$ghost: lighten($abbey, 38%);
+$iron: lighten($abbey, 46%);
+$porcelain: lighten($abbey, 55%);
+
+$white: hsl(0, 0%, 100%);
+
+$summer: hsl(201, 66%, 54%);
+$summer-dark: darken($summer, 10%);
+$summer-darker: darken($summer, 20%);
+$summer-light: lighten($summer, 10%);
+$summer-lighter: lighten($summer, 20%);
+
+$shamrock: hsl(166, 66%, 54%);
+$shamrock-dark: darken($shamrock, 10%);
+$shamrock-darker: darken($shamrock, 20%);
+$shamrock-light: lighten($shamrock, 10%);
+$shamrock-lighter: lighten($shamrock, 20%);
+
+$tulip: hsl(47, 82%, 54%);
+$tulip-dark: darken($tulip, 10%);
+$tulip-darker: darken($tulip, 20%);
+$tulip-light: lighten($tulip, 10%);
+$tulip-lighter: lighten($tulip, 20%);
+
+$flame: hsl(0, 66%, 54%);
+$flame-dark: darken($flame, 10%);
+$flame-darker: darken($flame, 20%);
+$flame-light: lighten($flame, 10%);
+$flame-lighter: lighten($flame, 20%);
+
+// Typography
+$font-size: 1.6rem;
+
+$h1: $font-size * 3.25;
+$h2: $font-size * 2.75;
+$h3: $font-size * 2.5;
+$h4: $font-size * 2;
+$h5: $font-size * 1.5;
+$h6: $font-size * 1.125;
+
+$color-background: $white;
+$color-font: $woodsmoke;
+$color-font-revert: $porcelain;
+$color-main: $abbey;
+$color-secondary: $raven;
+
+$color-blue: $summer;
+$color-blue-light: $summer-light;
+$color-blue-lighter: $summer-lighter;
+$color-blue-dark: $summer-dark;
+$color-blue-darker: $summer-darker;
+
+$color-yellow: $tulip;
+$color-yellow-light: $tulip-light;
+$color-yellow-lighter: $tulip-lighter;
+$color-yellow-dark: $tulip-dark;
+$color-yellow-darker: $tulip-darker;
+
+$color-green: $shamrock;
+$color-green-light: $shamrock-light;
+$color-green-lighter: $shamrock-lighter;
+$color-green-dark: $shamrock-dark;
+$color-green-darker: $shamrock-darker;
+
+$color-red: $flame;
+$color-red-light: $flame-light;
+$color-red-lighter: $flame-lighter;
+$color-red-dark: $flame-dark;
+$color-red-darker: $flame-darker;
+
+$color-mute: $iron;
+$color-mark: $tulip-light;
+$color-code: $porcelain;
+$color-button-font: $white;
+$color-alert-font: $mischka;
+
+$color-border: $iron;
+
+$space-xxs: 2px;
+$space-xs: 4px;
+$space-s: 8px;
+$space: 12px;
+$space-m: 16px;
+$space-l: 24px;
+$space-xl: 32px;
+$space-xxl: 64px;
+
+$font-thin: 300;
+$font-normal: 400;
+$font-bold: 600;
+
+$font-heading: "Catamaran", Helvetica, Arial, sans-serif;
+$font-text: "Catamaran", Helvetica, Arial, sans-serif;
+
+$line-height-s: $font-size * 1.3;
+$line-height: 1.5;
+$line-height-l: $font-size * 1.7;
+
+$p-size: $font-size * 1;
+$p-s-size: $font-size * 0.8125;
+$p-l-size: $font-size * 1.125;
+
+$el-font-size: $font-size * 0.8125;
+$el-s-font-size: $font-size * 0.6875;
+$el-l-font-size: $font-size * 0.9375;
+
+$el-line-height: 3.6rem;
+$el-s-line-height: 3rem;
+$el-l-line-height: 4.2rem;
+
+$transition-default: all 0.15s ease-in;
+$transparent: transparent;
+
+//**********************
+/* DARK THEME
+***********************/
+
+$color-font-dt: $porcelain;
+$color-font-revert-dt: $woodsmoke;
+$color-background-dt: $woodsmoke;
+$color-main-dt: $raven;
+$color-button-font-dt: $woodsmoke;
+$color-border-dt: $abbey;
+$color-code-dt: $shark;
+$color-mute-dt: $abbey;
+$color-secondary-dt: $mischka;
+
+// MEDIA QUERIES
+// $mq-breakpoints: (
+//     mobile:  420px,
+//     tablet-small:  768px,
+//     tablet:  860px,
+//     tablet-land: 1024px,
+//     laptop-small: 1200px,
+//     laptop: 1366px,
+//     laptop-p: 1367px,
+//     wide: 1400px,
+//     tv: 1920px,
+// );
+
+// $from:  min-width
+// $until:  max-width
+// $and:
+/// end
+
+//**********************
+/* BREAKPOINTS
+***********************/
+$bp-xl: 120em; //1920px
+$bp-l: 75em; //1200px
+$bp-m: 62.5em; //1000px
+$bp-s: 50em; //800px
+$bp-xs: 37.5em; //600px

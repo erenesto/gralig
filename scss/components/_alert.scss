@@ -1,0 +1,31 @@
+.alert {
+  display: inline-block;
+  min-width: 100%;
+  height: $el-s-line-height;
+  background-color: $color-secondary;
+  border-radius: $space-xxs;
+  color: $color-alert-font;
+  font-size: 1.4rem;
+  line-height: $el-s-line-height;
+  padding-inline: $space-xl;
+  @include min-width($bp-xs) {
+    width: 42rem;
+    min-width: 42rem;
+  }
+  &-green {
+    background-color: $color-green;
+    color: $color-green-darker;
+  }
+  &-yellow {
+    background-color: $color-yellow;
+    color: $color-yellow-darker;
+  }
+  &-blue {
+    background-color: $color-blue;
+    color: $color-blue-darker;
+  }
+  &-red {
+    background-color: $color-red;
+    color: $color-red-darker;
+  }
+}

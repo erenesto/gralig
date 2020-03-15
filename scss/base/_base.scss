@@ -1,0 +1,19 @@
+html {
+  font-size: 62.5%; // 10px/16px = 62.5% <<<>>> 1rem = 10px;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-font;
+  font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: $font-size;
+  font-weight: $font-normal;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+.dark {
+  background-color: $color-background-dt;
+  color: $color-font-dt;
+}

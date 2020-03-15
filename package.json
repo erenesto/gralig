@@ -1,0 +1,55 @@
+{
+  "name": "raven-ui",
+  "version": "1.0.0",
+  "description": "Raven UI is an open-source clean grayish ui library",
+  "main": "dist/raven.css",
+  "author": {
+    "name": "Eren Guldas",
+    "email": "erenguldas@gmail.com"
+  },
+  "scripts": {
+    "start": "run-s clean && parcel test/index.html --open ",
+    "build": "run-s test clean && parcel build scss/raven.scss -o raven.css --no-minify",
+    "clean": "rimraf dist",
+    "lint:scss": "stylelint 'scss/**/*.scss'",
+    "format:scss": "prettier-stylelint --write --q 'scss/**/*.scss'",
+    "test": "run-s format:scss lint:scss"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "prettier": {},
+  "keywords": [
+    "clean design",
+    "clean css",
+    "css",
+    "gray",
+    "grayish",
+    "raven",
+    "front-end"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "clean-css-cli": "^4.3.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.4.2",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^7.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2",
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-declaration-strict-value": "^1.1.8",
+    "stylelint-order": "^4.0.0"
+  },
+  "dependencies": {}
+}

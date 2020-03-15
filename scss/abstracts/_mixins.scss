@@ -1,0 +1,40 @@
+// themify mixin taken from https://medium.com/@dmitriy.borodiy/easy-color-theming-with-scss-bc38fd5734d1
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+    .#{$theme} & {
+      $theme-map: () !global;
+
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value
+          )
+        ) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+// Used to prevent text selection on an element
+@mixin prevent-user-select {
+  user-select: none;
+}
+
+// Min-width breakpoints
+@mixin min-width($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// Max-width breakpoints
+@mixin max-width($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
