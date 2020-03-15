@@ -2,30 +2,30 @@
   display: inline-block;
   min-width: 100%;
   height: $el-s-line-height;
-  background-color: $color-secondary;
-  border-radius: $space-xxs;
+  background-color: $color-alert;
+  border-radius: $border-radius;
   color: $color-alert-font;
   font-size: 1.4rem;
   line-height: $el-s-line-height;
   padding-inline: $space-xl;
+  @include themify($themes) {
+    background-color: themed("colorAlert");
+    color: themed("colorAlertFont");
+  }
   @include min-width($bp-xs) {
     width: 42rem;
     min-width: 42rem;
   }
-  &-green {
+  &.alert-green {
     background-color: $color-green;
-    color: $color-green-darker;
   }
-  &-yellow {
+  &.alert-yellow {
     background-color: $color-yellow;
-    color: $color-yellow-darker;
   }
-  &-blue {
+  &.alert-blue {
     background-color: $color-blue;
-    color: $color-blue-darker;
   }
-  &-red {
+  &.alert-red {
     background-color: $color-red;
-    color: $color-red-darker;
   }
 }

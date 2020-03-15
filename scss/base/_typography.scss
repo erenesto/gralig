@@ -15,7 +15,7 @@ code {
   padding: $space-xxs $space-xs;
   border: 1px solid $iron;
   background-color: $color-code;
-  border-radius: 2px;
+  border-radius: $border-radius;
   margin-inline: 1px;
   @include themify($themes) {
     border: 1px solid themed("colorBorder");
@@ -94,46 +94,62 @@ p {
   }
   &-yellow {
     color: $color-yellow;
-    &-yellow-light {
+    &-light {
+      color: $color-yellow-light;
     }
-    &-yellow-lighter {
+    &-lighter {
+      color: $color-yellow-lighter;
     }
-    &-yellow-dark {
+    &-dark {
+      color: $color-yellow-dark;
     }
-    &-yellow-darker {
+    &-darker {
+      color: $color-yellow-darker;
     }
   }
   &-red {
     color: $color-red;
-    &-red-light {
+    &-light {
+      color: $color-red-light;
     }
-    &-red-lighter {
+    &-lighter {
+      color: $color-red-lighter;
     }
-    &-red-dark {
+    &-dark {
+      color: $color-red-dark;
     }
-    &-red-darker {
+    &-darker {
+      color: $color-red-darker;
     }
   }
   &-green {
     color: $color-green;
-    &-green-light {
+    &-light {
+      color: $color-green-light;
     }
-    &-green-lighter {
+    &-lighter {
+      color: $color-green-lighter;
     }
-    &-green-dark {
+    &-dark {
+      color: $color-green-dark;
     }
-    &-green-darker {
+    &-darker {
+      color: $color-green-darker;
     }
   }
   &-blue {
     color: $color-blue;
-    &-blue-light {
+    &-light {
+      color: $color-blue-light;
     }
-    &-blue-lighter {
+    &-lighter {
+      color: $color-blue-lighter;
     }
-    &-blue-dark {
+    &-dark {
+      color: $color-blue-dark;
     }
-    &-blue-darker {
+    &-darker {
+      color: $color-blue-darker;
     }
   }
   &-mute {

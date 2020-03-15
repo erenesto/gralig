@@ -84,7 +84,8 @@ $color-mute: $iron;
 $color-mark: $tulip-light;
 $color-code: $porcelain;
 $color-button-font: $white;
-$color-alert-font: $mischka;
+$color-alert: $raven;
+$color-alert-font: $porcelain;
 
 $color-border: $iron;
 
@@ -120,6 +121,8 @@ $el-line-height: 3.6rem;
 $el-s-line-height: 3rem;
 $el-l-line-height: 4.2rem;
 
+$border-radius: 2px;
+
 $transition-default: all 0.15s ease-in;
 $transparent: transparent;
 
@@ -136,6 +139,9 @@ $color-border-dt: $abbey;
 $color-code-dt: $shark;
 $color-mute-dt: $abbey;
 $color-secondary-dt: $mischka;
+$color-alert-dt: $oslo;
+$color-alert-font-dt: $shark;
+$color-card-dt: $shark;
 
 // MEDIA QUERIES
 // $mq-breakpoints: (

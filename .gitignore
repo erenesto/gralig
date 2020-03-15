@@ -25,3 +25,5 @@ Temporary Items
 .apdisk
 test
 node_modules
+.cache
+dist/
