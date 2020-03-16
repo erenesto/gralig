@@ -73,25 +73,36 @@ h6 {
 }
 
 a {
-  color: $color-font-secondary;
+  color: $color-link-font;
+  cursor: pointer;
   text-decoration: none;
+  @include themify($themes) {
+    color: themed("colorLinkFont");
+  }
   &:hover,
   &:focus {
     color: $color-link-hover;
     outline: none;
+    @include themify($themes) {
+      color: themed("colorLinkHover");
+    }
   }
   &.current {
-    cursor: default;
     font-weight: $font-bold;
-    &:hover,
-    &:focus {
+    &:hover {
       color: $color-font-secondary;
+      @include themify($themes) {
+        color: themed("colorLinkFont");
+      }
     }
   }
   &.disabled,
   &[disabled] {
-    color: $mischka;
+    color: $color-mute;
     cursor: not-allowed;
+    @include themify($themes) {
+      color: themed("colorMute");
+    }
   }
 }
 

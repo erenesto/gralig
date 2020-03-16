@@ -1,15 +1,21 @@
 .breadcrumb {
-  background: tomato;
-  background: $porcelain;
+  border: 1px solid $color-border;
   border-radius: $border-radius;
   padding-block: $content-padding-block;
   padding-inline: $content-padding-inline;
+  @include themify($themes) {
+    border-color: themed("colorBorder");
+  }
 
   &-list {
     display: flex;
   }
   &-item {
     position: relative;
+    font-size: $font-size-s;
+    & > .current {
+      cursor: default;
+    }
     &:not(:first-child) {
       padding-left: $space-l;
       & > a {
@@ -21,11 +27,33 @@
           );
           left: -$space-m;
           margin-left: $space;
+          @include themify($themes) {
+            @include caret-right(
+              $crop: themed("colorMain"),
+              $main: false,
+              $before: true
+            );
+            left: -$space-m;
+            margin-left: $space;
+          }
         }
         &::after {
-          @include caret-right($crop: $porcelain, $main: false, $before: false);
+          @include caret-right(
+            $crop: $color-background,
+            $main: false,
+            $before: false
+          );
           left: -$space-m - 1;
           margin-left: $space;
+          @include themify($themes) {
+            @include caret-right(
+              $crop: themed("colorBackground"),
+              $main: false,
+              $before: false
+            );
+            left: -$space-m - 1;
+            margin-left: $space;
+          }
         }
       }
     }

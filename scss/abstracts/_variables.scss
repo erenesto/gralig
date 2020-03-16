@@ -42,6 +42,8 @@ $flame-lighter: lighten($flame, 16%);
 
 // Typography
 $font-size: 1.6rem;
+$font-size-s: 1.4rem;
+$font-size-m: 1.8rem;
 
 $heading-1: $font-size * 3.25;
 $heading-2: $font-size * 2.75;
@@ -52,7 +54,7 @@ $heading-6: $font-size * 1.125;
 
 $color-background: $white;
 $color-font: $woodsmoke;
-$color-font-secondary: $abbey;
+$color-font-secondary: $raven;
 $color-font-revert: $porcelain;
 $color-main: $abbey;
 $color-secondary: $raven;
@@ -87,8 +89,8 @@ $color-code: $porcelain;
 $color-button-font: $white;
 $color-alert: $raven;
 $color-alert-font: $porcelain;
+$color-link-font: $raven;
 $color-link-hover: $oslo;
-$color-link-disabled: $mischka;
 
 $color-border: $iron;
 
@@ -120,19 +122,18 @@ $el-font-size: $font-size * 0.8125;
 $el-s-font-size: $font-size * 0.6875;
 $el-l-font-size: $font-size * 0.9375;
 
-$el-line-height: 3.6rem;
+$el-line-height: 3.7rem;
 $el-s-line-height: 3rem;
 $el-l-line-height: 4.2rem;
 
 $border-radius: 2px;
+$border-radius-full: 50%;
 
 $transition-default: all 0.15s ease-in;
 $transparent: transparent;
 
 $content-padding-inline: $space-xl;
 $content-padding-block: $space-m;
-
-
 
 //**********************
 /* DARK THEME
@@ -151,6 +152,8 @@ $color-mute-dt: $abbey;
 $color-alert-dt: $oslo;
 $color-alert-font-dt: $shark;
 $color-card-dt: $shark;
+$color-link-font-dt: $oslo;
+$color-link-hover-dt: $ghost;
 
 //**********************
 /* BREAKPOINTS
