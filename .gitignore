@@ -26,4 +26,4 @@ Temporary Items
 test
 node_modules
 .cache
-dist/
+dist

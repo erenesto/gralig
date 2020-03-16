@@ -38,58 +38,81 @@ h6 {
 }
 
 .subheading {
-  color: $color-secondary;
+  color: $color-font-secondary;
   font-weight: $font-normal;
   @include themify($themes) {
-    color: themed("colorSecondary");
+    color: themed("colorFontSecondary");
   }
 }
 
 h1 {
-  font-size: $h1;
+  font-size: $heading-1;
   line-height: 1.2;
 }
 h2 {
-  font-size: $h2;
+  font-size: $heading-2;
   line-height: 1.25;
 }
 h3 {
-  font-size: $h3;
+  font-size: $heading-3;
   line-height: 1.3;
 }
 h4 {
-  font-size: $h4;
+  font-size: $heading-4;
   line-height: 1.4;
 }
 h5 {
-  font-size: $h5;
+  font-size: $heading-5;
   letter-spacing: -0.05rem;
   line-height: 1.5;
 }
 h6 {
-  font-size: $h6;
+  font-size: $heading-6;
   letter-spacing: -0.05rem;
   line-height: 1.6;
+}
+
+a {
+  color: $color-font-secondary;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    outline: none;
+  }
+  &.current {
+    cursor: default;
+    font-weight: $font-bold;
+    &:hover,
+    &:focus {
+      color: $color-font-secondary;
+    }
+  }
+  &.disabled,
+  &[disabled] {
+    color: $mischka;
+    cursor: not-allowed;
+  }
 }
 
 p {
   margin-bottom: $space-m;
   font-size: $p-size;
-  &.p-small {
-    margin-bottom: $space-s;
-    font-size: $p-s-size;
-  }
-  &.p-large {
-    margin-bottom: $space-l;
-    font-size: $p-l-size;
-  }
+}
+.p-small {
+  margin-bottom: $space-s;
+  font-size: $p-s-size;
+}
+.p-large {
+  margin-bottom: $space-l;
+  font-size: $p-l-size;
 }
 
 .text {
   &-secondary {
-    color: $color-secondary;
+    color: $color-font-secondary;
     @include themify($themes) {
-      color: themed("colorSecondary");
+      color: themed("colorFontSecondary");
     }
   }
   &-yellow {
@@ -152,15 +175,14 @@ p {
       color: $color-blue-darker;
     }
   }
-  &-mute {
+  &-muted {
     color: $color-mute;
     @include themify($themes) {
       color: themed("colorMute");
     }
   }
-  &-mark {
+  &-marked {
     background-color: $color-mark;
-
     @include themify($themes) {
       color: themed("colorFont");
     }

@@ -1,0 +1,36 @@
+.breadcrumb {
+  background: tomato;
+  background: $porcelain;
+  border-radius: $border-radius;
+  padding-block: $content-padding-block;
+  padding-inline: $content-padding-inline;
+
+  &-list {
+    display: flex;
+  }
+  &-item {
+    position: relative;
+    &:not(:first-child) {
+      padding-left: $space-l;
+      & > a {
+        &::before {
+          @include caret-right(
+            $crop: false,
+            $main: $color-font-secondary,
+            $before: true
+          );
+          left: -$space-m;
+          margin-left: $space;
+        }
+        &::after {
+          @include caret-right($crop: $porcelain, $main: false, $before: false);
+          left: -$space-m - 1;
+          margin-left: $space;
+        }
+      }
+    }
+    &:not(:last-child) {
+      margin-right: $space-l;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   $color-button-font: $white;
   display: inline-block;
   height: $el-line-height;
-  border: none;
+  border: 0;
   background-color: $color-main;
   border-radius: $border-radius;
   color: $color-button-font;
@@ -23,11 +23,11 @@
   }
   &:hover,
   &:focus {
-    opacity: 0.9;
+    opacity: 0.8;
     outline: none;
   }
   &:active {
-    box-shadow: 0 0 2px 2px rgba($color-main, 0.5);
+    box-shadow: 0 0 2px 1px rgba($color-main, 0.5);
   }
   &.btn-disabled,
   &[disabled] {
@@ -50,7 +50,7 @@
   &.btn-blue {
     background-color: $color-blue;
     &:active {
-      box-shadow: 0 0 2px 2px rgba($color-blue, 0.4);
+      box-shadow: 0 0 2px 1px rgba($color-blue, 0.4);
     }
 
     &.btn-outline {
@@ -66,7 +66,7 @@
   &.btn-yellow {
     background-color: $color-yellow;
     &:active {
-      box-shadow: 0 0 2px 2px rgba($color-yellow, 0.4);
+      box-shadow: 0 0 2px 1px rgba($color-yellow, 0.4);
     }
     &.btn-outline {
       border: 1px solid $color-yellow;
@@ -81,7 +81,7 @@
   &.btn-green {
     background-color: $color-green;
     &:active {
-      box-shadow: 0 0 2px 2px rgba($color-green, 0.4);
+      box-shadow: 0 0 2px 1px rgba($color-green, 0.4);
     }
     &.btn-outline {
       border: 1px solid $color-green;
@@ -96,7 +96,7 @@
   &.btn-red {
     background-color: $color-red;
     &:active {
-      box-shadow: 0 0 2px 2px rgba($color-red, 0.4);
+      box-shadow: 0 0 2px 1px rgba($color-red, 0.4);
     }
     &.btn-outline {
       border: 1px solid $color-red;

@@ -12,12 +12,14 @@
   }
   &-title {
     border-bottom: 1px solid $color-border;
-    color: $color-secondary;
+    color: $color-font-secondary;
     font-weight: $font-bold;
-    padding-block: $space-m;
-    padding-inline: $space-xl;
+    line-height: 1;
+    padding-block: $content-padding-block;
+    padding-inline: $content-padding-inline;
     @include themify($themes) {
       border-color: themed("colorBorder");
+      color: themed("colorFontSecondary");
     }
   }
   &-img-wrapper {
@@ -28,7 +30,7 @@
     margin-left: -1px;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
-    & > * {
+    * {
       display: block;
     }
   }
@@ -72,8 +74,8 @@
     flex: 1;
   }
   &-body {
-    padding-block: $space-m;
-    padding-inline: $space-xl;
+    padding-block: $content-padding-block;
+    padding-inline: $content-padding-inline;
   }
   p {
     margin-bottom: 0;

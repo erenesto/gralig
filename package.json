@@ -1,7 +1,7 @@
 {
   "name": "raven-ui",
   "version": "1.0.0",
-  "description": "Raven UI is an open-source clean grayish ui library",
+  "description": "Raven CSS is an open-source clean grayish css library",
   "main": "dist/raven.css",
   "author": {
     "name": "Eren Guldas",
@@ -9,14 +9,16 @@
   },
   "scripts": {
     "start": "run-s clean && parcel test/index.html --open ",
-    "build": "run-s test clean && parcel build scss/raven.scss -o raven.css --no-minify",
+    "build": "run-s test clean parcel:build minify",
+    "parcel:build": "parcel build -o dist/raven.css scss/raven.scss  --no-minify",
+    "minify": "cleancss -o dist/raven.min.css dist/raven.css",
     "clean": "rimraf dist",
-    "lint:scss": "stylelint 'scss/**/*.scss'",
+    "lint:scss": "stylelint -s --fix --formatter=verbose 'scss/**/*.scss'",
     "format:scss": "prettier-stylelint --write --q 'scss/**/*.scss'",
     "test": "run-s format:scss lint:scss"
   },
   "browserslist": [
-    "last 2 versions"
+    "last 2 version"
   ],
   "prettier": {},
   "keywords": [
@@ -26,21 +28,21 @@
     "gray",
     "grayish",
     "raven",
-    "front-end"
+    "frontend",
+    "ui"
   ],
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
-    "browser-sync": "^2.26.7",
     "clean-css-cli": "^4.3.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.4.2",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
-    "onchange": "^6.1.0",
     "parcel-bundler": "^1.12.4",
     "postcss-cli": "^7.1.0",
     "postcss-preset-env": "^6.7.0",
+    "postcss-safe-parser": "^4.0.2",
     "prettier": "^1.19.1",
     "prettier-stylelint": "^0.4.2",
     "rimraf": "^3.0.2",

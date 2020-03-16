@@ -25,6 +25,39 @@
   user-select: none;
 }
 
+// caret right
+@mixin caret-right($crop, $main, $before) {
+  @if $before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid $main;
+    z-index: 0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  } @else {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid $crop;
+    z-index: 1;
+    top: 50%;
+    left: -1px;
+    transform: translateY(-50%);
+
+  }
+
+}
+
 // Min-width breakpoints
 @mixin min-width($size) {
   @media screen and (min-width: $size) {
