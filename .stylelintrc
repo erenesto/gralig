@@ -19,14 +19,14 @@
     "order/properties-alphabetical-order": null,
     "order/properties-order": [
       [
+        "display",
+        "overflow",
         "position",
         "z-index",
         "top",
         "right",
         "bottom",
         "left",
-        "display",
-        "overflow",
         "width",
         "min-width",
         "max-width",
@@ -46,6 +46,11 @@
         "align-self",
         "justify-content",
         "order",
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
         "padding",
         "padding-top",
         "padding-right",
@@ -55,12 +60,7 @@
         "border-top",
         "border-right",
         "border-bottom",
-        "border-left",
-        "margin",
-        "margin-top",
-        "margin-right",
-        "margin-bottom",
-        "margin-left"
+        "border-left"
       ],
       { "unspecified": "bottomAlphabetical" }
     ]

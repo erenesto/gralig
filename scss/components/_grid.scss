@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 auto;
+  @include min-width($bp-s) {
+    max-width: 84rem;
+  }
+  @include min-width($bp-l) {
+    max-width: 114rem;
+  }
+}

@@ -1,7 +1,9 @@
 .nav {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
+
   &-fill {
+    width: 100%;
     .nav-item {
       flex: 1 1 auto;
       text-align: center;
@@ -9,10 +11,14 @@
   }
   &-item {
     position: relative;
+    font-size: $font-size-s;
+    @include min-width($bp-s) {
+      font-size: $font-size;
+    }
   }
   &-link {
-    position: relative;
     display: inline-block;
+    position: relative;
     padding-block: $space-s;
     padding-inline: $space-m;
     &:not(.disabled, [disabled])::after {

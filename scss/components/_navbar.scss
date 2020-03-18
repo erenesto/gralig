@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  height: 5.6rem;
+  min-height: 5.6rem;
+  border-bottom: 1px solid $color-border;
+  @include themify($themes) {
+    background-color: themed("colorCardBg");
+    border-color: themed("colorBorder");
+  }
+  @include min-width($bp-s) {
+    height: 7rem;
+    max-height: 7rem;
+  }
+  & > .container {
+    display: flex;
+    align-items: center;
+  }
+  &-logo-link {
+    display: flex;
+    align-items: center;
+    padding-inline: $space-m;
+  }
+  &-logo-img {
+    max-height: 1.6rem;
+    @include min-width($bp-s) {
+      max-height: 2rem;
+    }
+  }
+  &-content {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}

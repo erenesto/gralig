@@ -1,0 +1,11 @@
+.progress-bar {
+  &.loading {
+    .progress-bar-value {
+      width: 40%;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: progress-bar;
+      transition: none;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.progress {
+  &-bar {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: $progress-bar;
+    background-color: $color-lighter;
+    border-radius: $border-radius;
+    &.small {
+      height: $progress-bar-sm;
+    }
+    &.large {
+      height: $progress-bar-lg;
+    }
+    &-value {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-secondary;
+      border-radius: inherit;
+      transform: translateX(-100%);
+      transition: $transition-default;
+
+      &.blue {
+        background-color: $color-blue;
+      }
+      &.green {
+        background-color: $color-green;
+      }
+      &.yellow {
+        background-color: $color-yellow;
+      }
+      &.red {
+        background-color: $color-red;
+      }
+    }
+  }
+
+  &-circle {
+    width: $progress-circle;
+    height: $progress-circle;
+    &.small {
+      width: $progress-circle-sm;
+      height: $progress-circle-sm;
+    }
+    &.large {
+      width: $progress-circle-lg;
+      height: $progress-circle-lg;
+    }
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    circle {
+      stroke-width: 0.4em;
+    }
+    &-loading {
+      stroke: $color-lighter;
+      stroke-dashoffset: 380;
+    }
+    &-value {
+      fill: $color-lighter;
+      stroke: $color-secondary;
+      stroke-dasharray: 380;
+      // stroke-dashoffset: 380;
+      transform: rotate(-90deg);
+      transform-origin: center;
+    }
+    &.blue {
+      .progress-circle-value {
+        stroke: $color-blue;
+      }
+    }
+    &.green {
+      .progress-circle-value {
+        stroke: $color-green;
+      }
+    }
+    &.yellow {
+      .progress-circle-value {
+        stroke: $color-yellow;
+      }
+    }
+    &.red {
+      .progress-circle-value {
+        stroke: $color-red;
+      }
+    }
+  }
+}
+
+@keyframes progress-bar {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+
+// @keyframes rotate-left {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   50% {
+//     transform: rotate(180deg);
+//   }
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
+
+// @keyframes rotate-right {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   50% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
