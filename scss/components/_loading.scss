@@ -9,3 +9,112 @@
     }
   }
 }
+
+@keyframes progress-bar {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+
+.progress-circle {
+  &.loading {
+    .progress-circle-back {
+      fill: none;
+    }
+    .progress-circle-value {
+      stroke: $color-light;
+      @include themify($themes) {
+        stroke: themed("colorLoadings");
+      }
+    }
+    &.circle-turn-pieces {
+      .progress-circle-value {
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-name: circle-turn-pieces;
+        animation-timing-function: cubic-bezier(0.27, 0.82, 0.83, 0.67);
+        stroke-dasharray: 52;
+      }
+    }
+    &.circle-turn {
+      .progress-circle-value {
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-name: circle-turn;
+        animation-timing-function: linear;
+        stroke-dasharray: 170;
+      }
+    }
+  }
+}
+
+@keyframes circle-turn {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(630deg);
+  }
+}
+
+@keyframes circle-turn-pieces {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(1170deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.loading {
+  &-dots {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  &-dot {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-name: progress-dot;
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    background: $color-light;
+    border-radius: $border-radius;
+    margin-inline: 2px;
+    @include themify($themes) {
+      background: themed("colorLoadings");
+    }
+    &.dot-1 {
+      animation-delay: 0s;
+    }
+    &.dot-2 {
+      animation-delay: 0.1s;
+    }
+    &.dot-3 {
+      animation-delay: 0.2s;
+    }
+  }
+}
+
+@keyframes progress-dot {
+  0% {
+    transform: scale(0.4);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.4);
+  }
+  100% {
+    transform: scale(0.4);
+  }
+}

@@ -65,3 +65,7 @@
   }
 }
 
+
+@mixin dot-pulse-animation($left, $size, $color) {
+  box-shadow: $left 0 0 $size $color;
+}

@@ -7,6 +7,9 @@
     height: $progress-bar;
     background-color: $color-lighter;
     border-radius: $border-radius;
+    @include themify($themes) {
+      background-color: themed("colorCardBg");
+    }
     &.small {
       height: $progress-bar-sm;
     }
@@ -41,6 +44,7 @@
   }
 
   &-circle {
+    position: relative;
     width: $progress-circle;
     height: $progress-circle;
     &.small {
@@ -57,17 +61,18 @@
       height: 100%;
     }
     circle {
-      stroke-width: 0.4em;
+      stroke-width: 0.8em;
     }
-    &-loading {
-      stroke: $color-lighter;
-      stroke-dashoffset: 380;
+    &-back {
+      fill: $color-lighter;
+      @include themify($themes) {
+        fill: themed("colorCardBg");
+      }
     }
     &-value {
-      fill: $color-lighter;
+      // dashoffset 380 = 0% & 147 = 100%
       stroke: $color-secondary;
       stroke-dasharray: 380;
-      // stroke-dashoffset: 380;
       transform: rotate(-90deg);
       transform-origin: center;
     }
@@ -93,36 +98,3 @@
     }
   }
 }
-
-@keyframes progress-bar {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(300%);
-  }
-}
-
-// @keyframes rotate-left {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   50% {
-//     transform: rotate(180deg);
-//   }
-//   100% {
-//     transform: rotate(180deg);
-//   }
-// }
-
-// @keyframes rotate-right {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   50% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(180deg);
-//   }
-// }

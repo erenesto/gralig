@@ -95,6 +95,7 @@ $color-link-font: $raven;
 $color-link-hover: $mischka;
 
 $color-border: $iron;
+$color-border-dark: $raven;
 
 $space-xxs: 2px;
 $space-xs: 4px;
@@ -146,6 +147,9 @@ $progress-circle: 6rem;
 $progress-circle-sm: 3rem;
 $progress-circle-lg: 8rem;
 
+$color-input-disabled: $color-lighter;
+$color-input-placeholder: $mischka;
+
 //**********************
 /* DARK THEME
 ***********************/
@@ -158,6 +162,7 @@ $color-main-dt: $raven;
 $color-secondary-dt: $oslo;
 $color-button-font-dt: $woodsmoke;
 $color-border-dt: $abbey;
+$color-border-light-dt: $iron;
 $color-code-dt: $shark;
 $color-mute-dt: $abbey;
 $color-alert-dt: $oslo;
@@ -165,6 +170,8 @@ $color-alert-font-dt: $shark;
 $color-card-dt: $shark;
 $color-link-font-dt: $oslo;
 $color-link-hover-dt: $ghost;
+$color-input-disabled-dt: $abbey;
+$color-input-placeholder-dt: $raven;
 
 //**********************
 /* BREAKPOINTS

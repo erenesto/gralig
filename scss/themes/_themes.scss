@@ -9,12 +9,16 @@ $themes: (
     colorFontButton: $color-button-font-dt,
     colorFontRevert: $color-font-revert-dt,
     colorBorder: $color-border-dt,
+    colorBorderLight: $color-border-light-dt,
     colorCode: $color-code-dt,
     colorMute: $color-mute-dt,
     colorAlert: $color-alert-dt,
     colorAlertFont: $color-alert-font-dt,
     colorCardBg: $color-card-dt,
     colorLinkFont: $color-link-font-dt,
-    colorLinkHover: $color-link-hover-dt
+    colorLinkHover: $color-link-hover-dt,
+    colorInputDisabled: $color-input-disabled-dt,
+    colorInputPlaceholder: $color-input-placeholder-dt,
+    colorLoadings: $color-main-dt
   )
 );
