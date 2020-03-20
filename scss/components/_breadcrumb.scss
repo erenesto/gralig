@@ -20,40 +20,17 @@
       padding-left: $space-l;
       & > a {
         &::before {
-          @include caret-right(
-            $crop: false,
-            $main: $color-font-secondary,
-            $before: true
-          );
-          left: -$space-m;
-          margin-left: $space;
-          @include themify($themes) {
-            @include caret-right(
-              $crop: themed("colorMain"),
-              $main: false,
-              $before: true
-            );
-            left: -$space-m;
-            margin-left: $space;
-          }
-        }
-        &::after {
-          @include caret-right(
-            $crop: $color-background,
-            $main: false,
-            $before: false
-          );
-          left: -$space-m - 1;
-          margin-left: $space;
-          @include themify($themes) {
-            @include caret-right(
-              $crop: themed("colorBackground"),
-              $main: false,
-              $before: false
-            );
-            left: -$space-m - 1;
-            margin-left: $space;
-          }
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: -4px;
+          width: 8px;
+          height: 8px;
+          background-image: url($caret-icon-right);
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: "";
+          transform: translateY(-50%);
         }
       }
     }

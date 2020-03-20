@@ -25,32 +25,6 @@
   user-select: none;
 }
 
-// caret right
-@mixin caret-right($crop, $main, $before) {
-  content: "";
-    cursor: default;
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    z-index: 0;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  @if $before {
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid $main;
-  } @else {
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-left: 6px solid $crop;
-
-
-  }
-
-}
-
 // Min-width breakpoints
 @mixin min-width($size) {
   @media screen and (min-width: $size) {
@@ -64,7 +38,6 @@
     @content;
   }
 }
-
 
 @mixin dot-pulse-animation($left, $size, $color) {
   box-shadow: $left 0 0 $size $color;
