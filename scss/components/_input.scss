@@ -1,0 +1,72 @@
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  height: auto;
+  box-sizing: inherit;
+  padding: $space-s $space-m;
+  border: 1px solid $color-border;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $transparent;
+  border-radius: $border-radius;
+  box-shadow: none;
+  color: $color-font;
+  font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: $font-size-s;
+  @include themify($themes) {
+    background-color: themed("colorCardBg");
+    border-color: themed("colorBorder");
+    color: themed("colorFont");
+  }
+  &:focus {
+    border-color: $color-border-dark;
+    outline: 0;
+    @include themify($themes) {
+      border-color: themed("colorBorderLight");
+    }
+  }
+  &::placeholder {
+    color: $color-input-placeholder;
+    @include themify($themes) {
+      border-color: themed("colorInputPlaceholder");
+    }
+  }
+  &:disabled {
+    background-color: $color-input-disabled;
+    cursor: not-allowed;
+    opacity: 0.5;
+    @include themify($themes) {
+      background-color: themed("colorCardBg");
+    }
+  }
+}
+
+.search-input {
+  position: relative;
+  input {
+    padding-left: $space-xl + $space-m;
+  }
+  &::before {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: $space-m;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: -8px;
+    padding-left: $space-m;
+    background-image: url($search-icon);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+  }
+}

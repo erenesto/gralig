@@ -1,0 +1,38 @@
+.radio {
+  .custom-form {
+    &-label {
+      &::before {
+        border-radius: $border-radius-full;
+      }
+      &::after {
+        border-radius: $border-radius-full;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    &-input {
+      &:checked ~ .custom-form-label {
+        &::before {
+          border: none;
+          background-color: $color-main;
+          @include themify($themes) {
+            background-color: themed("colorMain");
+          }
+        }
+        &::after {
+          top: 8px;
+          left: 5px;
+          width: 0.6rem;
+          height: 0.6rem;
+          background-color: $white;
+          opacity: 1;
+          transform: scale(1);
+          @include themify($themes) {
+            background-color: themed("colorBackground");
+          }
+        }
+      }
+    }
+  }
+}
