@@ -10,10 +10,10 @@
     @include themify($themes) {
       background-color: themed("colorCardBg");
     }
-    &.small {
+    &-small {
       height: $progress-bar-sm;
     }
-    &.large {
+    &-large {
       height: $progress-bar-lg;
     }
     &-value {

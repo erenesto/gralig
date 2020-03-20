@@ -96,6 +96,7 @@ $color-link-hover: $mischka;
 
 $color-border: $iron;
 $color-border-dark: $raven;
+$color-switch-bg: $mischka;
 
 $space-xxs: 2px;
 $space-xs: 4px;
@@ -164,7 +165,7 @@ $color-button-font-dt: $woodsmoke;
 $color-border-dt: $abbey;
 $color-border-light-dt: $iron;
 $color-code-dt: $shark;
-$color-mute-dt: $abbey;
+$color-mute-dt: darken($abbey, 8%);
 $color-alert-dt: $oslo;
 $color-alert-font-dt: $shark;
 $color-card-dt: $shark;

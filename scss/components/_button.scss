@@ -1,145 +1,149 @@
 .btn {
-  $color-button-font: $white;
-  display: inline-block;
-  height: $el-line-height;
-  border: 0;
-  background-color: $color-main;
-  border-radius: $border-radius;
-  color: $color-button-font;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: $el-font-size;
-  font-weight: $font-bold;
-  letter-spacing: 0.08rem;
-  line-height: $el-line-height;
-  padding-block: 0;
-  padding-inline: $space-xl;
-  text-align: center;
-  text-transform: uppercase;
-  user-select: none;
-  white-space: nowrap;
-  @include themify($themes) {
-    background-color: themed("colorMain");
-    color: themed("colorFontButton");
-  }
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-    outline: none;
-  }
-  &:active {
-    box-shadow: 0 0 2px 1px rgba($color-main, 0.5);
-  }
-  &.btn-disabled,
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: 0.2;
-  }
-  &.btn-outline {
-    border: 1px solid $color-main;
-    background-color: transparent;
-    color: $color-main;
+  &,
+  &:link,
+  &:visited {
+    $color-button-font: $white;
+    display: inline-block;
+    height: $el-line-height;
+    border: 0;
+    background-color: $color-main;
+    border-radius: $border-radius;
+    color: $color-button-font;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: $el-font-size;
+    font-weight: $font-bold;
+    letter-spacing: 0.08rem;
+    line-height: $el-line-height;
+    padding-block: 0;
+    padding-inline: $space-xl;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+    white-space: nowrap;
     @include themify($themes) {
-      background-color: themed("transparentColor");
-      color: themed("colorMain");
+      background-color: themed("colorMain");
+      color: themed("colorFontButton");
     }
     &:hover,
     &:focus {
-      opacity: 0.7;
+      opacity: 0.8;
+      outline: none;
     }
-  }
-  &.btn-blue {
-    background-color: $color-blue;
     &:active {
-      box-shadow: 0 0 2px 1px rgba($color-blue, 0.4);
+      box-shadow: 0 0 2px 1px rgba($color-main, 0.5);
+    }
+    &.btn-disabled,
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.2;
+    }
+    &.btn-outline {
+      border: 1px solid $color-main;
+      background-color: transparent;
+      color: $color-main;
+      @include themify($themes) {
+        background-color: themed("transparentColor");
+        color: themed("colorMain");
+      }
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+    &.btn-blue {
+      background-color: $color-blue;
+      &:active {
+        box-shadow: 0 0 2px 1px rgba($color-blue, 0.4);
+      }
+
+      &.btn-outline {
+        border: 1px solid $color-blue;
+        background-color: transparent;
+        color: $color-blue;
+      }
+      &.btn-clear {
+        background-color: transparent;
+        color: $color-blue;
+      }
+    }
+    &.btn-yellow {
+      background-color: $color-yellow;
+      &:active {
+        box-shadow: 0 0 2px 1px rgba($color-yellow, 0.4);
+      }
+      &.btn-outline {
+        border: 1px solid $color-yellow;
+        background-color: transparent;
+        color: $color-yellow;
+      }
+      &.btn-clear {
+        background-color: transparent;
+        color: $color-yellow;
+      }
+    }
+    &.btn-green {
+      background-color: $color-green;
+      &:active {
+        box-shadow: 0 0 2px 1px rgba($color-green, 0.4);
+      }
+      &.btn-outline {
+        border: 1px solid $color-green;
+        background-color: transparent;
+        color: $color-green;
+      }
+      &.btn-clear {
+        background-color: transparent;
+        color: $color-green;
+      }
+    }
+    &.btn-red {
+      background-color: $color-red;
+      &:active {
+        box-shadow: 0 0 2px 1px rgba($color-red, 0.4);
+      }
+      &.btn-outline {
+        border: 1px solid $color-red;
+        background-color: transparent;
+        color: $color-red;
+      }
+      &.btn-clear {
+        background-color: transparent;
+        color: $color-red;
+      }
+    }
+    &.btn-small {
+      height: $el-s-line-height;
+      font-size: $el-s-font-size;
+      line-height: $el-s-line-height;
+      padding-inline: $space-m;
+    }
+    &.btn-large {
+      height: $el-l-line-height;
+      font-size: $el-l-font-size;
+      line-height: $el-l-line-height;
+      padding-inline: $space-l;
     }
 
-    &.btn-outline {
-      border: 1px solid $color-blue;
+    &.btn-clear {
       background-color: transparent;
-      color: $color-blue;
+      color: $color-main;
+      padding-inline: $space-m;
+      @include themify($themes) {
+        background-color: themed("transparentColor");
+        color: themed("darkButtonBackground");
+      }
+      &:active {
+        box-shadow: none;
+      }
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
     }
-    &.btn-link {
-      background-color: transparent;
-      color: $color-blue;
+    &.btn-full-width {
+      width: 100%;
+      padding: 0;
     }
-  }
-  &.btn-yellow {
-    background-color: $color-yellow;
-    &:active {
-      box-shadow: 0 0 2px 1px rgba($color-yellow, 0.4);
-    }
-    &.btn-outline {
-      border: 1px solid $color-yellow;
-      background-color: transparent;
-      color: $color-yellow;
-    }
-    &.btn-link {
-      background-color: transparent;
-      color: $color-yellow;
-    }
-  }
-  &.btn-green {
-    background-color: $color-green;
-    &:active {
-      box-shadow: 0 0 2px 1px rgba($color-green, 0.4);
-    }
-    &.btn-outline {
-      border: 1px solid $color-green;
-      background-color: transparent;
-      color: $color-green;
-    }
-    &.btn-link {
-      background-color: transparent;
-      color: $color-green;
-    }
-  }
-  &.btn-red {
-    background-color: $color-red;
-    &:active {
-      box-shadow: 0 0 2px 1px rgba($color-red, 0.4);
-    }
-    &.btn-outline {
-      border: 1px solid $color-red;
-      background-color: transparent;
-      color: $color-red;
-    }
-    &.btn-link {
-      background-color: transparent;
-      color: $color-red;
-    }
-  }
-  &.btn-small {
-    height: $el-s-line-height;
-    font-size: $el-s-font-size;
-    line-height: $el-s-line-height;
-    padding-inline: $space-m;
-  }
-  &.btn-large {
-    height: $el-l-line-height;
-    font-size: $el-l-font-size;
-    line-height: $el-l-line-height;
-    padding-inline: $space-l;
-  }
-
-  &.btn-link {
-    background-color: transparent;
-    color: $color-main;
-    padding-inline: $space-m;
-    @include themify($themes) {
-      background-color: themed("transparentColor");
-      color: themed("darkButtonBackground");
-    }
-    &:active {
-      box-shadow: none;
-    }
-    &:hover,
-    &:focus {
-      opacity: 0.7;
-    }
-  }
-  &.btn-full-width {
-    width: 100%;
-    padding: 0;
   }
 }
