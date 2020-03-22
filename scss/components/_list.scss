@@ -1,0 +1,28 @@
+.list {
+  padding-block: $space-m;
+  padding-inline: $space-l;
+  & > :first-child {
+    padding-top: 0;
+  }
+  & > :last-child {
+    padding-bottom: 0;
+  }
+  &-item {
+    display: flex;
+    width: 100%;
+    line-height: $line-height-s;
+    padding-block: $space;
+    word-break: break-word;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-border;
+    }
+  }
+}
+
+.block-list {
+  height: auto;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  padding-block: $space-m;
+  padding-inline: $space-l;
+}

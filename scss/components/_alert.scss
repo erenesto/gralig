@@ -6,7 +6,7 @@
   border-radius: $border-radius;
   color: $color-alert-font;
   font-size: 1.4rem;
-  line-height: $el-s-line-height;
+  line-height: $el-s-line-height + 0.1;
   padding-inline: $space-xl;
   @include themify($themes) {
     background-color: themed("colorAlert");

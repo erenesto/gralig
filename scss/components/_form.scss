@@ -59,9 +59,11 @@ select {
   &:disabled {
     background-color: $color-input-disabled;
     cursor: not-allowed;
-    opacity: 0.5;
     @include themify($themes) {
       background-color: themed("colorCardBg");
+    }
+    &:hover {
+      border: 1px solid $color-border;
     }
   }
 }
@@ -73,14 +75,14 @@ input[type="search"],
 input[type="tel"],
 input[type="text"],
 input[type="url"] {
-  height: 4rem;
+  height: 4.1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
 select {
-  height: 4rem;
+  height: 4.1rem;
   cursor: pointer;
 }
 
