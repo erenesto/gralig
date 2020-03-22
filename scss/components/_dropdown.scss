@@ -1,0 +1,142 @@
+.dropdown {
+  display: flex;
+  position: relative;
+  &[open] > .dropdown-btn {
+    box-shadow: none;
+    &::before {
+      display: block;
+      position: fixed;
+      z-index: 90;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: $transparent;
+      content: " ";
+      cursor: default;
+    }
+    &::after {
+      transform: rotate(0deg);
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &:not([open]) > .dropdown-btn {
+    opacity: 1;
+  }
+  &:not([open]) > .dropdown-list {
+    display: block;
+    opacity: 1;
+  }
+
+  &-top {
+    .dropdown-list {
+      top: initial;
+      bottom: 105%;
+      list-style: none;
+    }
+    .dropdown-btn {
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+    &[open] > .dropdown-btn {
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &-left {
+    .dropdown-list {
+      top: 0;
+      right: 101%;
+      bottom: initial;
+      left: initial;
+      width: max-content;
+      max-width: 20rem;
+    }
+    .dropdown-btn {
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+    &[open] > .dropdown-btn {
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  &-right {
+    .dropdown-list {
+      top: 0;
+      bottom: initial;
+      left: 101%;
+      max-width: 20rem;
+    }
+    .dropdown-btn {
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+.dropdown-list {
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  top: 105%;
+  left: 0;
+  min-width: 10rem;
+  height: auto;
+  border: 1px solid $color-border;
+  background-color: $color-background;
+  border-radius: $border-radius;
+  padding-block: $space-m;
+  padding-inline: $space-l;
+  & > :first-child {
+    .dropdown-list-link {
+      padding-top: 0;
+    }
+  }
+  & > :last-child {
+    .dropdown-list-link {
+      padding-bottom: 0;
+    }
+  }
+  &-item:not(:last-child) {
+    border-bottom: 1px solid $color-border;
+  }
+  &-link {
+    display: inline-block;
+    width: 100%;
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+    padding-block: $space-s;
+    word-break: break-word;
+  }
+}
+
+.dropdown-btn {
+  margin: 0;
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &::after {
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url($caret-icon-down);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    transform: rotate(-180deg);
+    transition: $transition-default;
+  }
+  &:focus {
+    box-shadow: 0 0 2px 2px rgba($color-main, 0.5);
+  }
+}

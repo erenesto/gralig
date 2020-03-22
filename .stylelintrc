@@ -10,7 +10,7 @@
     "media-query-list-comma-space-after": "always-single-line",
     "selector-class-pattern": null,
     "scale-unlimited/declaration-strict-value": [
-      ["color", "z-index"], {
+      ["color"], {
         "ignoreKeywords": "inherit"
       }
     ],
