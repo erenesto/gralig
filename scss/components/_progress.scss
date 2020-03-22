@@ -11,10 +11,10 @@
       background-color: themed("colorCardBg");
     }
     &-small {
-      height: $progress-bar-sm;
+      height: $progress-bar-s;
     }
     &-large {
-      height: $progress-bar-lg;
+      height: $progress-bar-l;
     }
     &-value {
       display: inline-block;
@@ -48,12 +48,12 @@
     width: $progress-circle;
     height: $progress-circle;
     &.small {
-      width: $progress-circle-sm;
-      height: $progress-circle-sm;
+      width: $progress-circle-s;
+      height: $progress-circle-s;
     }
     &.large {
-      width: $progress-circle-lg;
-      height: $progress-circle-lg;
+      width: $progress-circle-l;
+      height: $progress-circle-l;
     }
     svg {
       display: block;

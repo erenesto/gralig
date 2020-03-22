@@ -15,6 +15,9 @@
     word-break: break-word;
     &:not(:last-child) {
       border-bottom: 1px solid $color-border;
+      @include themify($themes) {
+        border-color: themed("colorBorder");
+      }
     }
   }
 }
@@ -25,4 +28,7 @@
   border-radius: $border-radius;
   padding-block: $space-m;
   padding-inline: $space-l;
+  @include themify($themes) {
+    border-color: themed("colorBorder");
+  }
 }

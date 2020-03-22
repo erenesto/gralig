@@ -20,17 +20,16 @@
       padding-left: $space-l;
       & > a {
         &::before {
+          @include caret-icon(-45deg, 0, -50%, $color-main);
           display: inline-block;
           position: absolute;
           top: 50%;
-          left: -2px;
-          width: 8px;
-          height: 8px;
-          background-image: url($caret-icon-right);
-          background-repeat: no-repeat;
-          background-size: contain;
+          left: -4px;
+          margin-top: -2px;
           content: "";
-          transform: translateY(-50%);
+          @include themify($themes) {
+            border-color: themed("colorBorder");
+          }
         }
       }
     }

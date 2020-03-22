@@ -2,9 +2,10 @@
 /* GLOBAL VARIABLES
 ***********************/
 // Colors
-$blackpearl: hsl(206, 19%, 7%);
+$blackpearl: hsl(206, 20%, 7%);
 $woodsmoke: hsl(200, 7%, 8%);
 $shark: hsl(207, 13%, 14%);
+$smooke: hsla(203, 4%, 40%, 0.2);
 
 $abbey: hsl(205, 7%, 40%);
 $raven: lighten($abbey, 8%);
@@ -141,12 +142,12 @@ $content-padding-inline: $space-xl;
 $content-padding-block: $space-m;
 
 $progress-bar: 1.4rem;
-$progress-bar-sm: 1rem;
-$progress-bar-lg: 2rem;
+$progress-bar-s: 1rem;
+$progress-bar-l: 2rem;
 
 $progress-circle: 6rem;
-$progress-circle-sm: 3rem;
-$progress-circle-lg: 8rem;
+$progress-circle-s: 3rem;
+$progress-circle-l: 8rem;
 
 $color-input-disabled: $color-lighter;
 $color-input-placeholder: $mischka;
@@ -155,7 +156,7 @@ $color-input-placeholder: $mischka;
 /* DARK THEME
 ***********************/
 
-$color-font-dt: $porcelain;
+$color-font-dt: $iron;
 $color-font-secondary-dt: $ghost;
 $color-font-revert-dt: $woodsmoke;
 $color-background-dt: $woodsmoke;
@@ -163,7 +164,7 @@ $color-main-dt: $raven;
 $color-secondary-dt: $oslo;
 $color-button-font-dt: $woodsmoke;
 $color-border-dt: $abbey;
-$color-border-light-dt: $iron;
+$color-border-light-dt: $oslo;
 $color-code-dt: $shark;
 $color-mute-dt: darken($abbey, 8%);
 $color-alert-dt: $oslo;
@@ -171,8 +172,8 @@ $color-alert-font-dt: $shark;
 $color-card-dt: $shark;
 $color-link-font-dt: $oslo;
 $color-link-hover-dt: $ghost;
-$color-input-disabled-dt: $abbey;
-$color-input-placeholder-dt: $raven;
+$color-input-disabled-dt: $smooke;
+$color-input-placeholder-dt: $abbey;
 
 //**********************
 /* BREAKPOINTS
@@ -184,7 +185,3 @@ $bp-s: 50em; //800px
 $bp-xs: 37.5em; //600px
 
 $search-icon: "data:image/svg+xml,%3Csvg width='14' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.643 6.107a3.755 3.755 0 01-3.75 3.75 3.755 3.755 0 01-3.75-3.75 3.755 3.755 0 013.75-3.75 3.755 3.755 0 013.75 3.75zm4.286 6.965c0-.285-.118-.561-.31-.754l-2.871-2.87A5.89 5.89 0 005.893.214 5.89 5.89 0 000 6.106a5.89 5.89 0 009.233 4.855l2.87 2.863c.193.2.47.318.754.318.586 0 1.072-.486 1.072-1.072z' fill='%236F7880'/%3E%3C/svg%3E";
-
-$caret-icon-right: "data:image/svg+xml,%3Csvg width='8' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.089 0a.473.473 0 00-.302.12L.131.721A.398.398 0 000 .998c0 .096.052.204.131.277L5.288 6 .13 10.726a.398.398 0 00-.131.276c0 .108.052.204.131.277l.656.6c.079.073.197.121.302.121a.473.473 0 00.302-.12l6.114-5.603A.398.398 0 007.636 6a.398.398 0 00-.13-.277L1.39.12A.473.473 0 001.089 0z' fill='%236F7880'/%3E%3C/svg%3E";
-
-$caret-icon-down: "data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 1.089a.473.473 0 00-.12-.302l-.601-.656A.399.399 0 0011.002 0a.399.399 0 00-.277.131L6 5.288 1.275.13A.399.399 0 00.998 0a.377.377 0 00-.277.131l-.6.656A.473.473 0 000 1.09c0 .105.048.223.12.302l5.603 6.114c.073.079.18.131.277.131a.398.398 0 00.277-.13L11.88 1.39a.473.473 0 00.12-.302z' fill='%23F2F3F4'/%3E%3C/svg%3E";

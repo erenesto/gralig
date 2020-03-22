@@ -7,6 +7,9 @@
     padding-block: $space;
     padding-inline: $space-m;
     text-align: left;
+    @include themify($themes) {
+      border-color: themed("colorBorder");
+    }
 
     &:first-child {
       padding-left: 0;

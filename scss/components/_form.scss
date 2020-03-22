@@ -54,17 +54,18 @@ select {
   &::placeholder {
     color: $color-input-placeholder;
     @include themify($themes) {
-      border-color: themed("colorInputPlaceholder");
+      color: themed("colorInputPlaceholder");
     }
   }
   &:disabled {
     background-color: $color-input-disabled;
     cursor: not-allowed;
     @include themify($themes) {
-      background-color: themed("colorCardBg");
+      border: 1px solid $transparent;
+      background-color: themed("colorInputDisabled");
     }
     &:hover {
-      border: 1px solid $color-border;
+      border: 1px solid $transparent;
     }
   }
 }
@@ -84,6 +85,7 @@ input[type="url"] {
 
 select {
   height: 4.1rem;
+  border-radius: $border-radius;
   cursor: pointer;
 }
 

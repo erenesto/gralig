@@ -9,6 +9,9 @@
   border-radius: $border-radius;
   transform: translate(-50%, -50%);
   transition: $transition-secondary;
+  @include themify($themes) {
+    background-color: themed("colorCardBg");
+  }
   @include min-width($bp-l) {
     width: 72rem;
     max-width: 72rem;
@@ -22,6 +25,9 @@
     left: 0;
     background-color: rgba($color: $color-main, $alpha: 0.8);
     cursor: default;
+    @include themify($themes) {
+      background-color: rgba($color: themed("colorMain"), $alpha: 0.5);
+    }
   }
   &-wrapper {
     position: fixed;
@@ -44,6 +50,9 @@
     font-weight: $font-bold;
     padding-block: $space;
     padding-inline: $space-xl;
+    @include themify($themes) {
+      border-color: themed("colorBorder");
+    }
   }
   &-body {
     padding-block: $space-l;
@@ -54,6 +63,9 @@
     border-top: 1px solid $color-border;
     padding-block: $space;
     padding-inline: $space-xl;
+    @include themify($themes) {
+      border-color: themed("colorBorder");
+    }
   }
   &-actions {
     display: flex;
