@@ -1,0 +1,18 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+  td,
+  th {
+    border-bottom: 1px solid $color-border;
+    padding-block: $space;
+    padding-inline: $space-m;
+    text-align: left;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

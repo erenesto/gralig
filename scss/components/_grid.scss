@@ -1,12 +1,94 @@
 .container {
   position: relative;
   width: 100%;
-  flex-grow: 1;
   margin: 0 auto;
-  @include min-width($bp-s) {
-    max-width: 84rem;
-  }
+  padding-inline: $space;
   @include min-width($bp-l) {
     max-width: 114rem;
+  }
+  &.full {
+    @include min-width($bp-l) {
+      max-width: 100%;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.col {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 0;
+
+  @include min-width($bp-s) {
+    &.col-25 {
+      max-width: 25%;
+      flex: 0 0 25%;
+    }
+    &.col-33 {
+      max-width: 33.33333333%;
+      flex: 0 0 33.33333333%;
+    }
+    &.col-50 {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    &.col-66 {
+      max-width: 66.66666666%;
+      flex: 0 0 66.66666666%;
+    }
+    &.col-75 {
+      max-width: 75%;
+      flex: 0 0 75%;
+    }
+  }
+}
+
+@include min-width($bp-s) {
+  .row {
+    width: calc(100% + #{$space} * 2);
+    flex-direction: row;
+    margin-left: -$space;
+  }
+  .col {
+    padding: 0 $space;
+  }
+}
+
+@include max-width($bp-s) {
+  &.row-mobile {
+    width: calc(100% + #{$space} * 2);
+    flex-direction: row;
+    margin-left: 0;
+    margin-left: -$space;
+
+    .col {
+      padding: 0 $space;
+      &.col-25 {
+        max-width: 25%;
+        flex: 0 0 25%;
+      }
+      &.col-33 {
+        max-width: 33.33333333%;
+        flex: 0 0 33.33333333%;
+      }
+      &.col-50 {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+      &.col-66 {
+        max-width: 66.66666666%;
+        flex: 0 0 66.66666666%;
+      }
+      &.col-75 {
+        max-width: 75%;
+        flex: 0 0 75%;
+      }
+    }
   }
 }

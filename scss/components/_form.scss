@@ -4,6 +4,7 @@ label {
   font-weight: $font-bold;
 }
 label {
+  margin-bottom: $space-xs;
   cursor: pointer;
 }
 
@@ -202,6 +203,7 @@ select {
   }
   &-label {
     display: inline-block;
+    margin-bottom: 0;
     font-weight: $font-normal;
     &::before,
     &::after {
