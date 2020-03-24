@@ -10,12 +10,13 @@
     "media-query-list-comma-space-after": "always-single-line",
     "selector-class-pattern": null,
     "scale-unlimited/declaration-strict-value": [
-      ["color"], {
+      ["color"],
+      {
         "ignoreKeywords": "inherit"
       }
     ],
     "plugin/declaration-block-no-ignored-properties": true,
-    "max-nesting-depth": 2,
+    "max-nesting-depth": 3,
     "order/properties-alphabetical-order": null,
     "order/properties-order": [
       [

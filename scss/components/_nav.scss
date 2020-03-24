@@ -45,13 +45,11 @@
     &:focus {
       box-shadow: none;
     }
-    &.current {
-      &::after {
-        width: 4px;
-        height: 4px;
-        @include themify($themes) {
-          background-color: themed("colorMain");
-        }
+    &.current::after {
+      width: 4px;
+      height: 4px;
+      @include themify($themes) {
+        background-color: themed("colorMain");
       }
     }
   }

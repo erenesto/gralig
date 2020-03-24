@@ -1,10 +1,10 @@
 .list {
   padding-block: $content-padding-block;
   padding-inline: $content-padding-inline;
-  & > :first-child {
+  > :first-child {
     padding-top: 0;
   }
-  & > :last-child {
+  > :last-child {
     padding-bottom: 0;
   }
   &-item {
@@ -30,5 +30,11 @@
   padding-inline: $content-padding-inline;
   @include themify($themes) {
     border-color: themed("colorBorder");
+  }
+  > :first-child {
+    padding-top: 0;
+  }
+  > :last-child {
+    padding-bottom: 0;
   }
 }

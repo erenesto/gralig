@@ -1,53 +1,48 @@
 .switch {
   padding-left: 5rem;
-  .custom-form {
-    &-label {
-      &::before {
-        top: 1px;
-        width: 4.2rem;
-        height: 2rem;
-        border: none;
-        background-color: $color-switch-bg;
-        border-radius: $border-radius;
-        @include themify($themes) {
-          border: 1px solid themed("colorBorder");
-          background-color: themed("colorCardBg");
-        }
-      }
-      &::after {
-        top: 4px;
-        left: $space-xs;
-        width: 1.4rem;
-        height: 1.4rem;
-        border: 1px solid $white;
-        border-radius: $border-radius;
-        opacity: 1;
-        transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in,
-          transform 0.3s ease-in-out;
-        @include themify($themes) {
-          background-color: themed("colorBorder");
-          border-color: themed("colorBorder");
-        }
+  .custom-form-label::before {
+    top: 1px;
+    width: 4.2rem;
+    height: 2rem;
+    border: 0;
+    background-color: $color-switch-bg;
+    border-radius: $border-radius;
+    @include themify($themes) {
+      border: 1px solid themed("colorBorder");
+      background-color: themed("colorCardBg");
+    }
+  }
+  .custom-form-label::after {
+    top: 4px;
+    left: $space-xs;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 1px solid $white;
+    border-radius: $border-radius;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in,
+      transform 0.3s ease-in-out;
+    @include themify($themes) {
+      background-color: themed("colorBorder");
+      border-color: themed("colorBorder");
+    }
+  }
+
+  .custom-form-input:checked ~ .custom-form-label {
+    &::before {
+      border: 0;
+      background: $color-main;
+      @include themify($themes) {
+        background-color: themed("colorMain");
       }
     }
-    &-input {
-      &:checked ~ .custom-form-label {
-        &::before {
-          border: none;
-          background: $color-main;
-          @include themify($themes) {
-            background-color: themed("colorMain");
-          }
-        }
-        &::after {
-          border: 0;
-          background-color: $color-lighter;
-          opacity: 1;
-          transform: translateX(2rem);
-          @include themify($themes) {
-            background-color: themed("colorBackground");
-          }
-        }
+    &::after {
+      border: 0;
+      background-color: $color-lighter;
+      opacity: 1;
+      transform: translateX(2rem);
+      @include themify($themes) {
+        background-color: themed("colorBackground");
       }
     }
   }

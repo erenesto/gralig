@@ -6,35 +6,33 @@
   @include themify($themes) {
     border-color: themed("colorBorder");
   }
-
   &-list {
     display: flex;
   }
   &-item {
     position: relative;
     font-size: $font-size-s;
-    & > .current {
-      cursor: default;
-    }
+
     &:not(:first-child) {
       padding-left: $space-l;
-      & > a {
-        &::before {
-          @include caret-icon(-45deg, 0, -50%, $color-main);
-          display: inline-block;
-          position: absolute;
-          top: 50%;
-          left: -4px;
-          margin-top: -2px;
-          content: "";
-          @include themify($themes) {
-            border-color: themed("colorBorder");
-          }
-        }
+    }
+    &:not(:first-child) > a::before {
+      @include caret-icon(-45deg, 0, -50%, $color-main);
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: -4px;
+      margin-top: -2px;
+      content: "";
+      @include themify($themes) {
+        border-color: themed("colorBorder");
       }
     }
     &:not(:last-child) {
       margin-right: $space-l;
     }
+  }
+  &-item > .current {
+    cursor: default;
   }
 }

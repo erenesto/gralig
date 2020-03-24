@@ -1,3 +1,4 @@
+// stylelint-disable selector-no-qualifying-type
 legend,
 label {
   display: block;
@@ -13,7 +14,7 @@ legend {
 }
 
 fieldset {
-  border: none;
+  border: 0;
 }
 
 input[type="email"],
@@ -81,8 +82,6 @@ input[type="tel"],
 input[type="text"],
 input[type="url"] {
   height: 4.1rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -132,140 +131,114 @@ input[type="search"] {
   min-height: $space-l;
   margin-bottom: $space;
   padding-left: 2.4rem;
-  .custom-form {
-    &-input {
-      position: absolute;
-      left: -9999px;
-      opacity: 0;
-      &:focus {
-        & ~ .custom-form-label {
-          &::before {
-            box-shadow: $el-box-shadow;
-            @include themify($themes) {
-              // outline-color: themed("colorBorder");
-            }
-          }
-        }
-      }
-      &:disabled ~ .custom-form-label,
-      &:disabled:checked ~ .custom-form-label {
-        color: $color-mute;
-        cursor: not-allowed;
-        @include themify($themes) {
-          color: themed("colorMute");
-        }
-        &::before {
-          background: $color-mute;
-          border-color: $color-mute;
-          @include themify($themes) {
-            background-color: themed("colorMute");
-            border-color: themed("colorMute");
-          }
-        }
+  .custom-form-input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    &:focus ~ .custom-form-label::before {
+      box-shadow: $el-box-shadow;
+    }
+  }
+  .custom-form-input:disabled ~ .custom-form-label,
+  .custom-form-input:disabled:checked ~ .custom-form-label {
+    color: $color-mute;
+    cursor: not-allowed;
+    @include themify($themes) {
+      color: themed("colorMute");
+    }
+    &::before {
+      background: $color-mute;
+      border-color: $color-mute;
+      @include themify($themes) {
+        background-color: themed("colorMute");
+        border-color: themed("colorMute");
       }
     }
-    &-label {
-      display: inline-block;
-      margin-bottom: 0;
-      font-weight: $font-normal;
-      &::before,
-      &::after {
-        display: block;
-        position: absolute;
-        content: "";
+  }
+  .custom-form-label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: $font-normal;
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+    }
+    &::before {
+      top: 3px;
+      left: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 1px solid $color-border-dark;
+      border-radius: 1px;
+      pointer-events: all;
+      transition: $transition-default;
+      user-select: none;
+      @include themify($themes) {
+        background-color: themed("colorCardBg");
+        border-color: themed("colorBorder");
       }
-      &::before {
-        top: 3px;
-        left: 0;
-        width: 1.6rem;
-        height: 1.6rem;
-        border: 1px solid $color-border-dark;
-        border-radius: 1px;
-        pointer-events: all;
-        transition: $transition-default;
-        user-select: none;
-        @include themify($themes) {
-          background-color: themed("colorCardBg");
-          border-color: themed("colorBorder");
-        }
-      }
-      &::after {
-        opacity: 0;
-      }
+    }
+    &::after {
+      opacity: 0;
     }
   }
 
   &.blue {
-    .custom-form-input {
-      &:checked ~ .custom-form-label {
-        &::before {
-          background: $color-blue;
-          @include themify($themes) {
-            background-color: $color-blue;
-          }
-        }
+    .custom-form-input:checked ~ .custom-form-label::before {
+      background: $color-blue;
+      @include themify($themes) {
+        background-color: $color-blue;
       }
-      &:checked:focus ~ .custom-form-label {
-        &::before {
-          box-shadow: $el-box-shadow-blue;
-        }
-      }
-      &:disabled:checked ~ .custom-form-label {
-        &::before {
-          opacity: 0.5;
-        }
-      }
+    }
+    .custom-form-input:checked:focus ~ .custom-form-label::before {
+      box-shadow: $el-box-shadow-blue;
+    }
+    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+      opacity: 0.5;
     }
   }
   &.green {
-    .custom-form-input {
-      &:checked ~ .custom-form-label {
-        &::before {
-          background: $color-green;
-          @include themify($themes) {
-            background-color: $color-green;
-          }
-        }
+    .custom-form-input:checked ~ .custom-form-label::before {
+      background: $color-green;
+      @include themify($themes) {
+        background-color: $color-green;
       }
-      &:checked:focus ~ .custom-form-label {
-        &::before {
-          box-shadow: $el-box-shadow-green;
-        }
-      }
+    }
+    .custom-form-input:checked:focus ~ .custom-form-label::before {
+      box-shadow: $el-box-shadow-green;
+    }
+    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+      opacity: 0.5;
     }
   }
   &.yellow {
-    .custom-form-input {
-      &:checked ~ .custom-form-label {
-        &::before {
-          background: $color-yellow;
-          @include themify($themes) {
-            background-color: $color-yellow;
-          }
-        }
+    .custom-form-input:checked ~ .custom-form-label::before {
+      background: $color-yellow;
+      @include themify($themes) {
+        background-color: $color-yellow;
       }
-      &:checked:focus ~ .custom-form-label {
-        &::before {
-          box-shadow: $el-box-shadow-yellow;
-        }
-      }
+    }
+    .custom-form-input:checked:focus ~ .custom-form-label::before {
+      box-shadow: $el-box-shadow-yellow;
+    }
+    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+      opacity: 0.5;
     }
   }
   &.red {
-    .custom-form-input {
-      &:checked ~ .custom-form-label {
-        &::before {
-          background: $color-red;
-          @include themify($themes) {
-            background-color: $color-red;
-          }
-        }
+    .custom-form-input:checked ~ .custom-form-label::before {
+      background: $color-red;
+      @include themify($themes) {
+        background-color: $color-red;
       }
-      &:checked:focus ~ .custom-form-label {
-        &::before {
-          box-shadow: $el-box-shadow-red;
-        }
-      }
+    }
+    .custom-form-input:checked:focus ~ .custom-form-label::before {
+      box-shadow: $el-box-shadow-red;
+    }
+    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+      opacity: 0.5;
     }
   }
 }

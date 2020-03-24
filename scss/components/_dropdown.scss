@@ -40,7 +40,7 @@
   height: auto;
   background-color: $color-background;
   @include themify($themes) {
-    border: none;
+    border: 0;
     background-color: themed("colorCardBg");
   }
 

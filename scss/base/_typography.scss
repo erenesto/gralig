@@ -1,3 +1,4 @@
+// stylelint-disable selector-no-qualifying-type
 strong,
 b {
   font-weight: $font-bold;
@@ -83,15 +84,7 @@ a {
       color: themed("colorLinkHover");
     }
   }
-  &.current {
-    font-weight: $font-bold;
-    &:hover {
-      color: $color-link-font;
-      @include themify($themes) {
-        color: themed("colorLinkFont");
-      }
-    }
-  }
+
   &.disabled,
   &[disabled] {
     color: $color-mute;
@@ -101,6 +94,16 @@ a {
     user-select: none;
     @include themify($themes) {
       color: themed("colorMute");
+    }
+  }
+}
+
+a.current {
+  font-weight: $font-bold;
+  &:hover {
+    color: $color-link-font;
+    @include themify($themes) {
+      color: themed("colorLinkFont");
     }
   }
 }
