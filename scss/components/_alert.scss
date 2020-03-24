@@ -1,12 +1,12 @@
 .alert {
   display: inline-block;
   min-width: 100%;
-  height: $el-s-line-height;
+  height: calc(#{$el-height-s} - 1px);
   background-color: $color-alert;
   border-radius: $border-radius;
   color: $color-alert-font;
   font-size: 1.4rem;
-  line-height: $el-s-line-height + 0.1;
+  line-height: $el-height-s;
   padding-inline: $space-xl;
   @include themify($themes) {
     background-color: themed("colorAlert");

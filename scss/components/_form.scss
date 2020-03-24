@@ -33,8 +33,7 @@ select {
   border-radius: $border-radius;
   box-shadow: none;
   color: $color-font;
-  font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: $font-family;
   font-size: $font-size-s;
   line-height: normal;
   vertical-align: middle;
@@ -61,11 +60,15 @@ select {
     background-color: $color-input-disabled;
     cursor: not-allowed;
     @include themify($themes) {
-      border: 1px solid $transparent;
       background-color: themed("colorInputDisabled");
+      border-color: themed("cardOutlineBorder");
     }
-    &:hover {
-      border: 1px solid $transparent;
+    &:hover,
+    &:focus {
+      border: 1px solid $color-border;
+      @include themify($themes) {
+        border-color: themed("cardOutlineBorder");
+      }
     }
   }
 }
@@ -89,13 +92,13 @@ select {
   cursor: pointer;
 }
 
+input[type="search"] {
+  padding-left: $space-xl + $space-m;
+}
 .search-input {
   position: relative;
-  input {
+  input[type="search"] {
     padding-left: $space-xl + $space-m;
-    -webkit-appearance: searchfield;
-    -moz-appearance: searchfield;
-    appearance: searchfield;
   }
   &::before {
     display: inline-block;
@@ -129,21 +132,65 @@ select {
   min-height: $space-l;
   margin-bottom: $space;
   padding-left: 2.4rem;
-  .custom-form-input {
-    &:disabled ~ .custom-form-label,
-    &:disabled:checked ~ .custom-form-label {
-      color: $color-mute;
-      cursor: not-allowed;
-      @include themify($themes) {
-        color: themed("colorMute");
+  .custom-form {
+    &-input {
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+      &:focus {
+        & ~ .custom-form-label {
+          &::before {
+            box-shadow: $el-box-shadow;
+            @include themify($themes) {
+              // outline-color: themed("colorBorder");
+            }
+          }
+        }
+      }
+      &:disabled ~ .custom-form-label,
+      &:disabled:checked ~ .custom-form-label {
+        color: $color-mute;
+        cursor: not-allowed;
+        @include themify($themes) {
+          color: themed("colorMute");
+        }
+        &::before {
+          background: $color-mute;
+          border-color: $color-mute;
+          @include themify($themes) {
+            background-color: themed("colorMute");
+            border-color: themed("colorMute");
+          }
+        }
+      }
+    }
+    &-label {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: $font-normal;
+      &::before,
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
       }
       &::before {
-        background: $color-mute;
-        border-color: $color-mute;
+        top: 3px;
+        left: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 1px solid $color-border-dark;
+        border-radius: 1px;
+        pointer-events: all;
+        transition: $transition-default;
+        user-select: none;
         @include themify($themes) {
-          background-color: themed("colorMute");
-          border-color: themed("colorMute");
+          background-color: themed("colorCardBg");
+          border-color: themed("colorBorder");
         }
+      }
+      &::after {
+        opacity: 0;
       }
     }
   }
@@ -156,6 +203,11 @@ select {
           @include themify($themes) {
             background-color: $color-blue;
           }
+        }
+      }
+      &:checked:focus ~ .custom-form-label {
+        &::before {
+          box-shadow: $el-box-shadow-blue;
         }
       }
       &:disabled:checked ~ .custom-form-label {
@@ -175,6 +227,11 @@ select {
           }
         }
       }
+      &:checked:focus ~ .custom-form-label {
+        &::before {
+          box-shadow: $el-box-shadow-green;
+        }
+      }
     }
   }
   &.yellow {
@@ -185,6 +242,11 @@ select {
           @include themify($themes) {
             background-color: $color-yellow;
           }
+        }
+      }
+      &:checked:focus ~ .custom-form-label {
+        &::before {
+          box-shadow: $el-box-shadow-yellow;
         }
       }
     }
@@ -199,43 +261,11 @@ select {
           }
         }
       }
-    }
-  }
-}
-
-.custom-form {
-  &-input {
-    position: absolute;
-    left: -9999px;
-    opacity: 0;
-  }
-  &-label {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: $font-normal;
-    &::before,
-    &::after {
-      display: block;
-      position: absolute;
-      content: "";
-    }
-    &::before {
-      top: 3px;
-      left: 0;
-      width: 1.6rem;
-      height: 1.6rem;
-      border: 1px solid $color-border-dark;
-      border-radius: 1px;
-      pointer-events: all;
-      transition: $transition-default;
-      user-select: none;
-      @include themify($themes) {
-        background-color: themed("colorCardBg");
-        border-color: themed("colorBorder");
+      &:checked:focus ~ .custom-form-label {
+        &::before {
+          box-shadow: $el-box-shadow-red;
+        }
       }
-    }
-    &::after {
-      opacity: 0;
     }
   }
 }

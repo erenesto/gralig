@@ -1,7 +1,6 @@
 //**********************
-/* GLOBAL VARIABLES
+/* MAIN VARIABLES
 ***********************/
-// Colors
 $blackpearl: hsl(206, 20%, 7%);
 $woodsmoke: hsl(200, 7%, 8%);
 $shark: hsl(207, 13%, 14%);
@@ -41,17 +40,60 @@ $flame-darker: darken($flame, 16%);
 $flame-light: lighten($flame, 8%);
 $flame-lighter: lighten($flame, 16%);
 
-// Typography
 $font-size: 1.6rem;
 $font-size-s: 1.4rem;
 $font-size-m: 1.8rem;
 
-$heading-1: $font-size * 3.25;
-$heading-2: $font-size * 2.75;
-$heading-3: $font-size * 2.5;
-$heading-4: $font-size * 2;
-$heading-5: $font-size * 1.5;
-$heading-6: $font-size * 1.125;
+$font-thin: 300;
+$font-normal: 400;
+$font-bold: 600;
+
+$font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+
+$heading-1: $font-size * 2.75;
+$heading-2: $font-size * 2.25;
+$heading-3: $font-size * 1.75;
+$heading-4: $font-size * 1.5;
+$heading-5: $font-size * 1.125;
+$heading-6: $font-size * 1;
+
+$space-xxs: 2px;
+$space-xs: 4px;
+$space-s: 8px;
+$space: 12px;
+$space-m: 16px;
+$space-l: 24px;
+$space-xl: 32px;
+$space-xxl: 64px;
+
+$line-height-s: 1.2;
+$line-height: 1.5;
+$line-height-m: 1.6;
+$line-height-l: 1.7;
+
+$el-height: 3.7rem;
+$el-height-s: 2.9rem;
+$el-height-l: 4.1rem;
+
+$border-radius: 2px;
+$border-radius-full: 50%;
+
+$transition-default: all 0.15s ease-in;
+$transition-secondary: all 0.3s ease-in;
+$transparent: transparent;
+
+$progress-bar: 1.4rem;
+$progress-bar-s: 1rem;
+$progress-bar-l: 2rem;
+
+$progress-circle: 6rem;
+$progress-circle-s: 3rem;
+$progress-circle-l: 8rem;
+
+//**********************
+/* DERIVED VARIABLES
+***********************/
 
 $color-background: $white;
 $color-font: $abbey;
@@ -86,7 +128,7 @@ $color-red-lighter: $flame-lighter;
 $color-red-dark: $flame-dark;
 $color-red-darker: $flame-darker;
 
-$color-mute: $iron;
+$color-mute: $ghost;
 $color-mark: $tulip-light;
 $color-code: $porcelain;
 $color-button-font: $white;
@@ -99,58 +141,25 @@ $color-border: $iron;
 $color-border-dark: $raven;
 $color-switch-bg: $mischka;
 
-$space-xxs: 2px;
-$space-xs: 4px;
-$space-s: 8px;
-$space: 12px;
-$space-m: 16px;
-$space-l: 24px;
-$space-xl: 32px;
-$space-xxl: 64px;
-
-$font-thin: 300;
-$font-normal: 400;
-$font-bold: 600;
-
-$font-heading: "Catamaran", Helvetica, Arial, sans-serif;
-$font-text: "Catamaran", Helvetica, Arial, sans-serif;
-
-$line-height-s: 1.3;
-$line-height: 1.5;
-$line-height-l: 1.7;
-
 $p-size: $font-size * 1;
 $p-s-size: $font-size * 0.8125;
 $p-l-size: $font-size * 1.125;
 
 $el-font-size: $font-size * 0.8125;
-$el-s-font-size: $font-size * 0.6875;
-$el-l-font-size: $font-size * 0.9375;
-
-$el-line-height: 3.7rem;
-$el-s-line-height: 3rem;
-$el-l-line-height: 4.2rem;
-
-$border-radius: 2px;
-$border-radius-full: 50%;
-
-$transition-default: all 0.15s ease-in;
-$transition-secondary: all 0.3s ease-in;
-$transparent: transparent;
+$el-font-size-s: $font-size * 0.6875;
+$el-font-size-l: $font-size * 0.9375;
 
 $content-padding-inline: $space-xl;
 $content-padding-block: $space-m;
 
-$progress-bar: 1.4rem;
-$progress-bar-s: 1rem;
-$progress-bar-l: 2rem;
-
-$progress-circle: 6rem;
-$progress-circle-s: 3rem;
-$progress-circle-l: 8rem;
-
 $color-input-disabled: $color-lighter;
 $color-input-placeholder: $mischka;
+
+$el-box-shadow: 0 0 3px 1px rgba($color-main, 0.5);
+$el-box-shadow-blue: 0 0 3px 1px rgba($color-blue, 0.5);
+$el-box-shadow-green: 0 0 3px 1px rgba($color-green, 0.5);
+$el-box-shadow-yellow: 0 0 3px 1px rgba($color-yellow, 0.5);
+$el-box-shadow-red: 0 0 3px 1px rgba($color-red, 0.5);
 
 //**********************
 /* DARK THEME
@@ -174,6 +183,7 @@ $color-link-font-dt: $oslo;
 $color-link-hover-dt: $ghost;
 $color-input-disabled-dt: $smooke;
 $color-input-placeholder-dt: $abbey;
+$card-outline-border-dt: $transparent;
 
 //**********************
 /* BREAKPOINTS

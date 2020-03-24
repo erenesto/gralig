@@ -5,21 +5,19 @@
   border-radius: $border-radius;
   @include themify($themes) {
     background-color: themed("colorCardBg");
-    border-color: themed("transparentColor");
+    border-color: themed("cardOutlineBorder");
   }
   &.card-horizontal {
     flex-direction: row;
   }
   &-title {
     border-bottom: 1px solid $color-border;
-    color: $color-font-secondary;
     font-weight: $font-bold;
     line-height: 1;
     padding-block: $content-padding-block;
     padding-inline: $content-padding-inline;
     @include themify($themes) {
       border-color: themed("colorBorder");
-      color: themed("colorFontSecondary");
     }
   }
   &-img-wrapper {

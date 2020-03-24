@@ -42,6 +42,9 @@
         height: 4px;
       }
     }
+    &:focus {
+      box-shadow: none;
+    }
     &.current {
       &::after {
         width: 4px;

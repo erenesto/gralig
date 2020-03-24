@@ -21,9 +21,9 @@
     padding-inline: $space-m;
   }
   &-logo-img {
-    max-height: 1.6rem;
+    max-height: 3rem;
     @include min-width($bp-s) {
-      max-height: 2rem;
+      max-height: 4rem;
     }
   }
   &-content {

@@ -1,12 +1,114 @@
-.blue-bg {
+.u-blue-bg {
   background-color: $color-blue;
 }
-.green-bg {
+.u-green-bg {
   background-color: $color-green;
 }
-.yellow-bg {
+.u-yellow-bg {
   background-color: $color-yellow;
 }
-.red-bg {
+.u-red-bg {
   background-color: $color-red;
+}
+.u-blue-color {
+  color: $color-blue;
+}
+.u-green-color {
+  color: $color-green;
+}
+.u-yellow-color {
+  color: $color-yellow;
+}
+.u-red-color {
+  color: $color-red;
+}
+
+.u-center-text {
+  text-align: center;
+}
+.u-right-text {
+  text-align: right;
+}
+.u-left-text {
+  text-align: left;
+}
+.u-bold-text {
+  font-weight: $font-bold;
+}
+.u-normal-text {
+  font-weight: $font-normal;
+}
+.u-thin-text {
+  font-weight: $font-thin;
+}
+.u-width-100 {
+  width: 100%;
+}
+.u-height-100 {
+  height: 100%;
+}
+.u-img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.u-none {
+  display: none;
+}
+.u-block {
+  display: block;
+}
+.u-inline {
+  display: inline;
+}
+.u-inline-block {
+  display: inline-block;
+}
+.u-flex {
+  display: flex;
+}
+.u-flex-col {
+  flex-direction: column;
+}
+.u-flex-row {
+  flex-direction: row;
+}
+.u-flex-ai-c {
+  align-items: center;
+}
+.u-flex-ai-start {
+  align-items: flex-start;
+}
+.u-flex-ai-end {
+  align-items: flex-end;
+}
+.u-flex-ai-sb {
+  align-items: space-between;
+}
+.u-flex-jc-c {
+  justify-content: center;
+}
+.u-flex-jc-start {
+  justify-content: flex-start;
+}
+.u-flex-jc-end {
+  justify-content: flex-end;
+}
+.u-flex-jc-sb {
+  justify-content: space-between;
+}
+.u-bg-cover {
+  background-size: cover;
+}
+.u-bg-contain {
+  background-size: contain;
+}
+.u-bg-norepeat {
+  background-repeat: no-repeat;
+}
+.u-absolute {
+  position: absolute;
+}
+.u-relative {
+  position: relative;
 }

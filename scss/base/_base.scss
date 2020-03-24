@@ -5,8 +5,7 @@ html {
 body {
   background-color: $color-background;
   color: $color-font;
-  font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-normal;
   line-height: 1.5;

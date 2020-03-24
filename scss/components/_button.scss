@@ -4,7 +4,7 @@
   &:visited {
     $color-button-font: $white;
     display: inline-block;
-    height: $el-line-height;
+    height: $el-height;
     border: 0;
     background-color: $color-main;
     border-radius: $border-radius;
@@ -14,7 +14,7 @@
     font-size: $el-font-size;
     font-weight: $font-bold;
     letter-spacing: 0.08rem;
-    line-height: $el-line-height;
+    line-height: $el-height;
     padding-block: 0;
     padding-inline: $space-xl;
     text-align: center;
@@ -25,15 +25,14 @@
       background-color: themed("colorMain");
       color: themed("colorFontButton");
     }
-    &:hover,
-    &:focus {
+    &:not([disabled]):hover {
       opacity: 0.8;
+    }
+    &:not([disabled]):focus {
+      box-shadow: $el-box-shadow;
       outline: none;
     }
-    &:active {
-      box-shadow: 0 0 2px 2px rgba($color-main, 0.5);
-    }
-    &.btn-disabled,
+    &.disabled,
     &[disabled] {
       cursor: not-allowed;
       opacity: 0.2;
@@ -46,15 +45,14 @@
         background-color: themed("transparentColor");
         color: themed("colorMain");
       }
-      &:hover,
-      &:focus {
+      &:hover {
         opacity: 0.7;
       }
     }
     &.btn-blue {
       background-color: $color-blue;
-      &:active {
-        box-shadow: 0 0 2px 2px rgba($color-blue, 0.4);
+      &:focus {
+        box-shadow: $el-box-shadow-blue;
       }
 
       &.btn-outline {
@@ -69,8 +67,8 @@
     }
     &.btn-yellow {
       background-color: $color-yellow;
-      &:active {
-        box-shadow: 0 0 2px 2px rgba($color-yellow, 0.4);
+      &:focus {
+        box-shadow: $el-box-shadow-yellow;
       }
       &.btn-outline {
         border: 1px solid $color-yellow;
@@ -84,8 +82,8 @@
     }
     &.btn-green {
       background-color: $color-green;
-      &:active {
-        box-shadow: 0 0 2px 2px rgba($color-green, 0.4);
+      &:focus {
+        box-shadow: $el-box-shadow-green;
       }
       &.btn-outline {
         border: 1px solid $color-green;
@@ -99,8 +97,8 @@
     }
     &.btn-red {
       background-color: $color-red;
-      &:active {
-        box-shadow: 0 0 2px 2px rgba($color-red, 0.4);
+      &:focus {
+        box-shadow: $el-box-shadow-red;
       }
       &.btn-outline {
         border: 1px solid $color-red;
@@ -113,15 +111,15 @@
       }
     }
     &.btn-small {
-      height: $el-s-line-height;
-      font-size: $el-s-font-size;
-      line-height: $el-s-line-height;
+      height: $el-height-s;
+      font-size: $el-font-size-s;
+      line-height: $el-height-s;
       padding-inline: $space-m;
     }
     &.btn-large {
-      height: $el-l-line-height;
-      font-size: $el-l-font-size;
-      line-height: $el-l-line-height;
+      height: $el-height-l;
+      font-size: $el-font-size-l;
+      line-height: $el-height-l;
       padding-inline: $space-l;
     }
 
@@ -133,13 +131,13 @@
         background-color: themed("transparentColor");
         color: themed("darkButtonBackground");
       }
-      &:active {
-        box-shadow: none;
-      }
-      &:hover,
-      &:focus {
-        opacity: 0.7;
-      }
+      // &:focus {
+      //   box-shadow: none;
+      // }
+      // &:hover,
+      // &:focus {
+      //   opacity: 0.7;
+      // }
     }
     &.btn-full-width {
       width: 100%;

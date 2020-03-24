@@ -28,8 +28,15 @@
     @include themify($themes) {
       background-color: rgba($color: themed("colorMain"), $alpha: 0.5);
     }
+    &:hover {
+      background-color: rgba($color: $color-main, $alpha: 0.8);
+      @include themify($themes) {
+        background-color: rgba($color: themed("colorMain"), $alpha: 0.5);
+      }
+    }
   }
   &-wrapper {
+    display: none;
     position: fixed;
     z-index: 190;
     top: 0;
@@ -37,17 +44,15 @@
     bottom: 0;
     left: 0;
     opacity: 0;
-    // display: none;
     visibility: hidden;
     &:target {
+      display: block;
       opacity: 1;
-      // display: none;
       visibility: visible;
     }
   }
   &-header {
     border-bottom: 1px solid $color-border;
-    font-weight: $font-bold;
     padding-block: $space;
     padding-inline: $space-xl;
     @include themify($themes) {
