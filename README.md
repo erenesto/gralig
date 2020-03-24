@@ -1,4 +1,4 @@
-<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585064273/eglvzfbgq5ovjqrxxxh6.jpg" alt="RavenCSS"></a>
+<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585065670/s6uc1yixyji0y6j7hnv6.jpg" alt="RavenCSS"></a>
 
 ## What is RavenCSS ?
 
