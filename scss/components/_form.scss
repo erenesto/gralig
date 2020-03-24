@@ -93,12 +93,12 @@ select {
 }
 
 input[type="search"] {
-  padding-left: $space-xl + $space-m;
+  padding-left: $content-padding-inline + $space-m;
 }
 .search-input {
   position: relative;
   input[type="search"] {
-    padding-left: $space-xl + $space-m;
+    padding-left: $content-padding-inline + $space-m;
   }
   &::before {
     display: inline-block;

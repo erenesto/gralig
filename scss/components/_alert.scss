@@ -7,7 +7,7 @@
   color: $color-alert-font;
   font-size: 1.4rem;
   line-height: $el-height-s;
-  padding-inline: $space-xl;
+  padding-inline: $content-padding-inline;
   @include themify($themes) {
     background-color: themed("colorAlert");
     color: themed("colorAlertFont");

@@ -54,20 +54,20 @@
   &-header {
     border-bottom: 1px solid $color-border;
     padding-block: $space;
-    padding-inline: $space-xl;
+    padding-inline: $content-padding-inline;
     @include themify($themes) {
       border-color: themed("colorBorder");
     }
   }
   &-body {
     padding-block: $space-l;
-    padding-inline: $space-xl;
+    padding-inline: $content-padding-inline;
   }
   &-footer {
     display: block;
     border-top: 1px solid $color-border;
     padding-block: $space;
-    padding-inline: $space-xl;
+    padding-inline: $content-padding-inline;
     @include themify($themes) {
       border-color: themed("colorBorder");
     }

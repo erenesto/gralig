@@ -1,6 +1,6 @@
 .list {
-  padding-block: $space-m;
-  padding-inline: $space-l;
+  padding-block: $content-padding-block;
+  padding-inline: $content-padding-inline;
   & > :first-child {
     padding-top: 0;
   }
@@ -26,8 +26,8 @@
   height: auto;
   border: 1px solid $color-border;
   border-radius: $border-radius;
-  padding-block: $space-m;
-  padding-inline: $space-l;
+  padding-block: $content-padding-block;
+  padding-inline: $content-padding-inline;
   @include themify($themes) {
     border-color: themed("colorBorder");
   }
