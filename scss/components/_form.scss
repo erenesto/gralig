@@ -1,4 +1,8 @@
 // stylelint-disable selector-no-qualifying-type
+fieldset {
+  border: 0;
+}
+
 legend,
 label {
   display: block;
@@ -8,13 +12,22 @@ label {
   margin-bottom: $space-xs;
   cursor: pointer;
 }
-
 legend {
   text-align: center;
 }
 
-fieldset {
-  border: 0;
+@media screen and (min--moz-device-pixel-ratio: 0) {
+  // for firefox
+  fieldset {
+    position: relative;
+    padding-top: 3.2rem;
+    > legend {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 input[type="email"],

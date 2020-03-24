@@ -1,8 +1,9 @@
 {
-  "name": "raven-ui",
+  "name": "raven-css",
   "version": "1.0.0",
-  "description": "Raven CSS is an open-source clean grayish css library",
+  "description": "A clean grayish CSS library",
   "main": "dist/raven.css",
+  "repository": "https://github.com/erenesto/raven-css",
   "author": {
     "name": "Eren Guldas",
     "email": "erenguldas@gmail.com"

@@ -36,7 +36,6 @@
   z-index: 99;
   top: 105%;
   left: 0;
-  min-width: 10rem;
   height: auto;
   background-color: $color-background;
   @include themify($themes) {
@@ -45,6 +44,7 @@
   }
 
   &-item {
+    min-width: 8rem;
     font-size: $font-size-s;
     padding-block: $space-s;
   }
