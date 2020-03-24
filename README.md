@@ -1,14 +1,14 @@
 <a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585064273/eglvzfbgq5ovjqrxxxh6.jpg" alt="RavenCSS"></a>
 
-### What is RavenCSS ?
+## What is RavenCSS ?
 
 RavenCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid option and dark mode. There is no JS, only CSS. Enjoy it !
 
-### Download
+## Download
 
 Coming soon...
 
-### Features
+## Features
 
 - Set of Colors
 - Typography
@@ -24,7 +24,7 @@ Coming soon...
 - Process Bar & Process Circle
 - Loading Bar & Loading Circle
 
-### Browser Support
+## Browser Support
 
 RavenCSS built for latest versions of modern browsers.
 
@@ -35,14 +35,14 @@ RavenCSS built for latest versions of modern browsers.
 - Opera
 - Safari
 
-### Docs and Website
+## Docs and Website
 
 Coming soon...
 
-### Contributing
+## Contributing
 
 Coming soon...
 
-### License
+## License
 
 Designed and developed by Eren Guldas. Code released under the [MIT License](license).
