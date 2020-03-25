@@ -31,7 +31,6 @@ h4,
 h5,
 h6 {
   font-weight: $font-bold;
-  letter-spacing: -0.15rem;
 }
 
 .heading,
@@ -50,15 +49,19 @@ h6 {
 
 h1 {
   font-size: $heading-1;
+  letter-spacing: -0.15rem;
 }
 h2 {
   font-size: $heading-2;
+  letter-spacing: -0.15rem;
 }
 h3 {
   font-size: $heading-3;
+  letter-spacing: -0.1rem;
 }
 h4 {
   font-size: $heading-4;
+  letter-spacing: -0.1rem;
 }
 h5 {
   font-size: $heading-5;

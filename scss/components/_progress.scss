@@ -10,10 +10,10 @@
     @include themify($themes) {
       background-color: themed("colorCardBg");
     }
-    &-small {
+    &.small {
       height: $progress-bar-s;
     }
-    &-large {
+    &.large {
       height: $progress-bar-l;
     }
     &-value {
@@ -26,7 +26,6 @@
       background-color: $color-secondary;
       border-radius: inherit;
       transform: translateX(-100%);
-      transition: $transition-default;
 
       &.blue {
         background-color: $color-blue;
@@ -73,6 +72,7 @@
       // dashoffset 380 = 0% & 147 = 100%
       stroke: $color-secondary;
       stroke-dasharray: 380;
+      stroke-dashoffset: 240;
       transform: rotate(-90deg);
       transform-origin: center;
     }

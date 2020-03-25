@@ -1,0 +1,22 @@
+extends layout.pug
+
+block append content
+  section#modalbox
+    h4.example-title Modal
+    a.btn(href='#modal') Open Modal
+    #modal.modal-wrapper(tabindex='-1', role='dialog', aria-labelledby='modal_title')
+      a.modal-overlay(href='#modalbox', aria-hidden='true', data-dismiss='modal')
+      .modal
+        .modal-header
+          h5#modal_title.modal-title Modal Header
+        .modal-body
+          | Mollit ullamco incididunt consequat consequat consectetur. Ut
+          | excepteur ipsum cillum eiusmod commodo sint occaecat esse et velit.
+          | Elit velit ad commodo ea sit nostrud qui. Qui proident duis veniam
+          | quis aliquip exercitation adipisicing laboris ex.
+        .modal-footer
+          .modal-actions
+            a.btn.btn-clear(href='#modalbox', data-dismiss='modal') Close
+            button.btn Accept
+  .back-to-home
+    a.btn.btn-outline(href='/index.pug') << Back

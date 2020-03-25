@@ -1,0 +1,200 @@
+extends layout.pug
+
+block append content
+  section.example-grids
+    h4.example-title Grid
+    .container
+      section
+        h5.example-title Columns
+        .row
+          .col
+            span.col-test col
+        .row
+          .col
+            span.col-test col
+          .col
+            span.col-test col
+        .row
+          .col
+            span.col-test col
+          .col
+            span.col-test col
+          .col
+            span.col-test col
+          .col
+            span.col-test col
+          .col
+            span.col-test col
+          .col
+            span.col-test col
+      section
+        h5.example-title Column Sizes
+        .row
+          .col.col-10
+            span.col-test col-10
+        .row
+          .col.col-16
+            span.col-test col-16
+        .row
+          .col.col-20
+            span.col-test col-20
+        .row
+          .col.col-25
+            span.col-test col-25
+        .row
+          .col.col-30
+            span.col-test col-30
+        .row
+          .col.col-33
+            span.col-test col-33
+        .row
+          .col.col-40
+            span.col-test col-40
+        .row
+          .col.col-50
+            span.col-test col-50
+        .row
+          .col.col-60
+            span.col-test col-60
+        .row
+          .col.col-67
+            span.col-test col-67
+        .row
+          .col.col-70
+            span.col-test col-70
+        .row
+          .col.col-75
+            span.col-test col-75
+        .row
+          .col.col-80
+            span.col-test col-80
+        .row
+          .col.col-84
+            span.col-test col-84
+        .row
+          .col.col-90
+            span.col-test col-90
+        .row
+          .col.col
+            span.col-test col-100
+      section
+        h5.example-title Spans (Offsets)
+        .row
+          .col.col-10.col-span-90
+            span.col-test col-10
+            //- this span is for test purposes
+            span.col-test.span.span90 col-span-90
+            //-
+        .row
+          .col.col-16.col-span-84
+            span.col-test col-16
+            //- this span is for test purposes
+            span.col-test.span.span84 col-span-84
+            //-
+        .row
+          .col.col-20.col-span-80
+            span.col-test col-20
+            //- this span is for test purposes
+            span.col-test.span.span80 col-span-80
+            //-
+        .row
+          .col.col-25.col-span-75
+            span.col-test col-25
+            //- this span is for test purposes
+            span.col-test.span.span75 col-span-75
+            //-
+        .row
+          .col.col-30.col-span-70
+            span.col-test col-30
+            //- this span is for test purposes
+            span.col-test.span.span70 col-span-70
+            //-
+        .row
+          .col.col-33.col-span-67
+            span.col-test col-33
+            //- this span is for test purposes
+            span.col-test.span.span67 col-span-67
+            //-
+        .row
+          .col.col-40.col-span-60
+            span.col-test col-40
+            //- this span is for test purposes
+            span.col-test.span.span60 col-span-60
+            //-
+        .row
+          .col.col-50.col-span-50
+            span.col-test col-50
+            //- this span is for test purposes
+            span.col-test.span.span50 col-span-50
+            //-
+        .row
+          .col.col-60.col-span-40
+            span.col-test col-60
+            //- this span is for test purposes
+            span.col-test.span.span40 col-span-40
+            //-
+        .row
+          .col.col-67.col-span-33
+            span.col-test col-67
+            //- this span is for test purposes
+            span.col-test.span.span33 col-span-33
+            //-
+        .row
+          .col.col-70.col-span-30
+            span.col-test col-70
+            //- this span is for test purposes
+            span.col-test.span.span30 col-span-30
+            //-
+        .row
+          .col.col-75.col-span-25
+            span.col-test col-75
+            //- this span is for test purposes
+            span.col-test.span.span25 col-span-25
+            //-
+        .row
+          .col.col-80.col-span-20
+            span.col-test col-80
+            //- this span is for test purposes
+            span.col-test.span.span20 col-span-20
+            //-
+        .row
+          .col.col-84.col-span-16
+            span.col-test col-84
+            //- this span is for test purposes
+            span.col-test.span.span16 col-span-16
+            //-
+        .row
+          .col.col-90.col-span-10
+            span.col-test col-90
+            //- this span is for test purposes
+            span.col-test.span.span10 col-span-10
+            //-
+      section
+        h5.example-title Some Sizes
+        .row
+          .col.col-16
+            span.col-test col-16
+          .col.col-84
+            span.col-test col-84
+        .row
+          .col.col-66
+            span.col-test col-66
+          .col.col-33
+            span.col-test col-33
+        .row
+          .col.col-75
+            span.col-test col-75
+          .col.col-25
+            span.col-test col-25
+      section
+        h5.example-title Grid Work on Mobile
+        .row.row-mobile
+          .col.col-33
+            span.col-test col-33
+          .col.col-33
+            span.col-test col-33
+          .col.col-33
+            span.col-test col-33
+
+  .back-to-home
+    a.btn.btn-outline(href='/index.pug') << Back

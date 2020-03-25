@@ -1,0 +1,44 @@
+extends layout.pug
+
+block append content
+  section.example-buttons
+    h4.example-title Buttons
+    h5.example-title Sizes
+    div
+      button.btn.btn-small Button
+      button.btn Button
+      button.btn.btn-large Button
+      button.btn.btn-full-width Full Outline
+    h5.example-title Colors & Types
+    div
+      button.btn Button
+      button.btn.btn-outline Button
+      button.btn.btn-clear link
+      button.btn(disabled='') Button
+    div
+      button.btn.btn-blue blue
+      button.btn.btn-blue.btn-outline blue
+      button.btn.btn-blue.btn-clear blue
+      button.btn.btn-blue(disabled='') blue
+    div
+      button.btn.btn-yellow yellow
+      button.btn.btn-yellow.btn-outline yellow
+      button.btn.btn-yellow.btn-clear yellow
+      button.btn.btn-yellow(disabled='') yellow
+    div
+      button.btn.btn-green green
+      button.btn.btn-green.btn-outline green
+      button.btn.btn-green.btn-clear green
+      button.btn.btn-green(disabled='') green
+    div
+      button.btn.btn-red red
+      button.btn.btn-red.btn-outline red
+      button.btn.btn-red.btn-clear red
+      button.btn.btn-red(disabled='') red
+    h5.example-title Other Types
+    div
+      a.btn(href='', type='button') Link
+      input.btn(href='', type='button', value='Input')
+
+  .back-to-home
+      a.btn.btn-outline(href='/index.pug') << Back

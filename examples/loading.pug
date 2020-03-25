@@ -1,0 +1,25 @@
+extends layout.pug
+
+block append content
+  section
+    h4.example-title Loading Bar
+    span.progress-bar.loading
+      span.progress-bar-value
+  section
+    h4.example-title Loading Circles
+    .progress-circle.loading.circle-turn-pieces.small
+      svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+        circle.progress-circle-back(cx='40', cy='40', r='33', fill='none')
+        circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+    .progress-circle.loading.circle-turn.small(style='margin-top: 10px;')
+      svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+        circle.progress-circle-back(cx='40', cy='40', r='33', fill='none')
+        circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+  section
+    h4.example-title Loading Dots
+    .loading-dots
+      span.loading-dot.dot-1
+      span.loading-dot.dot-2
+      span.loading-dot.dot-3
+  .back-to-home
+    a.btn.btn-outline(href='/index.pug') << Back

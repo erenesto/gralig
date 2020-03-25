@@ -1,0 +1,279 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/abstracts/mixins";
+// stylelint-disable selector-no-qualifying-type
+section {
+  min-height: 100px;
+  padding: 40px 0;
+  // border-bottom: 1px solid #ddd;
+}
+
+section.example-list {
+  border: 0;
+}
+
+.example-list .block-list {
+  max-width: 50rem;
+  margin: 0 auto;
+  .list-item {
+    justify-content: center;
+  }
+}
+
+.back-to-home {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.wrapper {
+  max-width: 100rem;
+}
+
+.example-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.colors-wrapper {
+  display: flex;
+}
+.colors-wrapper .box {
+  width: 40px;
+  height: 50px;
+  margin: 6px;
+}
+
+.box-dark-1 {
+  background-color: $blackpearl;
+}
+
+.box-dark-2 {
+  background-color: $woodsmoke;
+}
+
+.box-dark-3 {
+  background-color: $shark;
+}
+
+.box-1 {
+  background-color: $abbey;
+}
+.box-2 {
+  background-color: $raven;
+}
+.box-3 {
+  background-color: $oslo;
+}
+.box-4 {
+  background-color: $mischka;
+}
+.box-5 {
+  background-color: $ghost;
+}
+.box-6 {
+  background-color: $iron;
+}
+.box-7 {
+  background-color: $porcelain;
+}
+
+.box-summer-lighter {
+  background-color: $summer-lighter;
+}
+.box-summer-light {
+  background-color: $summer-light;
+}
+.box-summer {
+  background-color: $summer;
+}
+.box-summer-dark {
+  background-color: $summer-dark;
+}
+.box-summer-darker {
+  background-color: $summer-darker;
+}
+
+.box-shamrock-lighter {
+  background-color: $shamrock-lighter;
+}
+.box-shamrock-light {
+  background-color: $shamrock-light;
+}
+.box-shamrock {
+  background-color: $shamrock;
+}
+.box-shamrock-dark {
+  background-color: $shamrock-dark;
+}
+.box-shamrock-darker {
+  background-color: $shamrock-darker;
+}
+
+.box-tulip-lighter {
+  background-color: $tulip-lighter;
+}
+.box-tulip-light {
+  background-color: $tulip-light;
+}
+.box-tulip {
+  background-color: $tulip;
+}
+.box-tulip-dark {
+  background-color: $tulip-dark;
+}
+.box-tulip-darker {
+  background-color: $tulip-darker;
+}
+
+.box-flame-lighter {
+  background-color: $flame-lighter;
+}
+.box-flame-light {
+  background-color: $flame-light;
+}
+.box-flame {
+  background-color: $flame;
+}
+.box-flame-dark {
+  background-color: $flame-dark;
+}
+.box-flame-darker {
+  background-color: $flame-darker;
+}
+
+.examples-navbar .custom-form-control {
+  margin-bottom: 0;
+}
+
+.example-headings .headings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example-buttons .btn {
+  margin: 6px;
+}
+.example-buttons > div {
+  margin-bottom: 20px;
+}
+
+.example-buttons .btn.btn-full-width {
+  margin: 6px 0;
+}
+
+.example-alerts .alerts {
+  display: flex;
+  flex-direction: column;
+  .alert {
+    margin-bottom: 6px;
+  }
+}
+
+.example-cards > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.example-card-wrapper {
+  max-width: 28rem;
+  &-2 {
+    max-width: 48rem;
+  }
+}
+
+.example-progress-circles > div {
+  display: flex;
+  justify-content: center;
+  .progress-circle {
+    margin: 10px;
+  }
+}
+
+.example-grids {
+  @include min-width($bp-s) {
+    .col-test.span {
+      display: inline-block !important;
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      left: 0;
+      margin-left: 1.2rem;
+      border: 1px dashed hsl(204, 7%, 86%);
+      background-color: transparent;
+      color: hsl(207, 13%, 14%);
+      &.span90 {
+        width: calc(90% - 1.2rem);
+      }
+      &.span84 {
+        width: calc(83.33333333% - 1.2rem);
+      }
+      &.span80 {
+        width: calc(80% - 1.2rem);
+      }
+      &.span75 {
+        width: calc(75% - 1.2rem);
+      }
+      &.span70 {
+        width: calc(70% - 1.2rem);
+      }
+      &.span67 {
+        width: calc(66.66666666% - 1.2rem);
+      }
+      &.span60 {
+        width: calc(60% - 1.2rem);
+      }
+      &.span50 {
+        width: calc(50% - 1.2rem);
+      }
+      &.span40 {
+        width: calc(40% - 1.2rem);
+      }
+      &.span33 {
+        width: calc(33.33333333% - 1.2rem);
+      }
+      &.span30 {
+        width: calc(30% - 1.2rem);
+      }
+      &.span25 {
+        width: calc(25% - 1.2rem);
+      }
+      &.span20 {
+        width: calc(20% - 1.2rem);
+      }
+      &.span16 {
+        width: calc(16% - 1.2rem);
+      }
+      &.span10 {
+        width: calc(10% - 1.2rem);
+      }
+    }
+  }
+  .col-test.span {
+    display: none;
+  }
+  .row {
+    position: relative;
+  }
+
+  .col-test {
+    display: block;
+    padding: 10px;
+    background: hsl(207, 7%, 68%);
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.dark .example-grids {
+  .col-test {
+    background: hsl(207, 13%, 14%);
+  }
+  .col-test.span {
+    border-color: hsl(206, 7%, 40%);
+    // background: hsl(204, 7%, 86%);
+    color: hsl(204, 7%, 86%);
+  }
+}

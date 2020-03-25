@@ -14,7 +14,7 @@
     font-size: $el-font-size;
     font-weight: $font-bold;
     letter-spacing: 0.08rem;
-    line-height: $el-height;
+    line-height: calc(#{$el-height} + 1px);
     padding-block: 0;
     padding-inline: $content-padding-inline;
     text-align: center;
@@ -113,13 +113,13 @@
     &.btn-small {
       height: $el-height-s;
       font-size: $el-font-size-s;
-      line-height: $el-height-s;
+      line-height: calc(#{$el-height-s} + 1px);
       padding-inline: $space-m;
     }
     &.btn-large {
       height: $el-height-l;
       font-size: $el-font-size-l;
-      line-height: $el-height-l;
+      line-height: calc(#{$el-height-l} + 1px);
       padding-inline: $space-l;
     }
 

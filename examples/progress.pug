@@ -1,0 +1,63 @@
+extends layout.pug
+
+block append content
+  section
+    h4.example-title Progress Bar
+    h5.example-title Sizes
+    span.progress-bar.small
+      span.progress-bar-value(style='transform: translateX(-80%);')
+    span.progress-bar
+      span.progress-bar-value(style='transform: translateX(-80%);')
+    span.progress-bar.large
+      span.progress-bar-value(style='transform: translateX(-80%);')
+    h5.example-title Colors
+    span.progress-bar
+      span.progress-bar-value(style='transform: translateX(-80%);')
+    span.progress-bar
+      span.progress-bar-value.blue(style='transform: translateX(-70%);')
+    span.progress-bar
+      span.progress-bar-value.green(style='transform: translateX(-60%);')
+    span.progress-bar
+      span.progress-bar-value.yellow(style='transform: translateX(-50%);')
+    span.progress-bar
+      span.progress-bar-value.red(style='transform: translateX(-40%);')
+  section.example-progress-circles
+    h4.example-title Progress Circle
+      h5.example-title Sizes
+      div
+        .progress-circle.small
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='35', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+        .progress-circle
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='33', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+        .progress-circle.large
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='35', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+      h5.example-title Colors
+      div
+        .progress-circle
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='33', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+        .progress-circle.blue
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='35', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+        .progress-circle.green
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='35', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+        .progress-circle.yellow
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='35', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+        .progress-circle.red
+          svg(xmlns='http://www.w3.org/2000/svg', width='80', height='80', viewBox='0 0 80 80')
+            circle.progress-circle-back(cx='40', cy='40', r='35', fill='none')
+            circle.progress-circle-value(cx='40', cy='40', r='33', fill='none')
+  .back-to-home
+    a.btn.btn-outline(href='/index.pug') << Back

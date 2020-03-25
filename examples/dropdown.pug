@@ -1,0 +1,18 @@
+extends layout.pug
+
+block append content
+  section
+    h4.example-title Dropdown
+    .example-dropdowns
+      details.dropdown
+        summary.btn.dropdown-btn
+          | Dropdown
+        ul.dropdown-list.block-list
+          li.dropdown-list-item.list-item
+            a.dropdown-list-link.list-link(href='#') Item 1
+          li.dropdown-list-item.list-item
+            a.dropdown-list-link.list-link(href='#') Item 2
+          li.dropdown-list-item.list-item
+            a.dropdown-list-link.list-link(href='#') Item 3
+  .back-to-home
+    a.btn.btn-outline(href='/index.pug') << Back

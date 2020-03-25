@@ -1,0 +1,68 @@
+extends layout.pug
+
+block append content
+  section.example-cards
+    h4.example-title Card
+    div
+      .example-card-wrapper
+        .card
+          .card-content
+            h5.card-title Card Title
+            .card-body
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+    div
+      .example-card-wrapper
+        .card.card-img-top
+          figure.card-img-wrapper
+            img.img-object-fit(src='assets/test-image-2.jpg', alt='')
+          .card-content
+            h5.card-title Card Title
+            .card-body
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+      .example-card-wrapper
+        .card.card-img-bottom
+          figure.card-img-wrapper
+            img.img-object-fit(src='assets/test-image-2.jpg', alt='')
+          .card-content
+            h5.card-title Card Title
+            .card-body
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+    div
+      .example-card-wrapper-2
+        .card.card-horizontal.card-img-left
+          figure.card-img-wrapper
+            img.img-object-fit(src='assets/test-image.jpg', alt='')
+          .card-content
+            h5.card-title Card Title
+            .card-body
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+      .example-card-wrapper-2
+        .card.card-horizontal.card-img-right
+          figure.card-img-wrapper
+            img.img-object-fit(src='assets/test-image.jpg', alt='')
+          .card-content
+            h5.card-title Card Title
+            .card-body
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+              p This is the card body.
+  .back-to-home
+      a.btn.btn-outline(href='/index.pug') << Back

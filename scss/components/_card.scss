@@ -1,6 +1,9 @@
 .card {
   display: flex;
+  width: 100%;
+  min-width: 30rem;
   flex-direction: column;
+  margin-bottom: $space;
   border: 1px solid $color-border;
   border-radius: $border-radius;
   @include themify($themes) {

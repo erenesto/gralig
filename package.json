@@ -1,15 +1,16 @@
 {
   "name": "raven-css",
   "version": "1.0.0",
-  "description": "A clean grayish CSS library",
+  "description": "A clean, grayish CSS library",
   "main": "dist/raven.css",
-  "repository": "https://github.com/erenesto/raven-css",
+  "repository": "https://github.com/erenesto/raven-css.git",
   "author": {
     "name": "Eren Guldas",
     "email": "erenguldas@gmail.com"
   },
+  "license": "MIT",
   "scripts": {
-    "start": "run-s clean && parcel test/index.html --open ",
+    "start": "run-s clean && parcel examples/index.pug --open",
     "build": "run-s test clean parcel:build minify",
     "parcel:build": "parcel build -o dist/raven.css scss/raven.scss  --no-minify",
     "minify": "cleancss -o dist/raven.min.css dist/raven.css",
@@ -42,7 +43,6 @@
     "frontend",
     "ui"
   ],
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "clean-css-cli": "^4.3.0",
@@ -56,6 +56,7 @@
     "postcss-safe-parser": "^4.0.2",
     "prettier": "^1.19.1",
     "prettier-stylelint": "^0.4.2",
+    "pug": "^2.0.4",
     "rimraf": "^3.0.2",
     "stylelint": "^13.2.1",
     "stylelint-config-prettier": "^8.0.1",

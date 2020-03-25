@@ -2,7 +2,7 @@
 
 ## What is RavenCSS ?
 
-RavenCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid option and dark mode. There is no JS, only CSS. Enjoy it !
+RavenCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid option and dark mode. There is no JS, only CSS. Enjoy!
 
 ## Download
 

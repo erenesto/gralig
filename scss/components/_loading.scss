@@ -1,11 +1,10 @@
 .progress-bar {
   &.loading {
     .progress-bar-value {
-      width: 40%;
-      animation-duration: 2s;
+      width: 38%;
+      animation-duration: 1.4s;
       animation-iteration-count: infinite;
       animation-name: progress-bar;
-      transition: none;
     }
   }
 }
@@ -15,12 +14,15 @@
     transform: translateX(-100%);
   }
   to {
-    transform: translateX(300%);
+    transform: translateX(265%);
   }
 }
 
 .progress-circle {
   &.loading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     .progress-circle-back {
       fill: none;
     }

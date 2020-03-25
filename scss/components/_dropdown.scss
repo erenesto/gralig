@@ -1,5 +1,4 @@
 .dropdown {
-  display: flex;
   position: relative;
   &[open] > .dropdown-btn {
     box-shadow: none;

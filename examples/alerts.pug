@@ -1,0 +1,13 @@
+extends layout.pug
+
+block append content
+  section.example-alerts
+      h4.example-title Alerts
+      .alerts
+        span.alert(role="alert") This is an alert
+        span.alert.alert-green(role="alert") This is an alert
+        span.alert.alert-yellow(role="alert") This is an alert
+        span.alert.alert-blue(role="alert") This is an alert
+        span.alert.alert-red(role="alert") This is an alert
+  .back-to-home
+      a.btn.btn-outline(href='/index.pug') << Back
