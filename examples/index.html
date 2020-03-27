@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:300,400,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../scss/raven.scss" />
+    <link rel="stylesheet" href="assets/examples.scss" />
+    <title>Raven CSS</title>
+    <script src="assets/switcher.js"></script>
+  </head>
+  <body>
+    <header class="navbar examples-navbar">
+      <div class="container">
+        <div class="navbar-logo">
+          <a class="navbar-logo-link" href=""
+            ><img class="navbar-logo-img" src="assets/RavenCSS.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar-content">
+          <div class="custom-form-control switch">
+            <input class="custom-form-input" id="switchDark" type="checkbox" />
+            <label class="custom-form-label" for="switchDark">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper container">
+      <section>
+        <p style="max-width: 60rem; margin: 0 auto;">
+          This page created for only development purpose not for documentation. You can watch your
+          changes, bug fixes or new features you add. If you will add new feature, please open a
+          <code>&lt;section&gt;</code> tag and add a header for it as other examples.
+        </p>
+      </section>
+      <section class="example-list">
+        <h4 class="example-title">Table of Content</h4>
+        <ul class="block-list">
+          <li class="list-item">
+            <a class="list-link" href="#colors">Colors</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#typography">Typography</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#buttons">Buttons</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#form">Form</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#nav">Nav</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#navbar">Navbar</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#">Breadcrumb</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#breadcrumb">Card</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#alerts">Alerts</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#list">List</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#table">Table</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#dropdown">Dropdown</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#progress">Progress</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#loading">Loading</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#modalbox">Modal</a>
+          </li>
+          <li class="list-item">
+            <a class="list-link" href="#grid">Grid</a>
+          </li>
+        </ul>
+      </section>
+      <section id="colors">
+        <h4 class="example-title">Colors</h4>
+        <div class="colors-wrapper">
+          <div class="box box-dark-1"></div>
+          <div class="box box-dark-2"></div>
+          <div class="box box-dark-3"></div>
+        </div>
+        <div class="colors-wrapper">
+          <div class="box box-1"></div>
+          <div class="box box-2"></div>
+          <div class="box box-3"></div>
+          <div class="box box-4"></div>
+          <div class="box box-5"></div>
+          <div class="box box-6"></div>
+          <div class="box box-7"></div>
+        </div>
+        <div class="colors-wrapper">
+          <div class="box box-summer-darker"></div>
+          <div class="box box-summer-dark"></div>
+          <div class="box box-summer"></div>
+          <div class="box box-summer-light"></div>
+          <div class="box box-summer-lighter"></div>
+        </div>
+        <div class="colors-wrapper">
+          <div class="box box-shamrock-darker"></div>
+          <div class="box box-shamrock-dark"></div>
+          <div class="box box-shamrock"></div>
+          <div class="box box-shamrock-light"></div>
+          <div class="box box-shamrock-lighter"></div>
+        </div>
+        <div class="colors-wrapper">
+          <div class="box box-tulip-darker"></div>
+          <div class="box box-tulip-dark"></div>
+          <div class="box box-tulip"></div>
+          <div class="box box-tulip-light"></div>
+          <div class="box box-tulip-lighter"></div>
+        </div>
+        <div class="colors-wrapper">
+          <div class="box box-flame-darker"></div>
+          <div class="box box-flame-dark"></div>
+          <div class="box box-flame"></div>
+          <div class="box box-flame-light"></div>
+          <div class="box box-flame-lighter"></div>
+        </div>
+      </section>
+      <section id="typography" class="example-headings">
+        <h4 class="example-title">Headings</h4>
+        <div class="headings">
+          <div>
+            <h1 class="heading">Heading 1</h1>
+            <h2 class="heading">Heading 2</h2>
+            <h3 class="heading">Heading 3</h3>
+            <h4 class="heading">Heading 4</h4>
+            <h5 class="heading">Heading 5</h5>
+            <h6 class="heading">Heading 6</h6>
+          </div>
+          <div>
+            <h1 class="subheading">Sub Heading 1</h1>
+            <h2 class="subheading">Sub Heading 2</h2>
+            <h3 class="subheading">Sub Heading 3</h3>
+            <h4 class="subheading">Sub Heading 4</h4>
+            <h5 class="subheading">Sub Heading 5</h5>
+            <h6 class="subheading">Sub Heading 6</h6>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Paragraph</h4>
+        <div class="headings">
+          <div>
+            <p class="p-large">
+              Lorem ipsum <span class="text-red">red</span> sit amet <code>code</code> consectetur
+              adipisicing <span class="text-muted">muted</span> Aliquam ut placeat
+              <span class="text-blue">blue</span> voluptate
+              <span class="text-secondary">secondary</span>
+              corrupti repellendus nam adipisci
+              <del>deleted</del> explicabo dolor <span class="text-green">green</span> fugiat iste!
+              Numquam <span class="text-yellow">yellow</span> sed aut <em>emphasized</em> quod
+              repellendus <strong>strong</strong> doloremque in <u>underlined</u> recusandae libero
+              <mark class="text-marked">marked</mark> eligendi?
+            </p>
+            <p>
+              Lorem ipsum <span class="text-red">red</span> sit amet <code>code</code> consectetur
+              adipisicing <span class="text-muted">muted</span> Aliquam ut placeat
+              <span class="text-blue">blue</span> voluptate
+              <span class="text-secondary">secondary</span>
+              corrupti repellendus nam adipisci
+              <del>deleted</del> explicabo dolor <span class="text-green">green</span> fugiat iste!
+              Numquam <span class="text-yellow">yellow</span> sed aut <em>emphasized</em> quod
+              repellendus <strong>strong</strong> doloremque in <u>underlined</u> recusandae libero
+              <mark class="text-marked">marked</mark> eligendi?
+            </p>
+            <p class="p-small">
+              Lorem ipsum <span class="text-red">red</span> sit amet <code>code</code> consectetur
+              adipisicing <span class="text-muted">muted</span> Aliquam ut placeat
+              <span class="text-blue">blue</span> voluptate
+              <span class="text-secondary">secondary</span>
+              corrupti repellendus nam adipisci
+              <del>deleted</del> explicabo dolor <span class="text-green">green</span> fugiat iste!
+              Numquam <span class="text-yellow">yellow</span> sed aut <em>emphasized</em> quod
+              repellendus <strong>strong</strong> doloremque in <u>underlined</u> recusandae libero
+              <mark class="text-marked">marked</mark> eligendi?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Texts</h4>
+        <div class="texts">
+          <span>Raven UI</span>
+          <br />
+          <span class="text-secondary">Raven UI</span>
+          <br />
+          <span class="text-green">Raven UI</span>
+          <br />
+          <span class="text-yellow">Raven UI</span>
+          <br />
+          <span class="text-blue">Raven UI</span>
+          <br />
+          <span class="text-red">Raven UI</span>
+          <br />
+          <span class="text-muted">Raven UI</span>
+          <br />
+          <mark class="text-marked">Raven UI</mark>
+          <br />
+          <u>Raven UI</u>
+          <br />
+          <em>Raven UI</em>
+          <br />
+          <del>Raven UI</del>
+          <br />
+          <strong>Raven UI</strong>
+          <br />
+          <code>Raven UI</code>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Links</h4>
+        <div class="example-links">
+          <a href="#">This is a link</a>
+          <br />
+          <a href="#" tabindex="-1" disabled="">This is a disabled link</a>
+          <br />
+          <a class="current" href="#">This is current link</a>
+          <br />
+          <a class="btn btn-clear" href="#">Button Link</a>
+        </div>
+      </section>
+      <section id="buttons" class="example-buttons">
+        <h4 class="example-title">Buttons</h4>
+        <h5 class="example-title">Sizes</h5>
+        <div>
+          <button class="btn btn-small">Button</button>
+          <button class="btn">Button</button>
+          <button class="btn btn-large">Button</button>
+          <button class="btn btn-full-width">Full Outline</button>
+        </div>
+        <h5 class="example-title">Colors & Types</h5>
+        <div>
+          <button class="btn">Button</button>
+          <button class="btn btn-outline">Button</button>
+          <button class="btn btn-clear">link</button>
+          <button class="btn" disabled="">Button</button>
+        </div>
+        <div>
+          <button class="btn btn-blue">blue</button>
+          <button class="btn btn-blue btn-outline">blue</button>
+          <button class="btn btn-blue btn-clear">blue</button>
+          <button class="btn btn-blue" disabled="">blue</button>
+        </div>
+        <div>
+          <button class="btn btn-yellow">yellow</button>
+          <button class="btn btn-yellow btn-outline">yellow</button>
+          <button class="btn btn-yellow btn-clear">yellow</button>
+          <button class="btn btn-yellow" disabled="">yellow</button>
+        </div>
+        <div>
+          <button class="btn btn-green">green</button>
+          <button class="btn btn-green btn-outline">green</button>
+          <button class="btn btn-green btn-clear">green</button>
+          <button class="btn btn-green" disabled="">green</button>
+        </div>
+        <div>
+          <button class="btn btn-red">red</button>
+          <button class="btn btn-red btn-outline">red</button>
+          <button class="btn btn-red btn-clear">red</button>
+          <button class="btn btn-red" disabled="">red</button>
+        </div>
+        <h5 class="example-title">Other Types</h5>
+        <div>
+          <a class="btn" href="" type="button">Link</a>
+          <input class="btn" href="" type="button" value="Input" />
+        </div>
+      </section>
+      <section id="form">
+        <h4 class="example-title">Form Elements</h4>
+        <fieldset class="example-form">
+          <legend>
+            <h5 class="heading">Raven Form Example</h5>
+          </legend>
+          <div class="form-group">
+            <label for="test-input-text">Name</label>
+            <input id="test-input-text" type="text" placeholder="name" />
+          </div>
+          <div class="form-group">
+            <label for="test-input-email">Email</label>
+            <input id="test-input-email" type="email" placeholder="email" />
+          </div>
+          <div class="form-group">
+            <label>Disabled</label><input type="text" placeholder="test" disabled="" />
+          </div>
+          <div class="form-actions">
+            <button class="btn">Send</button><button class="btn btn-clear">Cancel</button>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <h4 class="example-title">Search Input</h4>
+        <span class="search-input">
+          <input id="test-input-text" type="search" name="" placeholder="Search..." />
+        </span>
+      </section>
+      <section>
+        <h4 class="example-title">Checkbox</h4>
+        <div class="custom-form-control checkbox">
+          <input class="custom-form-input" id="custom-checkbox" type="checkbox" name="" />
+          <label class="custom-form-label" for="custom-checkbox">Checkbox</label>
+        </div>
+        <div class="custom-form-control checkbox blue">
+          <input class="custom-form-input" id="custom-checkbox-blue" type="checkbox" name="" />
+          <label class="custom-form-label" for="custom-checkbox-blue">Checkbox Blue</label>
+        </div>
+        <div class="custom-form-control checkbox green">
+          <input class="custom-form-input" id="custom-checkbox-green" type="checkbox" name="" />
+          <label class="custom-form-label" for="custom-checkbox-green">Checkbox Green</label>
+        </div>
+        <div class="custom-form-control checkbox yellow">
+          <input class="custom-form-input" id="custom-checkbox-yellow" type="checkbox" name="" />
+          <label class="custom-form-label" for="custom-checkbox-yellow">Checkbox Yellow</label>
+        </div>
+        <div class="custom-form-control checkbox red">
+          <input class="custom-form-input" id="custom-checkbox-red" type="checkbox" name="" />
+          <label class="custom-form-label" for="custom-checkbox-red">Checkbox Red</label>
+        </div>
+        <div class="custom-form-control checkbox">
+          <input
+            class="custom-form-input"
+            id="custom-checkbox-2"
+            type="checkbox"
+            name=""
+            disabled=""
+            checked=""
+          />
+          <label class="custom-form-label" for="custom-checkbox-2">Checkbox Disabled</label>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Radio</h4>
+        <div class="radio-group" role="radiogroup">
+          <div class="custom-form-control radio">
+            <input class="custom-form-input" id="custom-radio" type="radio" name="radio" />
+            <label class="custom-form-label" for="custom-radio">Radio - 1</label>
+          </div>
+          <div class="custom-form-control radio">
+            <input class="custom-form-input" id="custom-radio-2" type="radio" name="radio" />
+            <label class="custom-form-label" for="custom-radio-2">Radio - 2</label>
+          </div>
+          <div class="custom-form-control radio">
+            <input
+              class="custom-form-input"
+              id="custom-radio-3"
+              type="radio"
+              name="radio"
+              disabled=""
+            />
+            <label class="custom-form-label" for="custom-radio-3">Radio Disabled</label>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Switch</h4>
+        <div class="custom-form-control switch">
+          <input class="custom-form-input" id="switch" type="checkbox" />
+          <label class="custom-form-label" for="switch">Toggle</label>
+        </div>
+        <div class="custom-form-control switch blue">
+          <input class="custom-form-input" id="switch-2" type="checkbox" />
+          <label class="custom-form-label" for="switch-2">Toggle Blue</label>
+        </div>
+        <div class="custom-form-control switch green">
+          <input class="custom-form-input" id="switch-3" type="checkbox" />
+          <label class="custom-form-label" for="switch-3">Toggle Green</label>
+        </div>
+        <div class="custom-form-control switch yellow">
+          <input class="custom-form-input" id="switch-4" type="checkbox" />
+          <label class="custom-form-label" for="switch-4">Toggle Yellow</label>
+        </div>
+        <div class="custom-form-control switch red">
+          <input class="custom-form-input" id="switch-5" type="checkbox" />
+          <label class="custom-form-label" for="switch-5">Toggle Red</label>
+        </div>
+        <div class="custom-form-control switch">
+          <input
+            class="custom-form-input"
+            id="switch-disable"
+            type="checkbox"
+            disabled=""
+            checked=""
+          />
+          <label class="custom-form-label" for="switch-disable">Toggle Disabled</label>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Textarea</h4>
+        <div class="form-group">
+          <label for="textarea">Textarea Label</label>
+          <textarea id="textarea" name="" placeholder="Textarea content here..."></textarea>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Select</h4>
+        <select>
+          <option value="first">First</option>
+          <option value="second">Second</option>
+          <option value="third" disabled="">Third</option>
+        </select>
+      </section>
+      <section id="nav">
+        <h4 class="example-title">Nav</h4>
+        <div class="example-navs">
+          <nav>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="#" aria-current="page">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" disabled="" tabindex="-1">Disabled</a>
+              </li>
+            </ul>
+          </nav>
+          <h5 class="example-title">Nav Fill</h5>
+          <nav>
+            <ul class="nav nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="#" aria-current="page">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" disabled="">Disabled</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section id="navbar">
+        <h4 class="example-title">Navbar</h4>
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-logo">
+              <a class="navbar-logo-link" href="">
+                <img class="navbar-logo-img" src="assets/RavenCSS.png" alt="" />
+              </a>
+            </div>
+            <div class="navbar-content">
+              <nav>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link current" href="#" aria-current="page">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" disabled="" tabindex="-1">Disabled</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </section>
+      <section id="breadcrumb">
+        <h4 class="example-title">Breadcrumb</h4>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="#" disabled="" tabindex="-1">Page 1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Page 1-1</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="current" aria-current="page">Page 1-1-2</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section id="card" class="example-cards">
+        <h4 class="example-title">Card</h4>
+        <div>
+          <div class="example-card-wrapper">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="card-title">Card Title</h5>
+                <div class="card-body">
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="example-card-wrapper">
+            <div class="card card-img-top">
+              <figure class="card-img-wrapper">
+                <img class="img-object-fit" src="assets/test-image-2.jpg" alt="" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Card Title</h5>
+                <div class="card-body">
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="example-card-wrapper">
+            <div class="card card-img-bottom">
+              <figure class="card-img-wrapper">
+                <img class="img-object-fit" src="assets/test-image-2.jpg" alt="" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Card Title</h5>
+                <div class="card-body">
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="example-card-wrapper-2">
+            <div class="card card-horizontal card-img-left">
+              <figure class="card-img-wrapper">
+                <img class="img-object-fit" src="assets/test-image.jpg" alt="" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Card Title</h5>
+                <div class="card-body">
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="example-card-wrapper-2">
+            <div class="card card-horizontal card-img-right">
+              <figure class="card-img-wrapper">
+                <img class="img-object-fit" src="assets/test-image.jpg" alt="" />
+              </figure>
+              <div class="card-content">
+                <h5 class="card-title">Card Title</h5>
+                <div class="card-body">
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                  <p>This is the card body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="alerts" class="example-alerts">
+        <h4 class="example-title">Alerts</h4>
+        <div class="alerts">
+          <span class="alert" role="alert">This is an alert</span>
+          <span class="alert alert-green" role="alert">This is an alert</span>
+          <span class="alert alert-yellow" role="alert">This is an alert</span>
+          <span class="alert alert-blue" role="alert">This is an alert</span>
+          <span class="alert alert-red" role="alert">This is an alert</span>
+        </div>
+      </section>
+      <section id="list">
+        <h4 class="example-title">List</h4>
+        <ul class="list">
+          <li class="list-item">Item 1</li>
+          <li class="list-item">Item 1</li>
+          <li class="list-item">Item 1</li>
+        </ul>
+      </section>
+      <section>
+        <h4 class="example-title">Block List</h4>
+        <ul class="block-list">
+          <li class="list-item">Item 1</li>
+          <li class="list-item">Item 1</li>
+          <li class="list-item">Item 1</li>
+        </ul>
+      </section>
+      <section id="table">
+        <h4 class="example-title">Table</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Teams</th>
+              <th>Games</th>
+              <th>Points</th>
+              <th>Goals</th>
+              <th>Last 5 Game</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Liverpool</td>
+              <td>29</td>
+              <td>82</td>
+              <td>66</td>
+              <td>W L W W W</td>
+            </tr>
+            <tr>
+              <td>Manchester City</td>
+              <td>28</td>
+              <td>57</td>
+              <td>68</td>
+              <td>L W W L W</td>
+            </tr>
+            <tr>
+              <td>Leicester City</td>
+              <td>29</td>
+              <td>53</td>
+              <td>58</td>
+              <td>W L L D D</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="dropdown">
+        <h4 class="example-title">Dropdown</h4>
+        <div class="example-dropdowns">
+          <details class="dropdown">
+            <summary class="btn dropdown-btn">Dropdown</summary>
+            <ul class="dropdown-list block-list">
+              <li class="dropdown-list-item list-item">
+                <a class="dropdown-list-link list-link" href="#">Item 1</a>
+              </li>
+              <li class="dropdown-list-item list-item">
+                <a class="dropdown-list-link list-link" href="#">Item 2</a>
+              </li>
+              <li class="dropdown-list-item list-item">
+                <a class="dropdown-list-link list-link" href="#">Item 3</a>
+              </li>
+            </ul>
+          </details>
+        </div>
+      </section>
+      <section id="progress">
+        <h4 class="example-title">Progress Bar</h4>
+        <h5 class="example-title">Sizes</h5>
+        <span class="progress-bar small">
+          <span class="progress-bar-value" style="transform: translateX(-80%);"></span>
+        </span>
+        <span class="progress-bar">
+          <span class="progress-bar-value" style="transform: translateX(-80%);"></span>
+        </span>
+        <span class="progress-bar large">
+          <span class="progress-bar-value" style="transform: translateX(-80%);"></span>
+        </span>
+        <h5 class="example-title">Colors</h5>
+        <span class="progress-bar">
+          <span class="progress-bar-value" style="transform: translateX(-80%);"></span>
+        </span>
+        <span class="progress-bar">
+          <span class="progress-bar-value blue" style="transform: translateX(-70%);"></span>
+        </span>
+        <span class="progress-bar">
+          <span class="progress-bar-value green" style="transform: translateX(-60%);"></span>
+        </span>
+        <span class="progress-bar">
+          <span class="progress-bar-value yellow" style="transform: translateX(-50%);"></span>
+        </span>
+        <span class="progress-bar">
+          <span class="progress-bar-value red" style="transform: translateX(-40%);"></span>
+        </span>
+      </section>
+      <section class="example-progress-circles">
+        <h4 class="example-title">
+          Progress Circle
+          <h5 class="example-title">Sizes</h5>
+          <div>
+            <div class="progress-circle small">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+            <div class="progress-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+            <div class="progress-circle large">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+          </div>
+          <h5 class="example-title">Colors</h5>
+          <div>
+            <div class="progress-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+            <div class="progress-circle blue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+            <div class="progress-circle green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+            <div class="progress-circle yellow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+            <div class="progress-circle red">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+                <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
+                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+              </svg>
+            </div>
+          </div>
+        </h4>
+      </section>
+      <section id="loading">
+        <h4 class="example-title">Loading Bar</h4>
+        <span class="progress-bar loading"><span class="progress-bar-value"></span></span>
+      </section>
+      <section>
+        <h4 class="example-title">Loading Circles</h4>
+        <div class="progress-circle loading circle-turn-pieces small">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+            <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
+            <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+          </svg>
+        </div>
+        <div class="progress-circle loading circle-turn small" style="margin-top: 10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+            <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
+            <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+          </svg>
+        </div>
+      </section>
+      <section>
+        <h4 class="example-title">Loading Dots</h4>
+        <div class="loading-dots">
+          <span class="loading-dot dot-1"></span><span class="loading-dot dot-2"></span
+          ><span class="loading-dot dot-3"></span>
+        </div>
+      </section>
+      <section id="modalbox">
+        <h4 class="example-title">Modal</h4>
+        <a class="btn" href="#modal">Open Modal</a>
+        <div
+          class="modal-wrapper"
+          id="modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modal_title"
+        >
+          <a class="modal-overlay" href="#modalbox" aria-hidden="true" data-dismiss="modal"></a>
+          <div class="modal">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal_title">
+                Modal Header
+              </h5>
+            </div>
+            <div class="modal-body">
+              Mollit ullamco incididunt consequat consequat consectetur. Ut excepteur ipsum cillum
+              eiusmod commodo sint occaecat esse et velit. Elit velit ad commodo ea sit nostrud qui.
+              Qui proident duis veniam quis aliquip exercitation adipisicing laboris ex.
+            </div>
+            <div class="modal-footer">
+              <div class="modal-actions">
+                <a class="btn btn-clear" href="#modalbox" data-dismiss="modal">Close</a>
+                <button class="btn">Accept</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="grid" class="example-grids">
+        <h4 class="example-title">Grid</h4>
+        <div class="container">
+          <section>
+            <h5 class="example-title">Columns</h5>
+            <div class="row">
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+              <div class="col">
+                <span class="col-test">col</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="example-title">Column Sizes</h5>
+            <div class="row">
+              <div class="col col-10">
+                <span class="col-test">col-10</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-16">
+                <span class="col-test">col-16</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-20">
+                <span class="col-test">col-20</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-25">
+                <span class="col-test">col-25</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-30">
+                <span class="col-test">col-30</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-33">
+                <span class="col-test">col-33</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-40">
+                <span class="col-test">col-40</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-50">
+                <span class="col-test">col-50</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-60">
+                <span class="col-test">col-60</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-67">
+                <span class="col-test">col-67</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-70">
+                <span class="col-test">col-70</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-75">
+                <span class="col-test">col-75</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-80">
+                <span class="col-test">col-80</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-84">
+                <span class="col-test">col-84</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-90">
+                <span class="col-test">col-90</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col">
+                <span class="col-test">col-100</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="example-title">Spans (Offsets)</h5>
+            <div class="row">
+              <div class="col col-10 col-span-90">
+                <span class="col-test">col-10</span
+                ><span class="col-test span span90">col-span-90</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-16 col-span-84">
+                <span class="col-test">col-16</span
+                ><span class="col-test span span84">col-span-84</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-20 col-span-80">
+                <span class="col-test">col-20</span
+                ><span class="col-test span span80">col-span-80</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-25 col-span-75">
+                <span class="col-test">col-25</span
+                ><span class="col-test span span75">col-span-75</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-30 col-span-70">
+                <span class="col-test">col-30</span
+                ><span class="col-test span span70">col-span-70</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-33 col-span-67">
+                <span class="col-test">col-33</span
+                ><span class="col-test span span67">col-span-67</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-40 col-span-60">
+                <span class="col-test">col-40</span
+                ><span class="col-test span span60">col-span-60</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-50 col-span-50">
+                <span class="col-test">col-50</span
+                ><span class="col-test span span50">col-span-50</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-60 col-span-40">
+                <span class="col-test">col-60</span
+                ><span class="col-test span span40">col-span-40</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-67 col-span-33">
+                <span class="col-test">col-67</span
+                ><span class="col-test span span33">col-span-33</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-70 col-span-30">
+                <span class="col-test">col-70</span
+                ><span class="col-test span span30">col-span-30</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-75 col-span-25">
+                <span class="col-test">col-75</span
+                ><span class="col-test span span25">col-span-25</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-80 col-span-20">
+                <span class="col-test">col-80</span
+                ><span class="col-test span span20">col-span-20</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-84 col-span-16">
+                <span class="col-test">col-84</span
+                ><span class="col-test span span16">col-span-16</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-90 col-span-10">
+                <span class="col-test">col-90</span
+                ><span class="col-test span span10">col-span-10</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="example-title">Some Sizes</h5>
+            <div class="row">
+              <div class="col col-16">
+                <span class="col-test">col-16</span>
+              </div>
+              <div class="col col-84">
+                <span class="col-test">col-84</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-66">
+                <span class="col-test">col-66</span>
+              </div>
+              <div class="col col-33">
+                <span class="col-test">col-33</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-75">
+                <span class="col-test">col-75</span>
+              </div>
+              <div class="col col-25">
+                <span class="col-test">col-25</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="example-title">Grid Work on Mobile</h5>
+            <div class="row row-mobile">
+              <div class="col col-33">
+                <span class="col-test">col-33</span>
+              </div>
+              <div class="col col-33">
+                <span class="col-test">col-33</span>
+              </div>
+              <div class="col col-33">
+                <span class="col-test">col-33</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -34,7 +34,7 @@
     }
     &.circle-turn-pieces {
       .progress-circle-value {
-        animation-duration: 4s;
+        animation-duration: 2.5s;
         animation-iteration-count: infinite;
         animation-name: circle-turn-pieces;
         animation-timing-function: cubic-bezier(0.27, 0.82, 0.83, 0.67);
@@ -67,7 +67,7 @@
     transform: rotate(90deg);
   }
   50% {
-    transform: rotate(1170deg);
+    transform: rotate(810deg);
   }
   100% {
     transform: rotate(90deg);

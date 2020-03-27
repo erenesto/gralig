@@ -16,6 +16,7 @@
 .com.apple.timemachine.donotpresent
 test.html
 package-lock.json
+dist/*.gz
 
 # Folders
 .AppleDB
@@ -26,4 +27,4 @@ Temporary Items
 test
 node_modules
 .cache
-dist
+dev

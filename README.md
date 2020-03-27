@@ -2,7 +2,9 @@
 
 ## What is RavenCSS ?
 
-RavenCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid option and dark mode. There is no JS, only CSS. Enjoy!
+RavenCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid and dark mode. There is no JS, only CSS.
+
+It's part of RavenUI. Next project will be RavenReact...
 
 ## Download
 
@@ -12,17 +14,17 @@ Coming soon...
 
 - Set of Colors
 - Typography
-- Breadcrumb
 - Buttons
 - Navbar
 - Card
 - Table
 - List
 - Modal
+- Breadcrumb
+- Form Elements
+- Loading Elements
+- Progress Elements
 - Flexbox based Grid
-- Customized Form Elements
-- Process Bar & Process Circle
-- Loading Bar & Loading Circle
 
 ## Browser Support
 
@@ -41,7 +43,8 @@ Coming soon...
 
 ## Contributing
 
-Coming soon...
+Welcome to the club 🙂
+You can contribute the project with our [contributing guidelines](https://github.com/erenesto/raven-css/.github/CONTRIBUTING.md).
 
 ## License
 
