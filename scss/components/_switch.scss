@@ -20,8 +20,7 @@
     border: 1px solid $white;
     border-radius: $border-radius;
     opacity: 1;
-    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in,
-      transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in, transform 0.3s ease-in-out;
     @include themify($themes) {
       background-color: themed("colorBorder");
       border-color: themed("colorBorder");
