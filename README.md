@@ -8,7 +8,17 @@ It's part of RavenUI. Next project will be RavenReact...
 
 ## Download
 
-Coming soon...
+CDN
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/raven-css" />
+```
+
+or
+
+```bash
+npm install raven-css
+```
 
 ## Features
 
