@@ -44,7 +44,7 @@ Coming soon...
 ## Contributing
 
 Welcome to the club 🙂
-You can contribute the project with our [contributing guidelines](https://github.com/erenesto/raven-css/.github/CONTRIBUTING.md).
+You can contribute the project with our [contributing guidelines](https://github.com/erenesto/raven-css/blob/master/.github/CONTRIBUTING.md).
 
 ## License
 
