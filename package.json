@@ -2,13 +2,32 @@
   "name": "raven-css",
   "version": "1.0.0",
   "description": "A clean, grayish CSS library",
-  "main": "dist/raven.css",
-  "repository": "https://github.com/erenesto/raven-css.git",
+  "main": "dist/raven.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erenesto/raven-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erenesto/raven-css/issues"
+  },
   "author": {
     "name": "Eren Guldas",
     "email": "erenguldas@gmail.com"
   },
+  "homepage": "https://github.com/erenesto/raven-css#readme",
   "license": "MIT",
+  "keywords": [
+    "clean design",
+    "clean css",
+    "css",
+    "css library",
+    "gray",
+    "grayish",
+    "raven",
+    "frontend",
+    "ui",
+    "minimal"
+  ],
   "scripts": {
     "start": "run-p clean serve ",
     "serve": "parcel examples/index.html --out-dir dev --open --no-cache",
@@ -20,30 +39,6 @@
     "format:scss": "prettier-stylelint --write --q 'scss/**/*.scss'",
     "test": "run-s format:scss lint:scss"
   },
-  "browserslist": [
-    "last 2 versions"
-  ],
-  "prettier": {
-    "printWidth": 100
-  },
-  "compress": {
-    "gzip": {
-      "enabled": true
-    },
-    "brotli": {
-      "enabled": false
-    }
-  },
-  "keywords": [
-    "clean design",
-    "clean css",
-    "css",
-    "gray",
-    "grayish",
-    "raven",
-    "frontend",
-    "ui"
-  ],
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "clean-css-cli": "^4.3.0",
@@ -65,5 +60,23 @@
     "stylelint-declaration-strict-value": "^1.1.8",
     "stylelint-order": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "prettier": {
+    "printWidth": 100
+  },
+  "compress": {
+    "gzip": {
+      "enabled": true
+    },
+    "brotli": {
+      "enabled": false
+    }
+  }
 }
