@@ -1,20 +1,20 @@
 {
-  "name": "raven-css",
+  "name": "corvus-css",
   "version": "1.0.0",
   "description": "A clean, grayish CSS library",
-  "main": "dist/raven.min.css",
+  "main": "dist/corvus.min.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erenesto/raven-css.git"
+    "url": "git+https://github.com/erenesto/corvus-css.git"
   },
   "bugs": {
-    "url": "https://github.com/erenesto/raven-css/issues"
+    "url": "https://github.com/erenesto/corvus-css/issues"
   },
   "author": {
     "name": "Eren Guldas",
     "email": "erenguldas@gmail.com"
   },
-  "homepage": "https://github.com/erenesto/raven-css#readme",
+  "homepage": "https://github.com/erenesto/corvus-css#readme",
   "license": "MIT",
   "keywords": [
     "clean design",
@@ -23,7 +23,8 @@
     "css library",
     "gray",
     "grayish",
-    "raven",
+    "pure",
+    "simplistic",
     "frontend",
     "ui",
     "minimal"
@@ -32,9 +33,9 @@
     "start": "run-p clean serve ",
     "serve": "parcel examples/index.html --out-dir dev --open --no-cache",
     "build": "run-s test clean parcel:build minify",
-    "parcel:build": "parcel build -o dist/raven.css scss/raven.scss --no-minify --no-cache",
+    "parcel:build": "parcel build -o dist/corvus.css scss/corvus.scss --no-minify --no-cache",
     "clean": "rimraf dist/*",
-    "minify": "cleancss -o dist/raven.min.css dist/raven.css",
+    "minify": "cleancss -o dist/corvus.min.css dist/corvus.css",
     "lint:scss": "stylelint -s --fix --formatter=verbose 'scss/**/*.scss'",
     "format:scss": "prettier-stylelint --write --q 'scss/**/*.scss'",
     "test": "run-s format:scss lint:scss"
