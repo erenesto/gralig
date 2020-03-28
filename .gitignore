@@ -16,7 +16,6 @@
 .com.apple.timemachine.donotpresent
 test.html
 package-lock.json
-dist/*.gz
 
 # Folders
 .AppleDB

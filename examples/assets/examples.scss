@@ -26,7 +26,7 @@ section.example-list {
 }
 
 .wrapper {
-  max-width: 94rem;
+  max-width: 120rem;
 }
 
 .example-title {
@@ -204,49 +204,49 @@ section.example-list {
       background-color: transparent;
       color: hsl(207, 13%, 14%);
       &.span90 {
-        width: calc(90% - 1.2rem);
+        width: calc(90% - 2.4rem);
       }
       &.span84 {
-        width: calc(83.33333333% - 1.2rem);
+        width: calc(83.33333333% - 2.4rem);
       }
       &.span80 {
-        width: calc(80% - 1.2rem);
+        width: calc(80% - 2.4rem);
       }
       &.span75 {
-        width: calc(75% - 1.2rem);
+        width: calc(75% - 2.4rem);
       }
       &.span70 {
-        width: calc(70% - 1.2rem);
+        width: calc(70% - 2.4rem);
       }
       &.span67 {
-        width: calc(66.66666666% - 1.2rem);
+        width: calc(66.66666666% - 2.4rem);
       }
       &.span60 {
-        width: calc(60% - 1.2rem);
+        width: calc(60% - 2.4rem);
       }
       &.span50 {
-        width: calc(50% - 1.2rem);
+        width: calc(50% - 2.4rem);
       }
       &.span40 {
-        width: calc(40% - 1.2rem);
+        width: calc(40% - 2.4rem);
       }
       &.span33 {
-        width: calc(33.33333333% - 1.2rem);
+        width: calc(33.33333333% - 2.4rem);
       }
       &.span30 {
-        width: calc(30% - 1.2rem);
+        width: calc(30% - 2.4rem);
       }
       &.span25 {
-        width: calc(25% - 1.2rem);
+        width: calc(25% - 2.4rem);
       }
       &.span20 {
-        width: calc(20% - 1.2rem);
+        width: calc(20% - 2.4rem);
       }
       &.span16 {
-        width: calc(16% - 1.2rem);
+        width: calc(16% - 2.4rem);
       }
       &.span10 {
-        width: calc(10% - 1.2rem);
+        width: calc(10% - 2.4rem);
       }
     }
   }

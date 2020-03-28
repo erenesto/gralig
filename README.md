@@ -4,8 +4,6 @@
 
 CorvusCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid and dark mode. There is no JS, only CSS.
 
-It's part of CorvusUI. Next project will be CorvusReact...
-
 ## Download
 
 CDN
@@ -54,7 +52,7 @@ Coming soon...
 ## Contributing
 
 Welcome to the club 🙂
-You can contribute the project with our [contributing guidelines](https://github.com/erenesto/corvus-css/blob/master/.github/CONTRIBUTING.md).
+You can contribute the project with our [contributing guidelines](https://github.com/erenesto/corvus/blob/master/.github/CONTRIBUTING.md).
 
 ## License
 
