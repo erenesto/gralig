@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: $space;
+  @include min-width($bp-l) {
+    max-width: 114rem;
+  }
+  &.full {
+    @include min-width($bp-l) {
+      max-width: 100%;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @include min-width($bp-s) {
+    width: calc(100% + #{$space} * 2);
+    flex-direction: row;
+    margin-left: -$space;
+  }
+
+  &.row-mobile {
+    width: calc(100% + #{$space} * 2);
+    flex-direction: row;
+    margin-left: -$space;
+  }
+}
