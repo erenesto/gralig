@@ -266,7 +266,8 @@ section.example-list {
 
   .col-test {
     display: block;
-    padding: 10px;
+    padding: 8px;
+    border: 1px solid hsl(207, 7%, 68%);
     background: hsl(207, 7%, 68%);
     border-radius: 2px;
     font-size: 12px;
@@ -280,7 +281,6 @@ section.example-list {
   }
   .col-test.span {
     border-color: hsl(206, 7%, 40%);
-    // background: hsl(204, 7%, 86%);
     color: hsl(204, 7%, 86%);
   }
 }
