@@ -12,13 +12,13 @@ First of all thanks for help out with CorvusCSS. We want to show simple steps of
 
 ## Open an Issue
 
-- If you found a problem to fix, please primarily [open a new issue](https://github.com/erenesto/corvus/issues/new) before working on it, so we can discuss the solution.
+- If you found a problem to fix, please primarily [open a new issue](https://github.com/erenesto/corvus-css/issues/new) before working on it, so we can discuss the solution.
 - Please provide helpful informations such as browser, OS, screenshots etc.
 - If issue you opened is as we stated and you do not get anything back from us, that doesn't mean that we object to the issue or we do not care.
 
 ## Work on the CorvusCSS
 
-- Fork the repo: `git clone https://github.com/erenesto/corvus.git`
+- Fork the repo: `git clone https://github.com/erenesto/corvus-css.git`
 - Install the dependencies using `npm install`.
 - Create a new branch with `git checkout -b issuenumber-feature-name`
 - The project is using [Parcel](https://parceljs.org/). After dependencies installed, you can start it with `npm start`. Parcel will create `dev` folder for development and it will compile your changes.

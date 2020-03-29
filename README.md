@@ -1,4 +1,4 @@
-<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585406742/xwwxywkym5bsef3tnhpy.jpg" alt="CorvusCSS"></a>
+<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585488949/gguvlfi9hx6mnuftibtu.jpg" alt="CorvusCSS"></a>
 
 ## What is CorvusCSS ?
 
@@ -52,7 +52,7 @@ Coming soon...
 ## Contributing
 
 Welcome to the club 🙂
-You can contribute the project with our [contributing guidelines](https://github.com/erenesto/corvus/blob/master/.github/CONTRIBUTING.md).
+You can contribute the project with our [contributing guidelines](https://github.com/erenesto/corvus-css/blob/master/.github/CONTRIBUTING.md).
 
 ## License
 

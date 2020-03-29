@@ -5,16 +5,16 @@
   "main": "dist/corvus.min.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erenesto/corvus.git"
+    "url": "git+https://github.com/erenesto/corvus-css.git"
   },
   "bugs": {
-    "url": "https://github.com/erenesto/corvus/issues"
+    "url": "https://github.com/erenesto/corvus-css/issues"
   },
   "author": {
     "name": "Eren Guldas",
     "email": "erenguldas@gmail.com"
   },
-  "homepage": "https://github.com/erenesto/corvus#readme",
+  "homepage": "https://github.com/erenesto/corvus-css#readme",
   "license": "MIT",
   "keywords": [
     "clean design",
