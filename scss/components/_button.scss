@@ -3,8 +3,10 @@
   &:link,
   &:visited {
     $color-button-font: $white;
-    display: inline-block;
+    display: inline-flex;
     height: $el-height;
+    align-items: center;
+    justify-content: center;
     border: 0;
     background-color: $color-main;
     border-radius: $border-radius;
@@ -14,7 +16,7 @@
     font-size: $el-font-size;
     font-weight: $font-bold;
     letter-spacing: 0.08rem;
-    line-height: calc(#{$el-height} + 1px);
+    line-height: 1;
     padding-block: 0;
     padding-inline: $content-padding-inline;
     text-align: center;
@@ -41,7 +43,6 @@
       border: 1px solid $color-main;
       background-color: transparent;
       color: $color-main;
-      line-height: calc(#{$el-height} - 1px);
       @include themify($themes) {
         background-color: themed("transparentColor");
         color: themed("colorMain");
@@ -114,7 +115,6 @@
     &.btn-small {
       height: $el-height-s;
       font-size: $el-font-size-s;
-      line-height: calc(#{$el-height-s} + 1px);
       padding-inline: $space-m;
     }
     &.btn-large {
@@ -133,7 +133,6 @@
     }
     &.btn-full-width {
       width: 100%;
-      padding: 0;
     }
   }
 }
