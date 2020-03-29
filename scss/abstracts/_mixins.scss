@@ -39,10 +39,6 @@
   }
 }
 
-@mixin dot-pulse-animation($left, $size, $color) {
-  box-shadow: $left 0 0 $size $color;
-}
-
 @mixin caret-icon($deg, $x, $y, $color) {
   width: 8px;
   height: 8px;
