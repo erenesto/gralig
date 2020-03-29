@@ -41,6 +41,7 @@
       border: 1px solid $color-main;
       background-color: transparent;
       color: $color-main;
+      line-height: calc(#{$el-height} - 1px);
       @include themify($themes) {
         background-color: themed("transparentColor");
         color: themed("colorMain");
@@ -119,8 +120,6 @@
     &.btn-large {
       height: $el-height-l;
       font-size: $el-font-size-l;
-      line-height: calc(#{$el-height-l} + 1px);
-      padding-inline: $space-l;
     }
 
     &.btn-clear {
