@@ -671,8 +671,16 @@ p {
     margin-left: 90%; }
 
 .btn, .btn:link, .btn:visited {
-  display: inline-block;
-  height: 3.7rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 3.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 0;
   background-color: #5f676d;
   border-radius: 2px;
@@ -682,7 +690,7 @@ p {
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.08rem;
-  line-height: calc(3.7rem + 1px);
+  line-height: 1;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 3.2rem;
@@ -764,17 +772,13 @@ p {
       background-color: transparent;
       color: #d73c3c; }
   .btn.btn-small, .btn:link.btn-small, .btn:visited.btn-small {
-    height: 2.9rem;
+    height: 3.1rem;
     font-size: 1.1rem;
-    line-height: calc(2.9rem + 1px);
     padding-left: 1.6rem;
     padding-right: 1.6rem; }
   .btn.btn-large, .btn:link.btn-large, .btn:visited.btn-large {
-    height: 4.1rem;
-    font-size: 1.5rem;
-    line-height: calc(4.1rem + 1px);
-    padding-left: 2.4rem;
-    padding-right: 2.4rem; }
+    height: 4.2rem;
+    font-size: 1.5rem; }
   .btn.btn-clear, .btn:link.btn-clear, .btn:visited.btn-clear {
     background-color: transparent;
     color: #5f676d;
@@ -783,18 +787,17 @@ p {
     .dark .btn.btn-clear, .dark .btn:link.btn-clear, .dark .btn:visited.btn-clear {
       background-color: transparent; }
   .btn.btn-full-width, .btn:link.btn-full-width, .btn:visited.btn-full-width {
-    width: 100%;
-    padding: 0; }
+    width: 100%; }
 
 .alert {
   display: inline-block;
   min-width: 100%;
-  height: calc(2.9rem - 1px);
+  height: calc(3.1rem - 1px);
   background-color: #727c83;
   border-radius: 2px;
   color: #f1f2f3;
   font-size: 1.4rem;
-  line-height: 2.9rem;
+  line-height: 3.1rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem; }
   .dark .alert {
@@ -1177,10 +1180,10 @@ img {
     padding-left: 1.6rem;
     padding-right: 1.6rem; }
   .navbar-logo-img {
-    max-height: 3rem; }
+    max-height: 1.75rem; }
     @media screen and (min-width: 50em) {
       .navbar-logo-img {
-        max-height: 4rem; } }
+        max-height: 2rem; } }
   .navbar-content {
     display: -webkit-box;
     display: -ms-flexbox;
