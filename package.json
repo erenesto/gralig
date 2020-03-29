@@ -30,11 +30,12 @@
     "minimal"
   ],
   "scripts": {
-    "start": "run-p clean serve ",
+    "start": "run-p clean:dev serve ",
     "serve": "parcel examples/index.html --out-dir dev --open --no-cache",
     "build": "run-s test clean parcel:build minify",
     "parcel:build": "parcel build -o dist/corvus.css scss/corvus.scss --no-minify --no-cache",
     "clean": "rimraf dist/*",
+    "clean:dev": "rimraf dev/*",
     "minify": "cleancss -o dist/corvus.min.css dist/corvus.css",
     "lint:scss": "stylelint -s --fix --formatter=verbose 'scss/**/*.scss'",
     "format:scss": "prettier-stylelint --write --q 'scss/**/*.scss'",
@@ -62,7 +63,7 @@
   },
   "dependencies": {},
   "files": [
-    "dist/",
+    "dist",
     "scss",
     "README.md"
   ],

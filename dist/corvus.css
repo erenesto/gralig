@@ -1958,5 +1958,18 @@ input[type="search"] {
     -webkit-box-shadow: 0 0 2px 2px rgba(95, 103, 109, 0.5);
             box-shadow: 0 0 2px 2px rgba(95, 103, 109, 0.5); }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #d9dcde;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem; }
+  .dark .footer {
+    border-color: #5f676d; }
+
 
 /*# sourceMappingURL=/corvus.css.map */

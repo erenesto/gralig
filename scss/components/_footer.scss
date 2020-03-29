@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $color-border;
+  padding-block: $space-l;
+  @include themify($themes) {
+    border-color: themed("colorBorder");
+  }
+}

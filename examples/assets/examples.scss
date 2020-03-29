@@ -4,7 +4,14 @@
 section {
   min-height: 100px;
   padding: 40px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  &:last-of-type {
+    border: 0;
+  }
+}
+
+.dark section {
+  border-color: #5f676d;
 }
 
 section.example-list {
