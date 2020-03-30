@@ -1,6 +1,7 @@
 .nav {
   display: inline-flex;
   flex-wrap: wrap;
+  align-items: center;
 
   &-fill {
     width: 100%;
@@ -12,6 +13,7 @@
   &-item {
     position: relative;
     font-size: $font-size-s;
+    padding-inline: $space-m;
     @include min-width($bp-s) {
       font-size: $font-size;
     }
@@ -20,7 +22,7 @@
     display: inline-block;
     position: relative;
     padding-block: $space-s;
-    padding-inline: $space-m;
+    padding-inline: $space-s;
     &:not(.disabled, [disabled])::after {
       position: absolute;
       bottom: 6px;

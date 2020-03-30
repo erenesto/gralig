@@ -1,21 +1,21 @@
-<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585488949/gguvlfi9hx6mnuftibtu.jpg" alt="CorvusCSS"></a>
+<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585571486/jpzeyym4ft5ezdiyxsn5.jpg" alt="Gralig CSS"></a>
 
-## What is CorvusCSS ?
+## What is Gralig ?
 
-CorvusCSS is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid and dark mode. There is no JS, only CSS.
+Gralig is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid and dark mode. There is no JS, only CSS.
 
 ## Download
 
 CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/corvus-css" />
+<link rel="stylesheet" href="https://unpkg.com/gralig" />
 ```
 
 or
 
 ```bash
-npm install corvus-css
+npm install gralig
 ```
 
 ## Features
@@ -36,7 +36,7 @@ npm install corvus-css
 
 ## Browser Support
 
-CorvusCSS built for latest versions of modern browsers.
+Gralig built for latest versions of modern browsers.
 
 - Chrome
 - Brave
@@ -52,7 +52,7 @@ Coming soon...
 ## Contributing
 
 Welcome to the club 🙂
-You can contribute the project with our [contributing guidelines](https://github.com/erenesto/corvus-css/blob/master/.github/CONTRIBUTING.md).
+You can contribute the project with our [contributing guidelines](https://github.com/erenesto/gralig/blob/master/.github/CONTRIBUTING.md).
 
 ## License
 
