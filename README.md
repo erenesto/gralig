@@ -8,6 +8,8 @@ Gralig is a simple, clean, grayish CSS library. (You can make it colorfull with 
 
 ## Download
 
+You can simply use `garlig.min.css` file with cdn link or you can install npm package and use `.scss` files in your project. Documentation will coming soon...
+
 CDN
 
 ```html

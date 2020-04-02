@@ -81,6 +81,7 @@ th:not([align]) {
   text-align: left; }
 
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 62.5%;
   -webkit-text-size-adjust: none;
      -moz-text-size-adjust: none;
@@ -90,7 +91,7 @@ html {
 body {
   background-color: white;
   color: #5f676d;
-  font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
@@ -176,6 +177,8 @@ a {
     outline: none; }
     .dark a:hover, .dark a:focus {
       color: #c3c8cb; }
+  a:not(.disabled):not([disabled]):not(.btn):not(.nav-link):hover {
+    text-decoration: underline; }
   a.disabled, a[disabled] {
     color: #c3c8cb;
     cursor: not-allowed;
@@ -1491,7 +1494,7 @@ select {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #5f676d;
-  font-family: "Catamaran", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 1.4rem;
   line-height: normal;
   vertical-align: middle; }

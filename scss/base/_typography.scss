@@ -87,6 +87,9 @@ a {
       color: themed("colorLinkHover");
     }
   }
+  &:not(.disabled):not([disabled]):not(.btn):not(.nav-link):hover {
+    text-decoration: underline;
+  }
 
   &.disabled,
   &[disabled] {
