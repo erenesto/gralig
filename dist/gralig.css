@@ -177,7 +177,7 @@ a {
     outline: none; }
     .dark a:hover, .dark a:focus {
       color: #c3c8cb; }
-  a:not(.disabled):not([disabled]):not(.btn):not(.nav-link):hover {
+  a:not(.disabled):not([disabled]):not(.btn):not(.nav-link):not(.breadcrumb-link):hover {
     text-decoration: underline; }
   a.disabled, a[disabled] {
     color: #c3c8cb;
@@ -429,7 +429,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0; }
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: 37.5em) {
     .row {
       width: calc(100% + 1.2rem * 2);
       -webkit-box-orient: horizontal;
@@ -454,7 +454,7 @@ p {
           flex: 1 1 0;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem; }
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: 37.5em) {
     .col {
       padding-left: 1.2rem;
       padding-right: 1.2rem; }
@@ -1099,6 +1099,11 @@ img {
   .breadcrumb-item > .current {
     cursor: default; }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .nav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1120,7 +1125,7 @@ img {
     font-size: 1.4rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem; }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: 37.5em) {
       .nav-item {
         font-size: 1.6rem; } }
   .nav-link {
@@ -1167,7 +1172,7 @@ img {
   .dark .navbar {
     background-color: #1f2428;
     border-color: #5f676d; }
-  @media screen and (min-width: 50em) {
+  @media screen and (min-width: 37.5em) {
     .navbar {
       height: 7rem;
       max-height: 7rem; } }
@@ -1191,7 +1196,7 @@ img {
     margin-left: -1.6rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem; }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: 37.5em) {
       .navbar-logo {
         max-width: 12rem; } }
   .navbar-logo-link {
@@ -1721,9 +1726,8 @@ input[type="search"] {
 .custom-form-control {
   display: block;
   position: relative;
-  min-height: 2.4rem;
   margin-bottom: 1.2rem;
-  padding-left: 2.4rem; }
+  padding-left: calc(1.6rem + 0.8rem); }
   .custom-form-control .custom-form-input {
     position: absolute;
     left: -9999px;
@@ -1873,7 +1877,7 @@ input[type="search"] {
     background-color: #131516; }
 
 .switch {
-  padding-left: 5rem; }
+  padding-left: calc(4.2rem + 0.8rem); }
   .switch .custom-form-label::before {
     top: 1px;
     width: 4.2rem;
