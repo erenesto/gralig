@@ -12,7 +12,7 @@
   @include themify($themes) {
     background-color: themed("colorCardBg");
   }
-  @include min-width($bp-l) {
+  @include min-width($breakpoint-l) {
     width: 72rem;
     max-width: 72rem;
   }

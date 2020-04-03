@@ -142,9 +142,8 @@ input[type="search"] {
 .custom-form-control {
   display: block;
   position: relative;
-  min-height: $space-l;
   margin-bottom: $space;
-  padding-left: 2.4rem;
+  padding-left: calc(1.6rem + #{$space-s});
   .custom-form-input {
     position: absolute;
     left: -9999px;

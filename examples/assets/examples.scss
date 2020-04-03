@@ -199,7 +199,7 @@ section.example-list {
 }
 
 .example-grids {
-  @include min-width($bp-s) {
+  @include min-width($breakpoint-xs) {
     .col-test.span {
       display: inline-block !important;
       position: absolute;

@@ -1,3 +1,7 @@
+nav {
+  display: flex;
+}
+
 .nav {
   display: inline-flex;
   flex-wrap: wrap;
@@ -14,7 +18,7 @@
     position: relative;
     font-size: $font-size-s;
     padding-inline: $space-m;
-    @include min-width($bp-s) {
+    @include min-width($breakpoint-xs) {
       font-size: $font-size;
     }
   }

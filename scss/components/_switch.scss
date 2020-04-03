@@ -1,5 +1,5 @@
 .switch {
-  padding-left: 5rem;
+  padding-left: calc(4.2rem + #{$space-s});
   .custom-form-label::before {
     top: 1px;
     width: 4.2rem;

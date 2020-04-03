@@ -12,7 +12,7 @@
     background-color: themed("colorAlert");
     color: themed("colorAlertFont");
   }
-  @include min-width($bp-xs) {
+  @include min-width($breakpoint-xs) {
     width: 42rem;
     min-width: 42rem;
   }

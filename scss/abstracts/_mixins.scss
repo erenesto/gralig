@@ -20,11 +20,6 @@
   }
 }
 
-// Used to prevent text selection on an element
-@mixin prevent-user-select {
-  user-select: none;
-}
-
 // Min-width breakpoints
 @mixin min-width($size) {
   @media screen and (min-width: $size) {

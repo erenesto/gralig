@@ -7,7 +7,7 @@
     background-color: themed("colorCardBg");
     border-color: themed("colorBorder");
   }
-  @include min-width($bp-s) {
+  @include min-width($breakpoint-xs) {
     height: 7rem;
     max-height: 7rem;
   }
@@ -22,7 +22,7 @@
     align-items: stretch;
     margin-left: -$space-m;
     padding-inline: $space-m;
-    @include min-width($bp-s) {
+    @include min-width($breakpoint-xs) {
       max-width: 12rem;
     }
   }

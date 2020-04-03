@@ -3,11 +3,11 @@
   width: 100%;
   margin: 0 auto;
   padding-inline: $space;
-  @include min-width($bp-l) {
+  @include min-width($breakpoint-l) {
     max-width: 114rem;
   }
   &.full {
-    @include min-width($bp-l) {
+    @include min-width($breakpoint-l) {
       max-width: 100%;
     }
   }
@@ -18,7 +18,7 @@
   flex-direction: column;
   padding: 0;
 
-  @include min-width($bp-s) {
+  @include min-width($breakpoint-xs) {
     width: calc(100% + #{$space} * 2);
     flex-direction: row;
     margin-left: -$space;

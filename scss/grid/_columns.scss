@@ -5,7 +5,7 @@
   flex: 1 1 0;
   padding-block: $space;
 
-  @include min-width($bp-s) {
+  @include min-width($breakpoint-xs) {
     padding-inline: $space;
     &.col-10 {
       max-width: 10%;
