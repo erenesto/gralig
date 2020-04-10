@@ -1,10 +1,10 @@
-<a style="text-align:center; display: block;" href="#"><img style="width: 40%; " src="https://res.cloudinary.com/erenesto/image/upload/v1585571486/jpzeyym4ft5ezdiyxsn5.jpg" alt="Gralig CSS"></a>
+<a style="text-align:center; display: block;" href="#"><img style="width: 35%; " src="https://res.cloudinary.com/erenesto/image/upload/v1586499201/ak0oavaecaoalct3jul2.jpg" alt="Gralig CSS"></a>
 
 ## What is Gralig ?
 
 <sup>_grålig_ means _grayish_ in Danish.<sup>
 
-Gralig is a simple, clean, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid and dark mode. There is no JS, only CSS.
+Gralig is a modest, grayish CSS library. (You can make it colorfull with helpers). It can be starting point for your CSS development. It provides a set of small modules, including flexbox based grid and dark mode. There is no JS, only CSS.
 
 ## Download
 
