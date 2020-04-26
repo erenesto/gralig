@@ -1,7 +1,3 @@
-/// to be used within wrapped content and makes
-/// it easy to access the theme map
-/// @param {String} $key - The key from theme map
-/// @return css property inside theme map based on key
-@function themed($key) {
-  @return map-get($theme-map, $key);
+@function mode($key) {
+  @return map-get($mode-map, $key);
 }

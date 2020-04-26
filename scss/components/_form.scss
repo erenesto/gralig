@@ -52,37 +52,37 @@ select {
   font-size: $font-size-s;
   line-height: normal;
   vertical-align: middle;
-  @include themify($themes) {
-    background-color: themed("colorCardBg");
-    border-color: themed("colorBorder");
-    color: themed("colorFont");
+  @include moder($modes) {
+    background-color: mode("colorCardBg");
+    border-color: mode("colorBorder");
+    color: mode("colorFont");
   }
   &:focus,
   &:hover {
     border-color: $color-border-dark;
     outline: 0;
-    @include themify($themes) {
-      border-color: themed("colorBorderLight");
+    @include moder($modes) {
+      border-color: mode("colorBorderLight");
     }
   }
   &::placeholder {
     color: $color-input-placeholder;
-    @include themify($themes) {
-      color: themed("colorInputPlaceholder");
+    @include moder($modes) {
+      color: mode("colorInputPlaceholder");
     }
   }
   &:disabled {
     background-color: $color-input-disabled;
     cursor: not-allowed;
-    @include themify($themes) {
-      background-color: themed("colorInputDisabled");
-      border-color: themed("cardOutlineBorder");
+    @include moder($modes) {
+      background-color: mode("colorInputDisabled");
+      border-color: mode("transparentColor");
     }
     &:hover,
     &:focus {
       border: 1px solid $color-border;
-      @include themify($themes) {
-        border-color: themed("cardOutlineBorder");
+      @include moder($modes) {
+        border-color: mode("transparentColor");
       }
     }
   }
@@ -130,7 +130,7 @@ input[type="search"] {
 }
 
 .form-group {
-  margin-bottom: $space-m;
+  margin-bottom: $space-l;
 }
 
 .form-actions {
@@ -156,15 +156,15 @@ input[type="search"] {
   .custom-form-input:disabled:checked ~ .custom-form-label {
     color: $color-mute;
     cursor: not-allowed;
-    @include themify($themes) {
-      color: themed("colorMute");
+    @include moder($modes) {
+      color: mode("colorMute");
     }
     &::before {
       background: $color-mute;
       border-color: $color-mute;
-      @include themify($themes) {
-        background-color: themed("colorMute");
-        border-color: themed("colorMute");
+      @include moder($modes) {
+        background-color: mode("colorMute");
+        border-color: mode("colorMute");
       }
     }
   }
@@ -188,9 +188,9 @@ input[type="search"] {
       pointer-events: all;
       transition: $transition-default;
       user-select: none;
-      @include themify($themes) {
-        background-color: themed("colorCardBg");
-        border-color: themed("colorBorder");
+      @include moder($modes) {
+        background-color: mode("colorCardBg");
+        border-color: mode("colorBorder");
       }
     }
     &::after {
@@ -201,7 +201,7 @@ input[type="search"] {
   &.blue {
     .custom-form-input:checked ~ .custom-form-label::before {
       background: $color-blue;
-      @include themify($themes) {
+      @include moder($modes) {
         background-color: $color-blue;
       }
     }
@@ -215,7 +215,7 @@ input[type="search"] {
   &.green {
     .custom-form-input:checked ~ .custom-form-label::before {
       background: $color-green;
-      @include themify($themes) {
+      @include moder($modes) {
         background-color: $color-green;
       }
     }
@@ -229,7 +229,7 @@ input[type="search"] {
   &.yellow {
     .custom-form-input:checked ~ .custom-form-label::before {
       background: $color-yellow;
-      @include themify($themes) {
+      @include moder($modes) {
         background-color: $color-yellow;
       }
     }
@@ -243,7 +243,7 @@ input[type="search"] {
   &.red {
     .custom-form-input:checked ~ .custom-form-label::before {
       background: $color-red;
-      @include themify($themes) {
+      @include moder($modes) {
         background-color: $color-red;
       }
     }

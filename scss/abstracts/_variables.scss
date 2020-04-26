@@ -39,8 +39,6 @@ $flame-darker: darken($flame, 16%);
 $flame-light: lighten($flame, 8%);
 $flame-lighter: lighten($flame, 16%);
 
-$smoke: hsla(203, 4%, 40%, 0.2);
-
 $font-size: 1.6rem;
 $font-size-s: 1.4rem;
 $font-size-m: 1.8rem;
@@ -78,7 +76,7 @@ $el-height: 3.8rem;
 $el-height-s: 3.1rem;
 $el-height-l: 4.2rem;
 
-$border-radius: 2px;
+$border-radius: 0.2rem;
 $border-radius-full: 50%;
 
 $transition-default: all 0.15s ease-in;
@@ -136,8 +134,8 @@ $color-code: $porcelain;
 $color-button-font: $white;
 $color-alert: $raven;
 $color-alert-font: $porcelain;
-$color-link-font: $raven;
-$color-link-hover: $mischka;
+$color-link-font: $oslo;
+$color-link-hover: $color-main;
 
 $color-border: $iron;
 $color-border-dark: $raven;
@@ -183,9 +181,8 @@ $color-alert-font-dt: $shark;
 $color-card-dt: $shark;
 $color-link-font-dt: $oslo;
 $color-link-hover-dt: $ghost;
-$color-input-disabled-dt: $smoke;
+$color-input-disabled-dt: rgba($iron, 0.2);
 $color-input-placeholder-dt: $abbey;
-$card-outline-border-dt: $transparent;
 
 //**********************
 /* BREAKPOINTS

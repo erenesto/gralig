@@ -1,4 +1,4 @@
-<a style="text-align:center; display: block;" href="#"><img style="width: 35%; " src="https://res.cloudinary.com/erenesto/image/upload/v1586499201/ak0oavaecaoalct3jul2.jpg" alt="Gralig CSS"></a>
+<a style="text-align:center; display: block;" href="https://gralig.com"><img style="width: 35%; " src="https://res.cloudinary.com/erenesto/image/upload/v1586499201/ak0oavaecaoalct3jul2.jpg" alt="Gralig CSS"></a>
 
 ## What is Gralig ?
 
@@ -8,7 +8,7 @@ Gralig is a modest, grayish CSS library. (You can make it colorfull with helpers
 
 ## Download
 
-You can simply use `garlig.min.css` file with cdn link or you can install npm package and use `.scss` files in your project. Documentation will coming soon...
+You can simply use `gralig.min.css` file with cdn link or you can install npm package and use `.scss` files in your project. Documentation will coming soon...
 
 CDN
 

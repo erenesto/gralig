@@ -323,23 +323,47 @@
       <section>
         <h4 class="example-title">Checkbox</h4>
         <div class="custom-form-control checkbox">
-          <input class="custom-form-input" id="custom-checkbox" type="checkbox" name="" />
+          <input class="custom-form-input" id="custom-checkbox" type="checkbox" name="" checked />
           <label class="custom-form-label" for="custom-checkbox">Checkbox</label>
         </div>
         <div class="custom-form-control checkbox blue">
-          <input class="custom-form-input" id="custom-checkbox-blue" type="checkbox" name="" />
+          <input
+            class="custom-form-input"
+            id="custom-checkbox-blue"
+            type="checkbox"
+            name=""
+            checked
+          />
           <label class="custom-form-label" for="custom-checkbox-blue">Checkbox Blue</label>
         </div>
         <div class="custom-form-control checkbox green">
-          <input class="custom-form-input" id="custom-checkbox-green" type="checkbox" name="" />
+          <input
+            class="custom-form-input"
+            id="custom-checkbox-green"
+            type="checkbox"
+            name=""
+            checked
+          />
           <label class="custom-form-label" for="custom-checkbox-green">Checkbox Green</label>
         </div>
         <div class="custom-form-control checkbox yellow">
-          <input class="custom-form-input" id="custom-checkbox-yellow" type="checkbox" name="" />
+          <input
+            class="custom-form-input"
+            id="custom-checkbox-yellow"
+            type="checkbox"
+            name=""
+            checked
+          />
           <label class="custom-form-label" for="custom-checkbox-yellow">Checkbox Yellow</label>
         </div>
         <div class="custom-form-control checkbox red">
-          <input class="custom-form-input" id="custom-checkbox-red" type="checkbox" name="" />
+          <input
+            class="custom-form-input"
+            id="custom-checkbox-red"
+            type="checkbox"
+            name=""
+            checked
+          />
           <label class="custom-form-label" for="custom-checkbox-red">Checkbox Red</label>
         </div>
         <div class="custom-form-control checkbox">
@@ -380,23 +404,23 @@
       <section>
         <h4 class="example-title">Switch</h4>
         <div class="custom-form-control switch">
-          <input class="custom-form-input" id="switch" type="checkbox" />
+          <input class="custom-form-input" id="switch" type="checkbox" checked />
           <label class="custom-form-label" for="switch">Toggle</label>
         </div>
         <div class="custom-form-control switch blue">
-          <input class="custom-form-input" id="switch-2" type="checkbox" />
+          <input class="custom-form-input" id="switch-2" type="checkbox" checked />
           <label class="custom-form-label" for="switch-2">Toggle Blue</label>
         </div>
         <div class="custom-form-control switch green">
-          <input class="custom-form-input" id="switch-3" type="checkbox" />
+          <input class="custom-form-input" id="switch-3" type="checkbox" checked />
           <label class="custom-form-label" for="switch-3">Toggle Green</label>
         </div>
         <div class="custom-form-control switch yellow">
-          <input class="custom-form-input" id="switch-4" type="checkbox" />
+          <input class="custom-form-input" id="switch-4" type="checkbox" checked />
           <label class="custom-form-label" for="switch-4">Toggle Yellow</label>
         </div>
         <div class="custom-form-control switch red">
-          <input class="custom-form-input" id="switch-5" type="checkbox" />
+          <input class="custom-form-input" id="switch-5" type="checkbox" checked />
           <label class="custom-form-label" for="switch-5">Toggle Red</label>
         </div>
         <div class="custom-form-control switch">
@@ -530,8 +554,8 @@
         </div>
         <div>
           <div class="example-card-wrapper">
-            <div class="card card-img-top">
-              <figure class="card-img-wrapper">
+            <div class="card card-media-top">
+              <figure class="card-media-wrapper">
                 <img class="img-object-fit" src="assets/test-image-2.jpg" alt="" />
               </figure>
               <div class="card-content">
@@ -547,8 +571,8 @@
             </div>
           </div>
           <div class="example-card-wrapper">
-            <div class="card card-img-bottom">
-              <figure class="card-img-wrapper">
+            <div class="card card-media-bottom">
+              <figure class="card-media-wrapper">
                 <img class="img-object-fit" src="assets/test-image-2.jpg" alt="" />
               </figure>
               <div class="card-content">
@@ -566,8 +590,8 @@
         </div>
         <div>
           <div class="example-card-wrapper-2">
-            <div class="card card-horizontal card-img-left">
-              <figure class="card-img-wrapper">
+            <div class="card card-horizontal card-media-left">
+              <figure class="card-media-wrapper">
                 <img class="img-object-fit" src="assets/test-image.jpg" alt="" />
               </figure>
               <div class="card-content">
@@ -583,8 +607,8 @@
             </div>
           </div>
           <div class="example-card-wrapper-2">
-            <div class="card card-horizontal card-img-right">
-              <figure class="card-img-wrapper">
+            <div class="card card-horizontal card-media-right">
+              <figure class="card-media-wrapper">
                 <img class="img-object-fit" src="assets/test-image.jpg" alt="" />
               </figure>
               <div class="card-content">
@@ -629,40 +653,81 @@
       </section>
       <section id="table">
         <h4 class="example-title">Table</h4>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Teams</th>
-              <th>Games</th>
-              <th>Points</th>
-              <th>Goals</th>
-              <th>Last 5 Game</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Liverpool</td>
-              <td>29</td>
-              <td>82</td>
-              <td>66</td>
-              <td>W L W W W</td>
-            </tr>
-            <tr>
-              <td>Manchester City</td>
-              <td>28</td>
-              <td>57</td>
-              <td>68</td>
-              <td>L W W L W</td>
-            </tr>
-            <tr>
-              <td>Leicester City</td>
-              <td>29</td>
-              <td>53</td>
-              <td>58</td>
-              <td>W L L D D</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Teams</th>
+                <th>Games</th>
+                <th>Points</th>
+                <th>Goals</th>
+                <th>Last 5 Game</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Liverpool</td>
+                <td>29</td>
+                <td>82</td>
+                <td>66</td>
+                <td>W L W W W</td>
+              </tr>
+              <tr>
+                <td>Manchester City</td>
+                <td>28</td>
+                <td>57</td>
+                <td>68</td>
+                <td>L W W L W</td>
+              </tr>
+              <tr>
+                <td>Leicester City</td>
+                <td>29</td>
+                <td>53</td>
+                <td>58</td>
+                <td>W L L D D</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h5 class="example-title" style="margin-top: 32px;">Table with Border</h5>
+
+        <div class="table-wrapper">
+          <table class="table table-border">
+            <thead>
+              <tr>
+                <th>Teams</th>
+                <th>Games</th>
+                <th>Points</th>
+                <th>Goals</th>
+                <th>Last 5 Game</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Liverpool</td>
+                <td>29</td>
+                <td>82</td>
+                <td>66</td>
+                <td>W L W W W</td>
+              </tr>
+              <tr>
+                <td>Manchester City</td>
+                <td>28</td>
+                <td>57</td>
+                <td>68</td>
+                <td>L W W L W</td>
+              </tr>
+              <tr>
+                <td>Leicester City</td>
+                <td>29</td>
+                <td>53</td>
+                <td>58</td>
+                <td>W L L D D</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section id="dropdown">
         <h4 class="example-title">Dropdown</h4>
@@ -720,19 +785,40 @@
             <div class="progress-circle small">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
             <div class="progress-circle">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
             <div class="progress-circle large">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
           </div>
@@ -741,31 +827,66 @@
             <div class="progress-circle">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
             <div class="progress-circle blue">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
             <div class="progress-circle green">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
             <div class="progress-circle yellow">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
             <div class="progress-circle red">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
                 <circle class="progress-circle-back" cx="40" cy="40" r="35" fill="none"></circle>
-                <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
+                <circle
+                  class="progress-circle-value"
+                  cx="40"
+                  cy="40"
+                  r="33"
+                  fill="none"
+                  style="stroke-dashoffset: 240"
+                ></circle>
               </svg>
             </div>
           </div>
@@ -779,13 +900,11 @@
         <h4 class="example-title">Loading Circles</h4>
         <div class="progress-circle loading circle-turn-pieces small">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-            <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
             <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
           </svg>
         </div>
         <div class="progress-circle loading circle-turn small" style="margin-top: 10px;">
           <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-            <circle class="progress-circle-back" cx="40" cy="40" r="33" fill="none"></circle>
             <circle class="progress-circle-value" cx="40" cy="40" r="33" fill="none"></circle>
           </svg>
         </div>
@@ -945,7 +1064,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col col">
+              <div class="col">
                 <span class="col-test">col-100</span>
               </div>
             </div>

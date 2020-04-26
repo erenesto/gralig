@@ -3,9 +3,9 @@
   height: 5.6rem;
   min-height: 5.6rem;
   border-bottom: 1px solid $color-border;
-  @include themify($themes) {
-    background-color: themed("colorCardBg");
-    border-color: themed("colorBorder");
+  @include moder($modes) {
+    background-color: mode("colorCardBg");
+    border-color: mode("colorBorder");
   }
   @include min-width($breakpoint-xs) {
     height: 7rem;

@@ -7,8 +7,8 @@
     height: $progress-bar;
     background-color: $color-lighter;
     border-radius: $border-radius;
-    @include themify($themes) {
-      background-color: themed("colorCardBg");
+    @include moder($modes) {
+      background-color: mode("colorCardBg");
     }
     &.small {
       height: $progress-bar-s;
@@ -64,15 +64,15 @@
     }
     &-back {
       fill: $color-lighter;
-      @include themify($themes) {
-        fill: themed("colorCardBg");
+      @include moder($modes) {
+        fill: mode("colorCardBg");
       }
     }
     &-value {
       // dashoffset 380 = 0% & 147 = 100%
       stroke: $color-secondary;
       stroke-dasharray: 380;
-      stroke-dashoffset: 240;
+      stroke-dashoffset: 380;
       transform: rotate(-90deg);
       transform-origin: center;
     }

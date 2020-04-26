@@ -37,9 +37,9 @@
   left: 0;
   height: auto;
   background-color: $color-background;
-  @include themify($themes) {
+  @include moder($modes) {
     border: 0;
-    background-color: themed("colorCardBg");
+    background-color: mode("colorCardBg");
   }
 
   &-item {
@@ -60,8 +60,8 @@
     margin-left: 12px;
     content: "";
     transition: $transition-default;
-    @include themify($themes) {
-      border-color: themed("colorIcon");
+    @include moder($modes) {
+      border-color: mode("colorIcon");
     }
   }
   &:focus {

@@ -28,8 +28,8 @@
     }
     .progress-circle-value {
       stroke: $color-light;
-      @include themify($themes) {
-        stroke: themed("colorLoadings");
+      @include moder($modes) {
+        stroke: mode("colorLoadings");
       }
     }
     &.circle-turn-pieces {
@@ -91,8 +91,8 @@
     background: $color-light;
     border-radius: $border-radius;
     margin-inline: 2px;
-    @include themify($themes) {
-      background: themed("colorLoadings");
+    @include moder($modes) {
+      background: mode("colorLoadings");
     }
     &.dot-1 {
       animation-delay: 0s;

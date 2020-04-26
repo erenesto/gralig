@@ -9,8 +9,8 @@
   border-radius: $border-radius;
   transform: translate(-50%, -50%);
   transition: $transition-secondary;
-  @include themify($themes) {
-    background-color: themed("colorCardBg");
+  @include moder($modes) {
+    background-color: mode("colorCardBg");
   }
   @include min-width($breakpoint-l) {
     width: 72rem;
@@ -25,13 +25,13 @@
     left: 0;
     background-color: rgba($color: $color-main, $alpha: 0.8);
     cursor: default;
-    @include themify($themes) {
-      background-color: rgba($color: themed("colorMain"), $alpha: 0.5);
+    @include moder($modes) {
+      background-color: rgba($color: mode("colorMain"), $alpha: 0.5);
     }
     &:hover {
       background-color: rgba($color: $color-main, $alpha: 0.8);
-      @include themify($themes) {
-        background-color: rgba($color: themed("colorMain"), $alpha: 0.5);
+      @include moder($modes) {
+        background-color: rgba($color: mode("colorMain"), $alpha: 0.5);
       }
     }
   }
@@ -55,8 +55,8 @@
     border-bottom: 1px solid $color-border;
     padding-block: $space;
     padding-inline: $content-padding-inline;
-    @include themify($themes) {
-      border-color: themed("colorBorder");
+    @include moder($modes) {
+      border-color: mode("colorBorder");
     }
   }
   &-body {
@@ -68,8 +68,8 @@
     border-top: 1px solid $color-border;
     padding-block: $space;
     padding-inline: $content-padding-inline;
-    @include themify($themes) {
-      border-color: themed("colorBorder");
+    @include moder($modes) {
+      border-color: mode("colorBorder");
     }
   }
   &-actions {

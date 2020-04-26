@@ -7,9 +7,9 @@
     border: 0;
     background-color: $color-switch-bg;
     border-radius: $border-radius;
-    @include themify($themes) {
-      border: 1px solid themed("colorBorder");
-      background-color: themed("colorCardBg");
+    @include moder($modes) {
+      border: 1px solid mode("colorBorder");
+      background-color: mode("colorCardBg");
     }
   }
   .custom-form-label::after {
@@ -21,9 +21,9 @@
     border-radius: $border-radius;
     opacity: 1;
     transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in, transform 0.3s ease-in-out;
-    @include themify($themes) {
-      background-color: themed("colorBorder");
-      border-color: themed("colorBorder");
+    @include moder($modes) {
+      background-color: mode("colorBorder");
+      border-color: mode("colorBorder");
     }
   }
 
@@ -31,8 +31,8 @@
     &::before {
       border: 0;
       background: $color-main;
-      @include themify($themes) {
-        background-color: themed("colorMain");
+      @include moder($modes) {
+        background-color: mode("colorMain");
       }
     }
     &::after {
@@ -40,8 +40,8 @@
       background-color: $color-lighter;
       opacity: 1;
       transform: translateX(2rem);
-      @include themify($themes) {
-        background-color: themed("colorBackground");
+      @include moder($modes) {
+        background-color: mode("colorBackground");
       }
     }
   }

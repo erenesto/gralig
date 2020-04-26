@@ -9,7 +9,7 @@ code,
 kbd,
 samp {
   font-family: Consolas, Menlo, Courier, monospace;
-  font-size: 0.875em;
+  font-size: 0.75em;
 }
 
 code {
@@ -18,9 +18,9 @@ code {
   background-color: $color-code;
   border-radius: $border-radius;
   margin-inline: 1px;
-  @include themify($themes) {
-    border: 1px solid themed("colorBorder");
-    background-color: themed("colorCode");
+  @include moder($modes) {
+    border: 1px solid mode("colorBorder");
+    background-color: mode("colorCode");
   }
 }
 
@@ -42,8 +42,8 @@ h6 {
 .subheading {
   color: $color-font-secondary;
   font-weight: $font-normal;
-  @include themify($themes) {
-    color: themed("colorFontSecondary");
+  @include moder($modes) {
+    color: mode("colorFontSecondary");
   }
 }
 
@@ -75,16 +75,17 @@ h6 {
 a {
   color: $color-link-font;
   cursor: pointer;
+  font-weight: $font-thin;
   text-decoration: none;
-  @include themify($themes) {
-    color: themed("colorLinkFont");
+  @include moder($modes) {
+    color: mode("colorLinkFont");
   }
   &:hover,
   &:focus {
     color: $color-link-hover;
     outline: none;
-    @include themify($themes) {
-      color: themed("colorLinkHover");
+    @include moder($modes) {
+      color: mode("colorLinkHover");
     }
   }
   &:not(.disabled):not([disabled]):not(.btn):not(.nav-link):not(.breadcrumb-link):hover {
@@ -98,8 +99,8 @@ a {
     opacity: 1;
     outline: none;
     user-select: none;
-    @include themify($themes) {
-      color: themed("colorMute");
+    @include moder($modes) {
+      color: mode("colorMute");
     }
   }
 }
@@ -108,8 +109,8 @@ a.current {
   font-weight: $font-bold;
   &:hover {
     color: $color-link-font;
-    @include themify($themes) {
-      color: themed("colorLinkFont");
+    @include moder($modes) {
+      color: mode("colorLinkFont");
     }
   }
 }
@@ -132,8 +133,8 @@ p {
 .text {
   &-secondary {
     color: $color-font-secondary;
-    @include themify($themes) {
-      color: themed("colorFontSecondary");
+    @include moder($modes) {
+      color: mode("colorFontSecondary");
     }
   }
   &-yellow {
@@ -198,14 +199,11 @@ p {
   }
   &-muted {
     color: $color-mute;
-    @include themify($themes) {
-      color: themed("colorMute");
+    @include moder($modes) {
+      color: mode("colorMute");
     }
   }
   &-marked {
     background-color: $color-mark;
-    @include themify($themes) {
-      color: themed("colorFont");
-    }
   }
 }

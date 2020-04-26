@@ -38,8 +38,8 @@ nav {
       content: "";
       transform: translateX(-50%);
       transition: $transition-default;
-      @include themify($themes) {
-        background-color: themed("colorLinkHover");
+      @include moder($modes) {
+        background-color: mode("colorLinkHover");
       }
     }
     &:hover {
@@ -54,8 +54,8 @@ nav {
     &.current::after {
       width: 4px;
       height: 4px;
-      @include themify($themes) {
-        background-color: themed("colorMain");
+      @include moder($modes) {
+        background-color: mode("colorMain");
       }
     }
   }

@@ -6,9 +6,9 @@
   margin-bottom: $space;
   border: 1px solid $color-border;
   border-radius: $border-radius;
-  @include themify($themes) {
-    background-color: themed("colorCardBg");
-    border-color: themed("cardOutlineBorder");
+  @include moder($modes) {
+    background-color: mode("colorCardBg");
+    border-color: mode("transparentColor");
   }
   &.card-horizontal {
     flex-direction: row;
@@ -19,11 +19,11 @@
     line-height: 1;
     padding-block: $content-padding-block;
     padding-inline: $content-padding-inline;
-    @include themify($themes) {
-      border-color: themed("colorBorder");
+    @include moder($modes) {
+      border-color: mode("colorBorder");
     }
   }
-  &-img-wrapper {
+  &-media-wrapper {
     overflow: hidden;
     flex: 1;
     margin-top: -1px;
@@ -35,8 +35,8 @@
       display: block;
     }
   }
-  &-img-bottom {
-    .card-img-wrapper {
+  &-media-bottom {
+    .card-media-wrapper {
       margin-top: 0;
       margin-bottom: -1px;
       border-bottom-left-radius: $border-radius;
@@ -49,8 +49,8 @@
     }
   }
 
-  &-img-left {
-    .card-img-wrapper {
+  &-media-left {
+    .card-media-wrapper {
       margin-right: 0;
       margin-bottom: -1px;
       border-bottom-left-radius: $border-radius;
@@ -59,8 +59,8 @@
       border-top-right-radius: 0;
     }
   }
-  &-img-right {
-    .card-img-wrapper {
+  &-media-right {
+    .card-media-wrapper {
       margin-bottom: -1px;
       margin-left: 0;
       border-bottom-right-radius: $border-radius;

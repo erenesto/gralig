@@ -8,9 +8,9 @@
   font-size: 1.4rem;
   line-height: $el-height-s;
   padding-inline: $content-padding-inline;
-  @include themify($themes) {
-    background-color: themed("colorAlert");
-    color: themed("colorAlertFont");
+  @include moder($modes) {
+    background-color: mode("colorAlert");
+    color: mode("colorAlertFont");
   }
   @include min-width($breakpoint-xs) {
     width: 42rem;

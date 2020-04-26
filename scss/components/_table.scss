@@ -1,14 +1,18 @@
 .table {
   width: 100%;
+  min-width: $breakpoint-xs;
   border-spacing: 0;
+  &-wrapper {
+    overflow-x: auto;
+  }
   td,
   th {
     border-bottom: 1px solid $color-border;
     padding-block: $space;
     padding-inline: $space-m;
     text-align: left;
-    @include themify($themes) {
-      border-color: themed("colorBorder");
+    @include moder($modes) {
+      border-color: mode("colorBorder");
     }
 
     &:first-child {
@@ -16,6 +20,18 @@
     }
     &:last-child {
       padding-right: 0;
+    }
+  }
+  &.table-bordered {
+    td,
+    th {
+      border: 1px solid $color-border;
+      &:first-child {
+        padding-left: $space-m;
+      }
+      &:last-child {
+        padding-right: $space-m;
+      }
     }
   }
 }

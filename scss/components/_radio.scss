@@ -14,8 +14,8 @@
     &:checked ~ .custom-form-label::before {
       border: 0;
       background-color: $color-main;
-      @include themify($themes) {
-        background-color: themed("colorMain");
+      @include moder($modes) {
+        background-color: mode("colorMain");
       }
     }
     &:checked ~ .custom-form-label::after {
@@ -26,8 +26,8 @@
       background-color: $color-background;
       opacity: 1;
       transform: scale(1);
-      @include themify($themes) {
-        background-color: themed("colorBackground");
+      @include moder($modes) {
+        background-color: mode("colorBackground");
       }
     }
   }
