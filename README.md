@@ -51,7 +51,7 @@ Gralig built for latest versions of modern browsers.
 
 ## Docs and Website
 
-Coming soon...
+You can use our website for documentation [gralig.com](https://gralig.com/)
 
 ## Contributing
 
