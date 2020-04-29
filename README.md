@@ -36,6 +36,7 @@ npm install gralig
 - Form Elements
 - Loading Elements
 - Progress Elements
+- Dark Mode
 - Flexbox based Grid
 
 ## Browser Support
