@@ -1,300 +1,386 @@
 .u-blue-bg {
-  background-color: $color-blue;
+  background-color: $color-blue !important;
 }
 .u-green-bg {
-  background-color: $color-green;
+  background-color: $color-green !important;
 }
 .u-yellow-bg {
-  background-color: $color-yellow;
+  background-color: $color-yellow !important;
 }
 .u-red-bg {
-  background-color: $color-red;
+  background-color: $color-red !important;
 }
 .u-blue-color {
-  color: $color-blue;
+  color: $color-blue !important;
 }
 .u-green-color {
-  color: $color-green;
+  color: $color-green !important;
 }
 .u-yellow-color {
-  color: $color-yellow;
+  color: $color-yellow !important;
 }
 .u-red-color {
-  color: $color-red;
+  color: $color-red !important;
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 .u-right-text {
-  text-align: right;
+  text-align: right !important;
 }
 .u-left-text {
-  text-align: left;
+  text-align: left !important;
 }
 .u-bold-text {
-  font-weight: $font-bold;
+  font-weight: $font-bold !important;
 }
 .u-normal-text {
-  font-weight: $font-normal;
+  font-weight: $font-normal !important;
 }
 .u-thin-text {
-  font-weight: $font-thin;
+  font-weight: $font-thin !important;
 }
 .u-width-100 {
-  width: 100%;
+  width: 100% !important;
 }
 .u-height-100 {
-  height: 100%;
+  height: 100% !important;
 }
 .u-img-responsive {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .u-none {
-  display: none;
+  display: none !important;
 }
 .u-block {
-  display: block;
+  display: block !important;
 }
 .u-inline {
-  display: inline;
+  display: inline !important;
 }
 .u-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 .u-flex {
-  display: flex;
+  display: flex !important;
 }
 .u-flex-col {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 .u-flex-row {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 .u-flex-ai-c {
-  align-items: center;
+  align-items: center !important;
 }
 .u-flex-ai-start {
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
 .u-flex-ai-end {
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 .u-flex-ai-sb {
-  align-items: space-between;
+  align-items: space-between !important;
 }
 .u-flex-jc-c {
-  justify-content: center;
+  justify-content: center !important;
 }
 .u-flex-jc-start {
-  justify-content: flex-start;
+  justify-content: flex-start !important;
 }
 .u-flex-jc-end {
-  justify-content: flex-end;
+  justify-content: flex-end !important;
 }
 .u-flex-jc-sb {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 .u-bg-cover {
-  background-size: cover;
+  background-size: cover !important;
 }
 .u-bg-contain {
-  background-size: contain;
+  background-size: contain !important;
 }
 .u-bg-norepeat {
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
 }
 .u-absolute {
-  position: absolute;
+  position: absolute !important;
 }
 .u-relative {
-  position: relative;
+  position: relative !important;
 }
 
-//color utilities
+.u-pd-inline-xxs {
+  padding-inline: $space-xxs !important;
+}
+.u-pd-inline-xs {
+  padding-inline: $space-xs !important;
+}
+.u-pd-inline-s {
+  padding-inline: $space-s !important;
+}
+.u-pd-inline-m {
+  padding-inline: $space-m !important;
+}
+.u-pd-inline-l {
+  padding-inline: $space-l !important;
+}
+.u-pd-inline-xl {
+  padding-inline: $space-xl !important;
+}
+.u-pd-inline-xxl {
+  padding-inline: $space-xxl !important;
+}
+
+.u-pd-block-xxs {
+  padding-block: $space-xxs !important;
+}
+.u-pd-block-xs {
+  padding-block: $space-xs !important;
+}
+.u-pd-block-s {
+  padding-block: $space-s !important;
+}
+.u-pd-block-m {
+  padding-block: $space-m !important;
+}
+.u-pd-block-l {
+  padding-block: $space-l !important;
+}
+.u-pd-block-xl {
+  padding-block: $space-xl !important;
+}
+.u-pd-block-xxl {
+  padding-block: $space-xxl !important;
+}
+
+.u-mg-inline-xxs {
+  margin-inline: $space-xxs !important;
+}
+.u-mg-inline-xs {
+  margin-inline: $space-xs !important;
+}
+.u-mg-inline-s {
+  margin-inline: $space-s !important;
+}
+.u-mg-inline-m {
+  margin-inline: $space-m !important;
+}
+.u-mg-inline-l {
+  margin-inline: $space-l !important;
+}
+.u-mg-inline-xl {
+  margin-inline: $space-xl !important;
+}
+.u-mg-inline-xxl {
+  margin-inline: $space-xxl !important;
+}
+
+.u-mg-block-xxs {
+  margin-block: $space-xxs !important;
+}
+.u-mg-block-xs {
+  margin-block: $space-xs !important;
+}
+.u-mg-block-s {
+  margin-block: $space-s !important;
+}
+.u-mg-block-m {
+  margin-block: $space-m !important;
+}
+.u-mg-block-l {
+  margin-block: $space-l !important;
+}
+.u-mg-block-xl {
+  margin-block: $space-xl !important;
+}
+.u-mg-block-xxl {
+  margin-block: $space-xxl !important;
+}
 
 .blackpearl {
-  color: $blackpearl;
+  color: $blackpearl !important;
 }
 .woodsmoke {
-  color: $woodsmoke;
+  color: $woodsmoke !important;
 }
 .shark {
-  color: $shark;
+  color: $shark !important;
 }
 .abbey {
-  color: $abbey;
+  color: $abbey !important;
 }
 .raven {
-  color: $raven;
+  color: $raven !important;
 }
 .oslo {
-  color: $oslo;
+  color: $oslo !important;
 }
 .mischka {
-  color: $mischka;
+  color: $mischka !important;
 }
 .ghost {
-  color: $ghost;
+  color: $ghost !important;
 }
 .iron {
-  color: $iron;
+  color: $iron !important;
 }
 .porcelain {
-  color: $porcelain;
+  color: $porcelain !important;
 }
 .summer-lighter {
-  color: $summer-lighter;
+  color: $summer-lighter !important;
 }
 .summer-light {
-  color: $summer-light;
+  color: $summer-light !important;
 }
 .summer {
-  color: $summer;
+  color: $summer !important;
 }
 .summer-dark {
-  color: $summer-dark;
+  color: $summer-dark !important;
 }
 .summer-darker {
-  color: $summer-darker;
+  color: $summer-darker !important;
 }
 .shamrock-lighter {
-  color: $shamrock-lighter;
+  color: $shamrock-lighter !important;
 }
 .shamrock-light {
-  color: $shamrock-light;
+  color: $shamrock-light !important;
 }
 .shamrock {
-  color: $shamrock;
+  color: $shamrock !important;
 }
 .shamrock-dark {
-  color: $shamrock-dark;
+  color: $shamrock-dark !important;
 }
 .shamrock-darker {
-  color: $shamrock-darker;
+  color: $shamrock-darker !important;
 }
 .tulip-lighter {
-  color: $tulip-lighter;
+  color: $tulip-lighter !important;
 }
 .tulip-light {
-  color: $tulip-light;
+  color: $tulip-light !important;
 }
 .tulip {
-  color: $tulip;
+  color: $tulip !important;
 }
 .tulip-dark {
-  color: $tulip-dark;
+  color: $tulip-dark !important;
 }
 .tulip-darker {
-  color: $tulip-darker;
+  color: $tulip-darker !important;
 }
 .flame-lighter {
-  color: $flame-lighter;
+  color: $flame-lighter !important;
 }
 .flame-light {
-  color: $flame-light;
+  color: $flame-light !important;
 }
 .flame {
-  color: $flame;
+  color: $flame !important;
 }
 .flame-dark {
-  color: $flame-dark;
+  color: $flame-dark !important;
 }
 .flame-darker {
-  color: $flame-darker;
+  color: $flame-darker !important;
 }
 
 // bg colors
 
 .blackpearl-bg {
-  background-color: $blackpearl;
+  background-color: $blackpearl !important;
 }
 .woodsmoke-bg {
-  background-color: $woodsmoke;
+  background-color: $woodsmoke !important;
 }
 .shark-bg {
-  background-color: $shark;
+  background-color: $shark !important;
 }
 .abbey-bg {
-  background-color: $abbey;
+  background-color: $abbey !important;
 }
 .raven-bg {
-  background-color: $raven;
+  background-color: $raven !important;
 }
 .oslo-bg {
-  background-color: $oslo;
+  background-color: $oslo !important;
 }
 .mischka-bg {
-  background-color: $mischka;
+  background-color: $mischka !important;
 }
 .ghost-bg {
-  background-color: $ghost;
+  background-color: $ghost !important;
 }
 .iron-bg {
-  background-color: $iron;
+  background-color: $iron !important;
 }
 .porcelain-bg {
-  background-color: $porcelain;
+  background-color: $porcelain !important;
 }
 .summer-lighter-bg {
-  background-color: $summer-lighter;
+  background-color: $summer-lighter !important;
 }
 .summer-light-bg {
-  background-color: $summer-light;
+  background-color: $summer-light !important;
 }
 .summer-bg {
-  background-color: $summer;
+  background-color: $summer !important;
 }
 .summer-dark-bg {
-  background-color: $summer-dark;
+  background-color: $summer-dark !important;
 }
 .summer-darker-bg {
-  background-color: $summer-darker;
+  background-color: $summer-darker !important;
 }
 .shamrock-lighter-bg {
-  background-color: $shamrock-lighter;
+  background-color: $shamrock-lighter !important;
 }
 .shamrock-light-bg {
-  background-color: $shamrock-light;
+  background-color: $shamrock-light !important;
 }
 .shamrock-bg {
-  background-color: $shamrock;
+  background-color: $shamrock !important;
 }
 .shamrock-dark-bg {
-  background-color: $shamrock-dark;
+  background-color: $shamrock-dark !important;
 }
 .shamrock-darker-bg {
-  background-color: $shamrock-darker;
+  background-color: $shamrock-darker !important;
 }
 .tulip-lighter-bg {
-  background-color: $tulip-lighter;
+  background-color: $tulip-lighter !important;
 }
 .tulip-light-bg {
-  background-color: $tulip-light;
+  background-color: $tulip-light !important;
 }
 .tulip-bg {
-  background-color: $tulip;
+  background-color: $tulip !important;
 }
 .tulip-dark-bg {
-  background-color: $tulip-dark;
+  background-color: $tulip-dark !important;
 }
 .tulip-darker-bg {
-  background-color: $tulip-darker;
+  background-color: $tulip-darker !important;
 }
 .flame-lighter-bg {
-  background-color: $flame-lighter;
+  background-color: $flame-lighter !important;
 }
 .flame-light-bg {
-  background-color: $flame-light;
+  background-color: $flame-light !important;
 }
 .flame-bg {
-  background-color: $flame;
+  background-color: $flame !important;
 }
 .flame-dark-bg {
-  background-color: $flame-dark;
+  background-color: $flame-dark !important;
 }
 .flame-darker-bg {
-  background-color: $flame-darker;
+  background-color: $flame-darker !important;
 }
