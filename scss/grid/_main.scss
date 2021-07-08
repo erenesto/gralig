@@ -13,7 +13,7 @@
   }
 }
 
-.gra-row {
+.row {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -24,7 +24,7 @@
     margin-left: -$space;
   }
 
-  &.gra-row-mobile {
+  &.row-mobile {
     width: calc(100% + #{$space} * 2);
     flex-direction: row;
     margin-left: -$space;
