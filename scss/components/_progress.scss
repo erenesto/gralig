@@ -1,4 +1,4 @@
-.progress {
+.gra-progress {
   &-bar {
     display: inline-block;
     overflow: hidden;
@@ -77,22 +77,22 @@
       transform-origin: center;
     }
     &.blue {
-      .progress-circle-value {
+      .gra-progress-circle-value {
         stroke: $color-blue;
       }
     }
     &.green {
-      .progress-circle-value {
+      .gra-progress-circle-value {
         stroke: $color-green;
       }
     }
     &.yellow {
-      .progress-circle-value {
+      .gra-progress-circle-value {
         stroke: $color-yellow;
       }
     }
     &.red {
-      .progress-circle-value {
+      .gra-progress-circle-value {
         stroke: $color-red;
       }
     }

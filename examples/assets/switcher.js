@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", event => {
 
   switcher.addEventListener("click", function(e) {
     if (e.target.checked) {
-      localStorage.setItem("mode", "dark");
+      localStorage.setItem("mode", "gra-dark");
       body.classList = "dark";
     } else {
       localStorage.setItem("mode", "");

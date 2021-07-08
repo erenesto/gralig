@@ -108,7 +108,7 @@ select {
 input[type="search"] {
   padding-left: $content-padding-inline + $space-m;
 }
-.search-input {
+.gra-search-input {
   position: relative;
   input[type="search"] {
     padding-left: $content-padding-inline + $space-m;
@@ -129,31 +129,31 @@ input[type="search"] {
   }
 }
 
-.form-group {
+.gra-form-group {
   margin-bottom: $space-l;
 }
 
-.form-actions {
-  .btn:not(:first-child) {
+.gra-form-actions {
+  .gra-btn:not(:first-child) {
     margin-left: $space-xs;
   }
 }
 
-.custom-form-control {
+.gra-custom-form-control {
   display: block;
   position: relative;
   margin-bottom: $space;
   padding-left: calc(1.6rem + #{$space-s});
-  .custom-form-input {
+  .gra-custom-form-input {
     position: absolute;
     left: -9999px;
     opacity: 0;
-    &:focus ~ .custom-form-label::before {
+    &:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow;
     }
   }
-  .custom-form-input:disabled ~ .custom-form-label,
-  .custom-form-input:disabled:checked ~ .custom-form-label {
+  .gra-custom-form-input:disabled ~ .gra-custom-form-label,
+  .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label {
     color: $color-mute;
     cursor: not-allowed;
     @include moder($modes) {
@@ -168,7 +168,7 @@ input[type="search"] {
       }
     }
   }
-  .custom-form-label {
+  .gra-custom-form-label {
     display: inline-block;
     margin-bottom: 0;
     font-weight: $font-normal;
@@ -199,58 +199,58 @@ input[type="search"] {
   }
 
   &.blue {
-    .custom-form-input:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-blue;
       @include moder($modes) {
         background-color: $color-blue;
       }
     }
-    .custom-form-input:checked:focus ~ .custom-form-label::before {
+    .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-blue;
     }
-    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }
   &.green {
-    .custom-form-input:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-green;
       @include moder($modes) {
         background-color: $color-green;
       }
     }
-    .custom-form-input:checked:focus ~ .custom-form-label::before {
+    .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-green;
     }
-    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }
   &.yellow {
-    .custom-form-input:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-yellow;
       @include moder($modes) {
         background-color: $color-yellow;
       }
     }
-    .custom-form-input:checked:focus ~ .custom-form-label::before {
+    .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-yellow;
     }
-    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }
   &.red {
-    .custom-form-input:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-red;
       @include moder($modes) {
         background-color: $color-red;
       }
     }
-    .custom-form-input:checked:focus ~ .custom-form-label::before {
+    .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-red;
     }
-    .custom-form-input:disabled:checked ~ .custom-form-label::before {
+    .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }

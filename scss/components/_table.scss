@@ -1,4 +1,4 @@
-.table {
+.gra-table {
   width: 100%;
   min-width: $breakpoint-xs;
   border-spacing: 0;
@@ -22,7 +22,7 @@
       padding-right: 0;
     }
   }
-  &.table-bordered {
+  &.gra-table-bordered {
     td,
     th {
       border: 1px solid $color-border;

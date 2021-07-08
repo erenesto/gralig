@@ -1,4 +1,4 @@
-.list {
+.gra-list {
   padding-block: $content-padding-block;
   padding-inline: $content-padding-inline;
   > :first-child {
@@ -22,7 +22,7 @@
   }
 }
 
-.block-list {
+.gra-block-list {
   height: auto;
   border: 1px solid $color-border;
   border-radius: $border-radius;

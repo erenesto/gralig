@@ -1,6 +1,6 @@
-.progress-bar {
-  &.loading {
-    .progress-bar-value {
+.gra-progress-bar {
+  &.gra-loading {
+    .gra-progress-bar-value {
       width: 38%;
       animation-duration: 1.4s;
       animation-iteration-count: infinite;
@@ -18,22 +18,22 @@
   }
 }
 
-.progress-circle {
-  &.loading {
+.gra-progress-circle {
+  &.gra-loading {
     display: flex;
     width: 100%;
     justify-content: center;
-    .progress-circle-back {
+    .gra-progress-circle-back {
       fill: none;
     }
-    .progress-circle-value {
+    .gra-progress-circle-value {
       stroke: $color-light;
       @include moder($modes) {
         stroke: mode("colorLoadings");
       }
     }
-    &.circle-turn-pieces {
-      .progress-circle-value {
+    &.gra-circle-turn-pieces {
+      .gra-progress-circle-value {
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
         animation-name: circle-turn-pieces;
@@ -41,8 +41,8 @@
         stroke-dasharray: 52;
       }
     }
-    &.circle-turn {
-      .progress-circle-value {
+    &.gra-circle-turn {
+      .gra-progress-circle-value {
         animation-duration: 1.2s;
         animation-iteration-count: infinite;
         animation-name: circle-turn;
@@ -74,7 +74,7 @@
   }
 }
 
-.loading {
+.gra-loading {
   &-dots {
     display: flex;
     width: 100%;

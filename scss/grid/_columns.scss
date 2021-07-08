@@ -1,4 +1,4 @@
-.col {
+.gra-col {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -117,8 +117,8 @@
   }
 }
 
-.row.row-mobile {
-  .col {
+.gra-row.gra-row-mobile {
+  .gra-col {
     padding-inline: $space;
     &.col-10 {
       max-width: 10%;

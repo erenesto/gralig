@@ -1,4 +1,4 @@
-.alert {
+.gra-alert {
   display: inline-block;
   min-width: 100%;
   height: calc(#{$el-height-s} - 1px);
@@ -16,16 +16,16 @@
     width: 42rem;
     min-width: 42rem;
   }
-  &.alert-green {
+  &.green {
     background-color: $color-green;
   }
-  &.alert-yellow {
+  &.yellow {
     background-color: $color-yellow;
   }
-  &.alert-blue {
+  &.blue {
     background-color: $color-blue;
   }
-  &.alert-red {
+  &.red {
     background-color: $color-red;
   }
 }

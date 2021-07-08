@@ -1,4 +1,4 @@
-.container {
+.gra-container {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   }
 }
 
-.row {
+.gra-row {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -24,7 +24,7 @@
     margin-left: -$space;
   }
 
-  &.row-mobile {
+  &.gra-row-mobile {
     width: calc(100% + #{$space} * 2);
     flex-direction: row;
     margin-left: -$space;

@@ -1,386 +1,386 @@
-.u-blue-bg {
+.gra-blue-bg {
   background-color: $color-blue !important;
 }
-.u-green-bg {
+.gra-green-bg {
   background-color: $color-green !important;
 }
-.u-yellow-bg {
+.gra-yellow-bg {
   background-color: $color-yellow !important;
 }
-.u-red-bg {
+.gra-red-bg {
   background-color: $color-red !important;
 }
-.u-blue-color {
+.gra-blue-color {
   color: $color-blue !important;
 }
-.u-green-color {
+.gra-green-color {
   color: $color-green !important;
 }
-.u-yellow-color {
+.gra-yellow-color {
   color: $color-yellow !important;
 }
-.u-red-color {
+.gra-red-color {
   color: $color-red !important;
 }
 
-.u-center-text {
+.gra-center-text {
   text-align: center !important;
 }
-.u-right-text {
+.gra-right-text {
   text-align: right !important;
 }
-.u-left-text {
+.gra-left-text {
   text-align: left !important;
 }
-.u-bold-text {
+.gra-bold-text {
   font-weight: $font-bold !important;
 }
-.u-normal-text {
+.gra-normal-text {
   font-weight: $font-normal !important;
 }
-.u-thin-text {
+.gra-thin-text {
   font-weight: $font-thin !important;
 }
-.u-width-100 {
+.gra-width-100 {
   width: 100% !important;
 }
-.u-height-100 {
+.gra-height-100 {
   height: 100% !important;
 }
-.u-img-responsive {
+.gra-img-responsive {
   width: 100% !important;
   height: auto !important;
 }
 
-.u-none {
+.gra-none {
   display: none !important;
 }
-.u-block {
+.gra-block {
   display: block !important;
 }
-.u-inline {
+.gra-inline {
   display: inline !important;
 }
-.u-inline-block {
+.gra-inline-block {
   display: inline-block !important;
 }
-.u-flex {
+.gra-flex {
   display: flex !important;
 }
-.u-flex-col {
+.gra-flex-col {
   flex-direction: column !important;
 }
-.u-flex-row {
+.gra-flex-row {
   flex-direction: row !important;
 }
-.u-flex-ai-c {
+.gra-flex-ai-c {
   align-items: center !important;
 }
-.u-flex-ai-start {
+.gra-flex-ai-start {
   align-items: flex-start !important;
 }
-.u-flex-ai-end {
+.gra-flex-ai-end {
   align-items: flex-end !important;
 }
-.u-flex-ai-sb {
+.gra-flex-ai-sb {
   align-items: space-between !important;
 }
-.u-flex-jc-c {
+.gra-flex-jc-c {
   justify-content: center !important;
 }
-.u-flex-jc-start {
+.gra-flex-jc-start {
   justify-content: flex-start !important;
 }
-.u-flex-jc-end {
+.gra-flex-jc-end {
   justify-content: flex-end !important;
 }
-.u-flex-jc-sb {
+.gra-flex-jc-sb {
   justify-content: space-between !important;
 }
-.u-bg-cover {
+.gra-bg-cover {
   background-size: cover !important;
 }
-.u-bg-contain {
+.gra-bg-contain {
   background-size: contain !important;
 }
-.u-bg-norepeat {
+.gra-bg-norepeat {
   background-repeat: no-repeat !important;
 }
-.u-absolute {
+.gra-absolute {
   position: absolute !important;
 }
-.u-relative {
+.gra-relative {
   position: relative !important;
 }
 
-.u-pd-inline-xxs {
+.gra-pd-inline-xxs {
   padding-inline: $space-xxs !important;
 }
-.u-pd-inline-xs {
+.gra-pd-inline-xs {
   padding-inline: $space-xs !important;
 }
-.u-pd-inline-s {
+.gra-pd-inline-s {
   padding-inline: $space-s !important;
 }
-.u-pd-inline-m {
+.gra-pd-inline-m {
   padding-inline: $space-m !important;
 }
-.u-pd-inline-l {
+.gra-pd-inline-l {
   padding-inline: $space-l !important;
 }
-.u-pd-inline-xl {
+.gra-pd-inline-xl {
   padding-inline: $space-xl !important;
 }
-.u-pd-inline-xxl {
+.gra-pd-inline-xxl {
   padding-inline: $space-xxl !important;
 }
 
-.u-pd-block-xxs {
+.gra-pd-block-xxs {
   padding-block: $space-xxs !important;
 }
-.u-pd-block-xs {
+.gra-pd-block-xs {
   padding-block: $space-xs !important;
 }
-.u-pd-block-s {
+.gra-pd-block-s {
   padding-block: $space-s !important;
 }
-.u-pd-block-m {
+.gra-pd-block-m {
   padding-block: $space-m !important;
 }
-.u-pd-block-l {
+.gra-pd-block-l {
   padding-block: $space-l !important;
 }
-.u-pd-block-xl {
+.gra-pd-block-xl {
   padding-block: $space-xl !important;
 }
-.u-pd-block-xxl {
+.gra-pd-block-xxl {
   padding-block: $space-xxl !important;
 }
 
-.u-mg-inline-xxs {
+.gra-mg-inline-xxs {
   margin-inline: $space-xxs !important;
 }
-.u-mg-inline-xs {
+.gra-mg-inline-xs {
   margin-inline: $space-xs !important;
 }
-.u-mg-inline-s {
+.gra-mg-inline-s {
   margin-inline: $space-s !important;
 }
-.u-mg-inline-m {
+.gra-mg-inline-m {
   margin-inline: $space-m !important;
 }
-.u-mg-inline-l {
+.gra-mg-inline-l {
   margin-inline: $space-l !important;
 }
-.u-mg-inline-xl {
+.gra-mg-inline-xl {
   margin-inline: $space-xl !important;
 }
-.u-mg-inline-xxl {
+.gra-mg-inline-xxl {
   margin-inline: $space-xxl !important;
 }
 
-.u-mg-block-xxs {
+.gra-mg-block-xxs {
   margin-block: $space-xxs !important;
 }
-.u-mg-block-xs {
+.gra-mg-block-xs {
   margin-block: $space-xs !important;
 }
-.u-mg-block-s {
+.gra-mg-block-s {
   margin-block: $space-s !important;
 }
-.u-mg-block-m {
+.gra-mg-block-m {
   margin-block: $space-m !important;
 }
-.u-mg-block-l {
+.gra-mg-block-l {
   margin-block: $space-l !important;
 }
-.u-mg-block-xl {
+.gra-mg-block-xl {
   margin-block: $space-xl !important;
 }
-.u-mg-block-xxl {
+.gra-mg-block-xxl {
   margin-block: $space-xxl !important;
 }
 
-.blackpearl {
+.gra-blackpearl {
   color: $blackpearl !important;
 }
-.woodsmoke {
+.gra-woodsmoke {
   color: $woodsmoke !important;
 }
-.shark {
+.gra-shark {
   color: $shark !important;
 }
-.abbey {
+.gra-abbey {
   color: $abbey !important;
 }
-.raven {
+.gra-raven {
   color: $raven !important;
 }
-.oslo {
+.gra-oslo {
   color: $oslo !important;
 }
-.mischka {
+.gra-mischka {
   color: $mischka !important;
 }
-.ghost {
+.gra-ghost {
   color: $ghost !important;
 }
-.iron {
+.gra-iron {
   color: $iron !important;
 }
-.porcelain {
+.gra-porcelain {
   color: $porcelain !important;
 }
-.summer-lighter {
+.gra-summer-lighter {
   color: $summer-lighter !important;
 }
-.summer-light {
+.gra-summer-light {
   color: $summer-light !important;
 }
-.summer {
+.gra-summer {
   color: $summer !important;
 }
-.summer-dark {
+.gra-summer-dark {
   color: $summer-dark !important;
 }
-.summer-darker {
+.gra-summer-darker {
   color: $summer-darker !important;
 }
-.shamrock-lighter {
+.gra-shamrock-lighter {
   color: $shamrock-lighter !important;
 }
-.shamrock-light {
+.gra-shamrock-light {
   color: $shamrock-light !important;
 }
-.shamrock {
+.gra-shamrock {
   color: $shamrock !important;
 }
-.shamrock-dark {
+.gra-shamrock-dark {
   color: $shamrock-dark !important;
 }
-.shamrock-darker {
+.gra-shamrock-darker {
   color: $shamrock-darker !important;
 }
-.tulip-lighter {
+.gra-tulip-lighter {
   color: $tulip-lighter !important;
 }
-.tulip-light {
+.gra-tulip-light {
   color: $tulip-light !important;
 }
-.tulip {
+.gra-tulip {
   color: $tulip !important;
 }
-.tulip-dark {
+.gra-tulip-dark {
   color: $tulip-dark !important;
 }
-.tulip-darker {
+.gra-tulip-darker {
   color: $tulip-darker !important;
 }
-.flame-lighter {
+.gra-flame-lighter {
   color: $flame-lighter !important;
 }
-.flame-light {
+.gra-flame-light {
   color: $flame-light !important;
 }
-.flame {
+.gra-flame {
   color: $flame !important;
 }
-.flame-dark {
+.gra-flame-dark {
   color: $flame-dark !important;
 }
-.flame-darker {
+.gra-flame-darker {
   color: $flame-darker !important;
 }
 
 // bg colors
 
-.blackpearl-bg {
+.gra-blackpearl-bg {
   background-color: $blackpearl !important;
 }
-.woodsmoke-bg {
+.gra-woodsmoke-bg {
   background-color: $woodsmoke !important;
 }
-.shark-bg {
+.gra-shark-bg {
   background-color: $shark !important;
 }
-.abbey-bg {
+.gra-abbey-bg {
   background-color: $abbey !important;
 }
-.raven-bg {
+.gra-raven-bg {
   background-color: $raven !important;
 }
-.oslo-bg {
+.gra-oslo-bg {
   background-color: $oslo !important;
 }
-.mischka-bg {
+.gra-mischka-bg {
   background-color: $mischka !important;
 }
-.ghost-bg {
+.gra-ghost-bg {
   background-color: $ghost !important;
 }
-.iron-bg {
+.gra-iron-bg {
   background-color: $iron !important;
 }
-.porcelain-bg {
+.gra-porcelain-bg {
   background-color: $porcelain !important;
 }
-.summer-lighter-bg {
+.gra-summer-lighter-bg {
   background-color: $summer-lighter !important;
 }
-.summer-light-bg {
+.gra-summer-light-bg {
   background-color: $summer-light !important;
 }
-.summer-bg {
+.gra-summer-bg {
   background-color: $summer !important;
 }
-.summer-dark-bg {
+.gra-summer-dark-bg {
   background-color: $summer-dark !important;
 }
-.summer-darker-bg {
+.gra-summer-darker-bg {
   background-color: $summer-darker !important;
 }
-.shamrock-lighter-bg {
+.gra-shamrock-lighter-bg {
   background-color: $shamrock-lighter !important;
 }
-.shamrock-light-bg {
+.gra-shamrock-light-bg {
   background-color: $shamrock-light !important;
 }
-.shamrock-bg {
+.gra-shamrock-bg {
   background-color: $shamrock !important;
 }
-.shamrock-dark-bg {
+.gra-shamrock-dark-bg {
   background-color: $shamrock-dark !important;
 }
-.shamrock-darker-bg {
+.gra-shamrock-darker-bg {
   background-color: $shamrock-darker !important;
 }
-.tulip-lighter-bg {
+.gra-tulip-lighter-bg {
   background-color: $tulip-lighter !important;
 }
-.tulip-light-bg {
+.gra-tulip-light-bg {
   background-color: $tulip-light !important;
 }
-.tulip-bg {
+.gra-tulip-bg {
   background-color: $tulip !important;
 }
-.tulip-dark-bg {
+.gra-tulip-dark-bg {
   background-color: $tulip-dark !important;
 }
-.tulip-darker-bg {
+.gra-tulip-darker-bg {
   background-color: $tulip-darker !important;
 }
-.flame-lighter-bg {
+.gra-flame-lighter-bg {
   background-color: $flame-lighter !important;
 }
-.flame-light-bg {
+.gra-flame-light-bg {
   background-color: $flame-light !important;
 }
-.flame-bg {
+.gra-flame-bg {
   background-color: $flame !important;
 }
-.flame-dark-bg {
+.gra-flame-dark-bg {
   background-color: $flame-dark !important;
 }
-.flame-darker-bg {
+.gra-flame-darker-bg {
   background-color: $flame-darker !important;
 }
