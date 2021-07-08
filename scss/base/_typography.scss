@@ -33,13 +33,13 @@ h6 {
   font-weight: $font-bold;
 }
 
-.heading,
-.subheading {
+.gra-heading,
+.gra-subheading {
   margin-bottom: $space-s;
   line-height: $line-height-s;
 }
 
-.subheading {
+.gra-subheading {
   color: $color-font-secondary;
   font-weight: $font-normal;
   @include moder($modes) {
@@ -72,7 +72,8 @@ h6 {
   letter-spacing: -0.05rem;
 }
 
-a {
+a,
+.gra-link {
   color: $color-link-font;
   cursor: pointer;
   font-weight: $font-thin;
@@ -88,7 +89,7 @@ a {
       color: mode("colorLinkHover");
     }
   }
-  &:not(.disabled):not([disabled]):not(.btn):not(.nav-link):not(.breadcrumb-link):hover {
+  &:not(.disabled):not([disabled]):not(.gra-btn):not(.gra-nav-link):not(.gra-breadcrumb-link):hover {
     text-decoration: underline;
   }
 
@@ -103,34 +104,35 @@ a {
       color: mode("colorMute");
     }
   }
-}
 
-a.current {
-  font-weight: $font-bold;
-  &:hover {
-    color: $color-link-font;
-    @include moder($modes) {
-      color: mode("colorLinkFont");
+  &.current {
+    font-weight: $font-bold;
+    &:hover {
+      color: $color-link-font;
+      @include moder($modes) {
+        color: mode("colorLinkFont");
+      }
     }
   }
 }
 
-p {
+p,
+.gra-p {
   margin-bottom: $content-padding-block;
   font-size: $p-size;
 }
-.p-small {
+.gra-p-small {
   margin-bottom: $space-s;
   font-size: $p-s-size;
   line-height: $line-height-m;
 }
-.p-large {
+.gra-p-large {
   margin-bottom: $space-l;
   font-size: $p-l-size;
   line-height: $line-height-l;
 }
 
-.text {
+.gra-text {
   &-secondary {
     color: $color-font-secondary;
     @include moder($modes) {

@@ -1,4 +1,4 @@
-.card {
+.gra-card {
   display: flex;
   width: 100%;
   min-width: 20rem;
@@ -10,7 +10,7 @@
     background-color: mode("colorCardBg");
     border-color: mode("transparentColor");
   }
-  &.card-horizontal {
+  &.gra-card-horizontal {
     flex-direction: row;
   }
   &-title {
@@ -36,7 +36,7 @@
     }
   }
   &-media-bottom {
-    .card-media-wrapper {
+    .gra-card-media-wrapper {
       margin-top: 0;
       margin-bottom: -1px;
       border-bottom-left-radius: $border-radius;
@@ -44,13 +44,13 @@
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
-    &.card {
+    &.gra-card {
       flex-direction: column-reverse;
     }
   }
 
   &-media-left {
-    .card-media-wrapper {
+    .gra-card-media-wrapper {
       margin-right: 0;
       margin-bottom: -1px;
       border-bottom-left-radius: $border-radius;
@@ -60,14 +60,14 @@
     }
   }
   &-media-right {
-    .card-media-wrapper {
+    .gra-card-media-wrapper {
       margin-bottom: -1px;
       margin-left: 0;
       border-bottom-right-radius: $border-radius;
       border-top-left-radius: 0;
       border-top-right-radius: $border-radius;
     }
-    &.card {
+    &.gra-card {
       flex-direction: row-reverse;
     }
   }

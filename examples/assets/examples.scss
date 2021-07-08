@@ -4,13 +4,13 @@
 section {
   min-height: 100px;
   padding: 40px 0;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 6px solid #ddd;
   &:last-of-type {
     border: 0;
   }
 }
 
-.dark section {
+.gra-dark section {
   border-color: #5f676d;
 }
 
@@ -18,10 +18,10 @@ section.example-list {
   border: 0;
 }
 
-.example-list .block-list {
+.example-list .gra-block-list {
   max-width: 50rem;
   margin: 0 auto;
-  .list-item {
+  .gra-list-item {
     justify-content: center;
   }
 }
@@ -157,14 +157,14 @@ section.example-list {
   justify-content: space-around;
 }
 
-.example-buttons .btn {
+.example-buttons .gra-btn {
   margin: 6px;
 }
 .example-buttons > div {
   margin-bottom: 20px;
 }
 
-.example-buttons .btn.btn-full-width {
+.example-buttons .gra-btn.gra-btn-full-width {
   margin: 6px 0;
 }
 
@@ -275,7 +275,7 @@ section.example-list {
   }
 }
 
-.dark .example-grids {
+.gra-dark .example-grids {
   .col-test {
     background: hsl(207, 13%, 14%);
   }

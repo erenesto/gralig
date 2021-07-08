@@ -2,14 +2,14 @@ nav {
   display: flex;
 }
 
-.nav {
+.gra-nav {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
 
   &-fill {
     width: 100%;
-    .nav-item {
+    .gra-nav-item {
       flex: 1 1 auto;
       text-align: center;
     }

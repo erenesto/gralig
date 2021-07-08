@@ -1,6 +1,6 @@
-.switch {
+.gra-switch {
   padding-left: calc(4.2rem + #{$space-s});
-  .custom-form-label::before {
+  .gra-custom-form-label::before {
     top: 1px;
     width: 4.2rem;
     height: 2rem;
@@ -12,7 +12,7 @@
       background-color: mode("colorCardBg");
     }
   }
-  .custom-form-label::after {
+  .gra-custom-form-label::after {
     top: 4px;
     left: $space-xs;
     width: 1.4rem;
@@ -27,7 +27,7 @@
     }
   }
 
-  .custom-form-input:checked ~ .custom-form-label {
+  .gra-custom-form-input:checked ~ .gra-custom-form-label {
     &::before {
       border: 0;
       background: $color-main;

@@ -1,5 +1,5 @@
-.checkbox {
-  .custom-form-label {
+.gra-checkbox {
+  .gra-custom-form-label {
     &::before {
       border-radius: $border-radius;
     }
@@ -18,15 +18,15 @@
       }
     }
   }
-  .custom-form-input {
-    &:checked ~ .custom-form-label::before {
+  .gra-custom-form-input {
+    &:checked ~ .gra-custom-form-label::before {
       border: 0;
       background: $color-main;
       @include moder($modes) {
         background-color: mode("colorMain");
       }
     }
-    &:checked ~ .custom-form-label::after {
+    &:checked ~ .gra-custom-form-label::after {
       opacity: 1;
       transform: rotate(45deg) scale(1);
     }
