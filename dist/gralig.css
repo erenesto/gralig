@@ -93,7 +93,7 @@ body {
   color: #5f676d;
   font-family: "Catamaran", sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.5;
   text-rendering: optimizeLegibility; }
 
@@ -103,7 +103,7 @@ body {
 
 strong,
 b {
-  font-weight: 600; }
+  font-weight: bold; }
 
 pre,
 code,
@@ -129,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600; }
+  font-weight: bold; }
 
 .gra-heading,
 .gra-subheading {
@@ -138,7 +138,7 @@ h6 {
 
 .gra-subheading {
   color: #8c959b;
-  font-weight: 400; }
+  font-weight: normal; }
   .dark .gra-subheading {
     color: #c3c8cb; }
 
@@ -170,7 +170,7 @@ a,
 .gra-link {
   color: #8c959b;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: lighter;
   text-decoration: none; }
   .dark a, .dark
   .gra-link {
@@ -204,7 +204,7 @@ a,
       color: #4c5357; }
   a.current,
   .gra-link.current {
-    font-weight: 600; }
+    font-weight: bold; }
     a.current:hover,
     .gra-link.current:hover {
       color: #8c959b; }
@@ -318,13 +318,13 @@ p,
   text-align: left !important; }
 
 .gra-bold-text {
-  font-weight: 600 !important; }
+  font-weight: bold !important; }
 
 .gra-normal-text {
-  font-weight: 400 !important; }
+  font-weight: normal !important; }
 
 .gra-thin-text {
-  font-weight: 300 !important; }
+  font-weight: lighter !important; }
 
 .gra-width-100 {
   width: 100% !important; }
@@ -420,6 +420,96 @@ p,
 .gra-relative {
   position: relative !important; }
 
+.gra-fixed {
+  position: fixed !important; }
+
+.gra-sticky {
+  position: sticky !important; }
+
+.gra-pd-left-xxs {
+  padding-left: 0.2rem !important; }
+
+.gra-pd-left-xs {
+  padding-left: 0.4rem !important; }
+
+.gra-pd-left-s {
+  padding-left: 0.8rem !important; }
+
+.gra-pd-left-m {
+  padding-left: 1.6rem !important; }
+
+.gra-pd-left-l {
+  padding-left: 2.4rem !important; }
+
+.gra-pd-left-xl {
+  padding-left: 3.2rem !important; }
+
+.gra-pd-left-xxl {
+  padding-left: 6.4rem !important; }
+
+.gra-pd-right-xxs {
+  padding-right: 0.2rem !important; }
+
+.gra-pd-right-xs {
+  padding-right: 0.4rem !important; }
+
+.gra-pd-right-s {
+  padding-right: 0.8rem !important; }
+
+.gra-pd-right-m {
+  padding-right: 1.6rem !important; }
+
+.gra-pd-right-l {
+  padding-right: 2.4rem !important; }
+
+.gra-pd-right-xl {
+  padding-right: 3.2rem !important; }
+
+.gra-pd-right-xxl {
+  padding-right: 6.4rem !important; }
+
+.gra-pd-top-xxs {
+  padding-top: 0.2rem !important; }
+
+.gra-pd-top-xs {
+  padding-top: 0.4rem !important; }
+
+.gra-pd-top-s {
+  padding-top: 0.8rem !important; }
+
+.gra-pd-top-m {
+  padding-top: 1.6rem !important; }
+
+.gra-pd-top-l {
+  padding-top: 2.4rem !important; }
+
+.gra-pd-top-xl {
+  padding-top: 3.2rem !important; }
+
+.gra-pd-top-xxl {
+  padding-top: 6.4rem !important; }
+
+.gra-pd-bottom-xxs {
+  padding-bottom: 0.2rem !important; }
+
+.gra-pd-bottom-xs {
+  padding-bottom: 0.4rem !important; }
+
+.gra-pd-bottom-s {
+  padding-bottom: 0.8rem !important; }
+
+.gra-pd-bottom-m {
+  padding-bottom: 1.6rem !important; }
+
+.gra-pd-bottom-l {
+  padding-bottom: 2.4rem !important; }
+
+.gra-pd-bottom-xl {
+  padding-bottom: 3.2rem !important; }
+
+.gra-pd-bottom-xxl {
+  padding-bottom: 6.4rem !important; }
+
 .gra-pd-inline-xxs {
   padding-left: 0.2rem !important;
   padding-right: 0.2rem !important; }
@@ -475,6 +565,132 @@ p,
 .gra-pd-block-xxl {
   padding-top: 6.4rem !important;
   padding-bottom: 6.4rem !important; }
+
+.gra-pd-all-xxs {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  padding-left: 0.2rem !important;
+  padding-right: 0.2rem !important; }
+
+.gra-pd-all-xs {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+  padding-left: 0.4rem !important;
+  padding-right: 0.4rem !important; }
+
+.gra-pd-all-s {
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.8rem !important;
+  padding-left: 0.8rem !important;
+  padding-right: 0.8rem !important; }
+
+.gra-pd-all-m {
+  padding-top: 1.6rem !important;
+  padding-bottom: 1.6rem !important;
+  padding-left: 1.6rem !important;
+  padding-right: 1.6rem !important; }
+
+.gra-pd-all-l {
+  padding-top: 2.4rem !important;
+  padding-bottom: 2.4rem !important;
+  padding-left: 2.4rem !important;
+  padding-right: 2.4rem !important; }
+
+.gra-pd-all-xl {
+  padding-top: 3.2rem !important;
+  padding-bottom: 3.2rem !important;
+  padding-left: 3.2rem !important;
+  padding-right: 3.2rem !important; }
+
+.gra-pd-all-xxl {
+  padding-top: 6.4rem !important;
+  padding-bottom: 6.4rem !important;
+  padding-left: 6.4rem !important;
+  padding-right: 6.4rem !important; }
+
+.gra-mg-left-xxs {
+  margin-left: 0.2rem !important; }
+
+.gra-mg-left-xs {
+  margin-left: 0.4rem !important; }
+
+.gra-mg-left-s {
+  margin-left: 0.8rem !important; }
+
+.gra-mg-left-m {
+  margin-left: 1.6rem !important; }
+
+.gra-mg-left-l {
+  margin-left: 2.4rem !important; }
+
+.gra-mg-left-xl {
+  margin-left: 3.2rem !important; }
+
+.gra-mg-left-xxl {
+  margin-left: 6.4rem !important; }
+
+.gra-mg-right-xxs {
+  margin-right: 0.2rem !important; }
+
+.gra-mg-right-xs {
+  margin-right: 0.4rem !important; }
+
+.gra-mg-right-s {
+  margin-right: 0.8rem !important; }
+
+.gra-mg-right-m {
+  margin-right: 1.6rem !important; }
+
+.gra-mg-right-l {
+  margin-right: 2.4rem !important; }
+
+.gra-mg-right-xl {
+  margin-right: 3.2rem !important; }
+
+.gra-mg-right-xxl {
+  margin-right: 6.4rem !important; }
+
+.gra-mg-top-xxs {
+  margin-top: 0.2rem !important; }
+
+.gra-mg-top-xs {
+  margin-top: 0.4rem !important; }
+
+.gra-mg-top-s {
+  margin-top: 0.8rem !important; }
+
+.gra-mg-top-m {
+  margin-top: 1.6rem !important; }
+
+.gra-mg-top-l {
+  margin-top: 2.4rem !important; }
+
+.gra-mg-top-xl {
+  margin-top: 3.2rem !important; }
+
+.gra-mg-top-xxl {
+  margin-top: 6.4rem !important; }
+
+.gra-mg-bottom-xxs {
+  margin-bottom: 0.2rem !important; }
+
+.gra-mg-bottom-xs {
+  margin-bottom: 0.4rem !important; }
+
+.gra-mg-bottom-s {
+  margin-bottom: 0.8rem !important; }
+
+.gra-mg-bottom-m {
+  margin-bottom: 1.6rem !important; }
+
+.gra-mg-bottom-l {
+  margin-bottom: 2.4rem !important; }
+
+.gra-mg-bottom-xl {
+  margin-bottom: 3.2rem !important; }
+
+.gra-mg-bottom-xxl {
+  margin-bottom: 6.4rem !important; }
 
 .gra-mg-inline-xxs {
   margin-left: 0.2rem !important;
@@ -532,185 +748,47 @@ p,
   margin-top: 6.4rem !important;
   margin-bottom: 6.4rem !important; }
 
-.gra-blackpearl {
-  color: #0e1215 !important; }
+.gra-mg-all-xxs {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.2rem !important;
+  margin-left: 0.2rem !important;
+  margin-right: 0.2rem !important; }
 
-.gra-woodsmoke {
-  color: #131516 !important; }
+.gra-mg-all-xs {
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
+  margin-left: 0.4rem !important;
+  margin-right: 0.4rem !important; }
 
-.gra-shark {
-  color: #1f2428 !important; }
+.gra-mg-all-s {
+  margin-top: 0.8rem !important;
+  margin-bottom: 0.8rem !important;
+  margin-left: 0.8rem !important;
+  margin-right: 0.8rem !important; }
 
-.gra-abbey {
-  color: #5f676d !important; }
+.gra-mg-all-m {
+  margin-top: 1.6rem !important;
+  margin-bottom: 1.6rem !important;
+  margin-left: 1.6rem !important;
+  margin-right: 1.6rem !important; }
 
-.gra-raven {
-  color: #727c83 !important; }
+.gra-mg-all-l {
+  margin-top: 2.4rem !important;
+  margin-bottom: 2.4rem !important;
+  margin-left: 2.4rem !important;
+  margin-right: 2.4rem !important; }
 
-.gra-oslo {
-  color: #8c959b !important; }
+.gra-mg-all-xl {
+  margin-top: 3.2rem !important;
+  margin-bottom: 3.2rem !important;
+  margin-left: 3.2rem !important;
+  margin-right: 3.2rem !important; }
 
-.gra-mischka {
-  color: #a8aeb3 !important; }
-
-.gra-ghost {
-  color: #c3c8cb !important; }
-
-.gra-iron {
-  color: #d9dcde !important; }
-
-.gra-porcelain {
-  color: #f1f2f3 !important; }
-
-.gra-summer-lighter {
-  color: #80c2e5 !important; }
-
-.gra-summer-light {
-  color: #5eb1de !important; }
-
-.gra-summer {
-  color: #3ca1d7 !important; }
-
-.gra-summer-dark {
-  color: #288dc3 !important; }
-
-.gra-summer-darker {
-  color: #2174a1 !important; }
-
-.gra-shamrock-lighter {
-  color: #80e5cd !important; }
-
-.gra-shamrock-light {
-  color: #5edec0 !important; }
-
-.gra-shamrock {
-  color: #3cd7b3 !important; }
-
-.gra-shamrock-dark {
-  color: #28c39f !important; }
-
-.gra-shamrock-darker {
-  color: #21a183 !important; }
-
-.gra-tulip-lighter {
-  color: #f1d674 !important; }
-
-.gra-tulip-light {
-  color: #eecb4f !important; }
-
-.gra-tulip {
-  color: #eac02a !important; }
-
-.gra-tulip-dark {
-  color: #d5ac15 !important; }
-
-.gra-tulip-darker {
-  color: #b08e11 !important; }
-
-.gra-flame-lighter {
-  color: #e58080 !important; }
-
-.gra-flame-light {
-  color: #de5e5e !important; }
-
-.gra-flame {
-  color: #d73c3c !important; }
-
-.gra-flame-dark {
-  color: #c32828 !important; }
-
-.gra-flame-darker {
-  color: #a12121 !important; }
-
-.gra-blackpearl-bg {
-  background-color: #0e1215 !important; }
-
-.gra-woodsmoke-bg {
-  background-color: #131516 !important; }
-
-.gra-shark-bg {
-  background-color: #1f2428 !important; }
-
-.gra-abbey-bg {
-  background-color: #5f676d !important; }
-
-.gra-raven-bg {
-  background-color: #727c83 !important; }
-
-.gra-oslo-bg {
-  background-color: #8c959b !important; }
-
-.gra-mischka-bg {
-  background-color: #a8aeb3 !important; }
-
-.gra-ghost-bg {
-  background-color: #c3c8cb !important; }
-
-.gra-iron-bg {
-  background-color: #d9dcde !important; }
-
-.gra-porcelain-bg {
-  background-color: #f1f2f3 !important; }
-
-.gra-summer-lighter-bg {
-  background-color: #80c2e5 !important; }
-
-.gra-summer-light-bg {
-  background-color: #5eb1de !important; }
-
-.gra-summer-bg {
-  background-color: #3ca1d7 !important; }
-
-.gra-summer-dark-bg {
-  background-color: #288dc3 !important; }
-
-.gra-summer-darker-bg {
-  background-color: #2174a1 !important; }
-
-.gra-shamrock-lighter-bg {
-  background-color: #80e5cd !important; }
-
-.gra-shamrock-light-bg {
-  background-color: #5edec0 !important; }
-
-.gra-shamrock-bg {
-  background-color: #3cd7b3 !important; }
-
-.gra-shamrock-dark-bg {
-  background-color: #28c39f !important; }
-
-.gra-shamrock-darker-bg {
-  background-color: #21a183 !important; }
-
-.gra-tulip-lighter-bg {
-  background-color: #f1d674 !important; }
-
-.gra-tulip-light-bg {
-  background-color: #eecb4f !important; }
-
-.gra-tulip-bg {
-  background-color: #eac02a !important; }
-
-.gra-tulip-dark-bg {
-  background-color: #d5ac15 !important; }
-
-.gra-tulip-darker-bg {
-  background-color: #b08e11 !important; }
-
-.gra-flame-lighter-bg {
-  background-color: #e58080 !important; }
-
-.gra-flame-light-bg {
-  background-color: #de5e5e !important; }
-
-.gra-flame-bg {
-  background-color: #d73c3c !important; }
-
-.gra-flame-dark-bg {
-  background-color: #c32828 !important; }
-
-.gra-flame-darker-bg {
-  background-color: #a12121 !important; }
+.gra-mg-all-xxl {
+  margin-top: 6.4rem !important;
+  margin-bottom: 6.4rem !important;
+  margin-left: 6.4rem !important;
+  margin-right: 6.4rem !important; }
 
 .gra-container {
   position: relative;
@@ -996,7 +1074,7 @@ p,
   cursor: pointer;
   font-family: inherit;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 0.08rem;
   line-height: 1;
   padding-top: 0;
@@ -1147,7 +1225,7 @@ p,
             flex-direction: row; }
   .gra-card-title {
     border-bottom: 1px solid #d9dcde;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 1;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
@@ -1777,7 +1855,7 @@ fieldset {
 legend,
 label {
   display: block;
-  font-weight: 600; }
+  font-weight: bold; }
 
 label {
   margin-bottom: 0.4rem;
@@ -2070,7 +2148,7 @@ input[type="search"] {
   .gra-custom-form-control .gra-custom-form-label {
     display: inline-block;
     margin-bottom: 0;
-    font-weight: 400; }
+    font-weight: normal; }
     .gra-custom-form-control .gra-custom-form-label::before, .gra-custom-form-control .gra-custom-form-label::after {
       display: block;
       position: absolute;
