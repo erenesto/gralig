@@ -1,5 +1,3 @@
-<a style="text-align:center; display: block;" href="https://gralig.com"><img style="width: 35%; " src="https://res.cloudinary.com/erenesto/image/upload/v1586499201/ak0oavaecaoalct3jul2.jpg" alt="Gralig CSS"></a>
-
 ## What is Gralig ?
 
 <sup>_grålig_ means _grayish_ in Danish.<sup>
