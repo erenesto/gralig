@@ -9,10 +9,12 @@ label {
   display: block;
   font-weight: $font-bold;
 }
+
 label {
   margin-bottom: $space-xs;
   cursor: pointer;
 }
+
 legend {
   text-align: center;
 }
@@ -22,6 +24,7 @@ legend {
   fieldset {
     position: relative;
     padding-top: 3.2rem;
+
     > legend {
       position: absolute;
       top: 0;
@@ -57,6 +60,7 @@ select {
     border-color: mode("colorBorder");
     color: mode("colorFont");
   }
+
   &:focus,
   &:hover {
     border-color: $color-border-dark;
@@ -65,12 +69,14 @@ select {
       border-color: mode("colorBorderLight");
     }
   }
+
   &::placeholder {
     color: $color-input-placeholder;
     @include moder($modes) {
       color: mode("colorInputPlaceholder");
     }
   }
+
   &:disabled {
     background-color: $color-input-disabled;
     cursor: not-allowed;
@@ -78,6 +84,7 @@ select {
       background-color: mode("colorInputDisabled");
       border-color: mode("transparentColor");
     }
+
     &:hover,
     &:focus {
       border: 1px solid $color-border;
@@ -108,11 +115,14 @@ select {
 input[type="search"] {
   padding-left: $content-padding-inline + $space-m;
 }
+
 .gra-search-input {
   position: relative;
+
   input[type="search"] {
     padding-left: $content-padding-inline + $space-m;
   }
+
   &::before {
     display: inline-block;
     position: absolute;
@@ -144,14 +154,17 @@ input[type="search"] {
   position: relative;
   margin-bottom: $space;
   padding-left: calc(1.6rem + #{$space-s});
+
   .gra-custom-form-input {
     position: absolute;
     left: -9999px;
     opacity: 0;
+
     &:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow;
     }
   }
+
   .gra-custom-form-input:disabled ~ .gra-custom-form-label,
   .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label {
     color: $color-mute;
@@ -159,6 +172,7 @@ input[type="search"] {
     @include moder($modes) {
       color: mode("colorMute");
     }
+
     &::before {
       background: $color-mute;
       border-color: $color-mute;
@@ -168,16 +182,19 @@ input[type="search"] {
       }
     }
   }
+
   .gra-custom-form-label {
     display: inline-block;
     margin-bottom: 0;
     font-weight: $font-normal;
+
     &::before,
     &::after {
       display: block;
       position: absolute;
       content: "";
     }
+
     &::before {
       top: 3px;
       left: 0;
@@ -193,6 +210,7 @@ input[type="search"] {
         border-color: mode("colorBorder");
       }
     }
+
     &::after {
       opacity: 0;
     }
@@ -205,13 +223,16 @@ input[type="search"] {
         background-color: $color-blue;
       }
     }
+
     .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-blue;
     }
+
     .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }
+
   &.green {
     .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-green;
@@ -219,13 +240,16 @@ input[type="search"] {
         background-color: $color-green;
       }
     }
+
     .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-green;
     }
+
     .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }
+
   &.yellow {
     .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-yellow;
@@ -233,13 +257,16 @@ input[type="search"] {
         background-color: $color-yellow;
       }
     }
+
     .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-yellow;
     }
+
     .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }
   }
+
   &.red {
     .gra-custom-form-input:checked ~ .gra-custom-form-label::before {
       background: $color-red;
@@ -247,9 +274,11 @@ input[type="search"] {
         background-color: $color-red;
       }
     }
+
     .gra-custom-form-input:checked:focus ~ .gra-custom-form-label::before {
       box-shadow: $el-box-shadow-red;
     }
+
     .gra-custom-form-input:disabled:checked ~ .gra-custom-form-label::before {
       opacity: 0.5;
     }

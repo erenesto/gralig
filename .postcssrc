@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "autoprefixer": {},
+    "postcss-safe-parser": {},
+    "postcss-preset-env": {
+      "stage": 2
+    }
+  }
+}

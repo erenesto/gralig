@@ -11,10 +11,12 @@
     height: 7rem;
     max-height: 7rem;
   }
+
   > .gra-container {
     display: flex;
     align-items: center;
   }
+
   &-logo {
     display: flex;
     max-width: 9.2rem;
@@ -26,6 +28,7 @@
       max-width: 12rem;
     }
   }
+
   &-logo-link {
     display: flex;
     align-items: center;

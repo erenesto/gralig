@@ -1,7 +1,9 @@
 .gra-dropdown {
   position: relative;
+
   &[open] .gra-dropdown-btn {
     box-shadow: none;
+
     &::before {
       display: block;
       position: fixed;
@@ -14,16 +16,20 @@
       content: " ";
       cursor: default;
     }
+
     &::after {
       transform: rotate(-135deg) translate(-2px, -2px);
     }
+
     &:hover {
       opacity: 1;
     }
   }
+
   &:not([open]) .gra-dropdown-btn {
     opacity: 1;
   }
+
   &:not([open]) .gra-dropdown-list {
     display: block;
     opacity: 1;
@@ -51,9 +57,11 @@
 
 .gra-dropdown-wrapper {
   display: inline-block;
+
   &::-webkit-details-marker {
     display: none;
   }
+
   &:focus {
     outline: 0;
   }
@@ -61,6 +69,7 @@
 
 .gra-dropdown-btn {
   margin: 0;
+
   &::after {
     @include caret-icon(45deg, -2px, -2px, $color-border);
     display: inline-block;

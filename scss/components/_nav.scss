@@ -9,11 +9,13 @@ nav {
 
   &-fill {
     width: 100%;
+
     .gra-nav-item {
       flex: 1 1 auto;
       text-align: center;
     }
   }
+
   &-item {
     position: relative;
     font-size: $font-size-s;
@@ -22,11 +24,13 @@ nav {
       font-size: $font-size;
     }
   }
+
   &-link {
     display: inline-block;
     position: relative;
     padding-block: $space-s;
     padding-inline: $space-s;
+
     &:not(.disabled, [disabled])::after {
       position: absolute;
       bottom: 6px;
@@ -42,15 +46,18 @@ nav {
         background-color: mode("colorLinkHover");
       }
     }
+
     &:hover {
       &:not([disabled]):not(.disabled)::after {
         width: 4px;
         height: 4px;
       }
     }
+
     &:focus {
       box-shadow: none;
     }
+
     &.current::after {
       width: 4px;
       height: 4px;

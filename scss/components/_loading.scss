@@ -13,6 +13,7 @@
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(265%);
   }
@@ -23,15 +24,18 @@
     display: flex;
     width: 100%;
     justify-content: center;
+
     .gra-progress-circle-back {
       fill: none;
     }
+
     .gra-progress-circle-value {
       stroke: $color-light;
       @include moder($modes) {
         stroke: mode("colorLoadings");
       }
     }
+
     &.gra-circle-turn-pieces {
       .gra-progress-circle-value {
         animation-duration: 2.5s;
@@ -41,6 +45,7 @@
         stroke-dasharray: 52;
       }
     }
+
     &.gra-circle-turn {
       .gra-progress-circle-value {
         animation-duration: 1.2s;
@@ -57,6 +62,7 @@
   0% {
     transform: rotate(-90deg);
   }
+
   100% {
     transform: rotate(630deg);
   }
@@ -66,9 +72,11 @@
   0% {
     transform: rotate(90deg);
   }
+
   50% {
     transform: rotate(810deg);
   }
+
   100% {
     transform: rotate(90deg);
   }
@@ -80,6 +88,7 @@
     width: 100%;
     justify-content: center;
   }
+
   &-dot {
     display: inline-block;
     width: 1.4rem;
@@ -94,12 +103,15 @@
     @include moder($modes) {
       background: mode("colorLoadings");
     }
+
     &.dot-1 {
       animation-delay: 0s;
     }
+
     &.dot-2 {
       animation-delay: 0.1s;
     }
+
     &.dot-3 {
       animation-delay: 0.2s;
     }
@@ -110,12 +122,15 @@
   0% {
     transform: scale(0.4);
   }
+
   30% {
     transform: scale(1.2);
   }
+
   60% {
     transform: scale(0.4);
   }
+
   100% {
     transform: scale(0.4);
   }

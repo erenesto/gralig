@@ -12,7 +12,8 @@
     "scale-unlimited/declaration-strict-value": [
       ["color"],
       {
-        "ignoreKeywords": "inherit"
+        "ignoreKeywords": "inherit",
+        "disableFix": true
       }
     ],
     "plugin/declaration-block-no-ignored-properties": true,

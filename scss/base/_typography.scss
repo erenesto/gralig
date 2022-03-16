@@ -51,22 +51,27 @@ h1 {
   font-size: $heading-1;
   letter-spacing: -0.15rem;
 }
+
 h2 {
   font-size: $heading-2;
   letter-spacing: -0.15rem;
 }
+
 h3 {
   font-size: $heading-3;
   letter-spacing: -0.1rem;
 }
+
 h4 {
   font-size: $heading-4;
   letter-spacing: -0.1rem;
 }
+
 h5 {
   font-size: $heading-5;
   letter-spacing: -0.05rem;
 }
+
 h6 {
   font-size: $heading-6;
   letter-spacing: -0.05rem;
@@ -81,6 +86,7 @@ a,
   @include moder($modes) {
     color: mode("colorLinkFont");
   }
+
   &:hover,
   &:focus {
     color: $color-link-hover;
@@ -89,6 +95,7 @@ a,
       color: mode("colorLinkHover");
     }
   }
+
   &:not(.disabled):not([disabled]):not(.gra-btn):not(.gra-nav-link):not(.gra-breadcrumb-link):hover {
     text-decoration: underline;
   }
@@ -107,6 +114,7 @@ a,
 
   &.current {
     font-weight: $font-bold;
+
     &:hover {
       color: $color-link-font;
       @include moder($modes) {
@@ -121,11 +129,13 @@ p,
   margin-bottom: $content-padding-block;
   font-size: $p-size;
 }
+
 .gra-p-small {
   margin-bottom: $space-s;
   font-size: $p-s-size;
   line-height: $line-height-m;
 }
+
 .gra-p-large {
   margin-bottom: $space-l;
   font-size: $p-l-size;
@@ -139,72 +149,94 @@ p,
       color: mode("colorFontSecondary");
     }
   }
+
   &-yellow {
     color: $color-yellow;
+
     &-light {
       color: $color-yellow-light;
     }
+
     &-lighter {
       color: $color-yellow-lighter;
     }
+
     &-dark {
       color: $color-yellow-dark;
     }
+
     &-darker {
       color: $color-yellow-darker;
     }
   }
+
   &-red {
     color: $color-red;
+
     &-light {
       color: $color-red-light;
     }
+
     &-lighter {
       color: $color-red-lighter;
     }
+
     &-dark {
       color: $color-red-dark;
     }
+
     &-darker {
       color: $color-red-darker;
     }
   }
+
   &-green {
     color: $color-green;
+
     &-light {
       color: $color-green-light;
     }
+
     &-lighter {
       color: $color-green-lighter;
     }
+
     &-dark {
       color: $color-green-dark;
     }
+
     &-darker {
       color: $color-green-darker;
     }
   }
+
   &-blue {
     color: $color-blue;
+
     &-light {
       color: $color-blue-light;
     }
+
     &-lighter {
       color: $color-blue-lighter;
     }
+
     &-dark {
       color: $color-blue-dark;
     }
+
     &-darker {
       color: $color-blue-darker;
     }
   }
+
   &-muted {
     color: $color-mute;
     @include moder($modes) {
       color: mode("colorMute");
     }
   }
+
   &-marked {
     background-color: $color-mark;
   }

@@ -10,12 +10,15 @@
     @include moder($modes) {
       background-color: mode("colorCardBg");
     }
+
     &.small {
       height: $progress-bar-s;
     }
+
     &.large {
       height: $progress-bar-l;
     }
+
     &-value {
       display: inline-block;
       position: absolute;
@@ -30,12 +33,15 @@
       &.blue {
         background-color: $color-blue;
       }
+
       &.green {
         background-color: $color-green;
       }
+
       &.yellow {
         background-color: $color-yellow;
       }
+
       &.red {
         background-color: $color-red;
       }
@@ -46,28 +52,34 @@
     position: relative;
     width: $progress-circle;
     height: $progress-circle;
+
     &.small {
       width: $progress-circle-s;
       height: $progress-circle-s;
     }
+
     &.large {
       width: $progress-circle-l;
       height: $progress-circle-l;
     }
+
     svg {
       display: block;
       width: 100%;
       height: 100%;
     }
+
     circle {
       stroke-width: 0.8em;
     }
+
     &-back {
       fill: $color-lighter;
       @include moder($modes) {
         fill: mode("colorCardBg");
       }
     }
+
     &-value {
       // dashoffset 380 = 0% & 147 = 100%
       stroke: $color-secondary;
@@ -76,21 +88,25 @@
       transform: rotate(-90deg);
       transform-origin: center;
     }
+
     &.blue {
       .gra-progress-circle-value {
         stroke: $color-blue;
       }
     }
+
     &.green {
       .gra-progress-circle-value {
         stroke: $color-green;
       }
     }
+
     &.yellow {
       .gra-progress-circle-value {
         stroke: $color-yellow;
       }
     }
+
     &.red {
       .gra-progress-circle-value {
         stroke: $color-red;

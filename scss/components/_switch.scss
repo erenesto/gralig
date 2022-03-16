@@ -1,5 +1,6 @@
 .gra-switch {
   padding-left: calc(4.2rem + #{$space-s});
+
   .gra-custom-form-label::before {
     top: 1px;
     width: 4.2rem;
@@ -12,6 +13,7 @@
       background-color: mode("colorCardBg");
     }
   }
+
   .gra-custom-form-label::after {
     top: 4px;
     left: $space-xs;
@@ -35,6 +37,7 @@
         background-color: mode("colorMain");
       }
     }
+
     &::after {
       border: 0;
       background-color: $color-lighter;

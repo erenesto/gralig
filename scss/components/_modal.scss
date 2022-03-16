@@ -16,6 +16,7 @@
     width: 72rem;
     max-width: 72rem;
   }
+
   &-overlay {
     position: absolute;
     z-index: 191;
@@ -28,6 +29,7 @@
     @include moder($modes) {
       background-color: rgba($color: mode("colorMain"), $alpha: 0.5);
     }
+
     &:hover {
       background-color: rgba($color: $color-main, $alpha: 0.8);
       @include moder($modes) {
@@ -35,6 +37,7 @@
       }
     }
   }
+
   &-wrapper {
     display: none;
     position: fixed;
@@ -45,12 +48,14 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
+
     &:target {
       display: block;
       opacity: 1;
       visibility: visible;
     }
   }
+
   &-header {
     border-bottom: 1px solid $color-border;
     padding-block: $space;
@@ -59,10 +64,12 @@
       border-color: mode("colorBorder");
     }
   }
+
   &-body {
     padding-block: $space-l;
     padding-inline: $content-padding-inline;
   }
+
   &-footer {
     display: block;
     border-top: 1px solid $color-border;
@@ -72,9 +79,11 @@
       border-color: mode("colorBorder");
     }
   }
+
   &-actions {
     display: flex;
     justify-content: flex-end;
+
     .btn:not(:first-child) {
       margin-left: $space-xs;
     }

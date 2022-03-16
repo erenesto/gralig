@@ -6,9 +6,11 @@
   @include moder($modes) {
     border-color: mode("colorBorder");
   }
+
   &-list {
     display: flex;
   }
+
   &-item {
     position: relative;
     font-size: $font-size-s;
@@ -16,6 +18,7 @@
     &:not(:first-child) {
       padding-left: $space-l;
     }
+
     &:not(:first-child) > a::before {
       @include caret-icon(-45deg, 0, -50%, $color-main);
       display: inline-block;
@@ -28,10 +31,12 @@
         border-color: mode("colorBorder");
       }
     }
+
     &:not(:last-child) {
       margin-right: $space-l;
     }
   }
+
   &-item > .current {
     cursor: default;
   }

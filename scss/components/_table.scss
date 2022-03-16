@@ -2,9 +2,11 @@
   width: 100%;
   min-width: $breakpoint-xs;
   border-spacing: 0;
+
   &-wrapper {
     overflow-x: auto;
   }
+
   td,
   th {
     border-bottom: 1px solid $color-border;
@@ -18,17 +20,21 @@
     &:first-child {
       padding-left: 0;
     }
+
     &:last-child {
       padding-right: 0;
     }
   }
+
   &.gra-table-bordered {
     td,
     th {
       border: 1px solid $color-border;
+
       &:first-child {
         padding-left: $space-m;
       }
+
       &:last-child {
         padding-right: $space-m;
       }

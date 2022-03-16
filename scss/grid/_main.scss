@@ -6,6 +6,7 @@
   @include min-width($breakpoint-l) {
     max-width: 114rem;
   }
+
   &.full {
     @include min-width($breakpoint-l) {
       max-width: 100%;
