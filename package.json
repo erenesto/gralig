@@ -41,12 +41,7 @@
     "clean:dev": "rimraf dev/*",
     "minify": "cleancss -o dist/gralig.min.css dist/gralig.css",
     "lint:scss": "stylelint -s --fix --formatter=verbose 'scss/**/*.scss'",
-    "format:scss": "prettier-stylelint --write --q 'scss/**/*.scss'",
-    "test": "run-s format:scss lint:scss",
-    "stylelint:fix": "patch -p1 -i patches/prettier-stylelint+0.4.2.patch",
-    "stylelint:install": "npx patch-package prettier-stylelint",
-    "stylelint:patch": "run-s stylelint:fix stylelint:install",
-    "postinstall": "run-s stylelint:patch"
+    "test": "run-s lint:scss"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-nightly.1015",
@@ -62,7 +57,6 @@
     "postcss-preset-env": "^7.4.2",
     "postcss-safe-parser": "^6.0.0",
     "prettier": "^2.6.0",
-    "prettier-stylelint": "^0.4.2",
     "rimraf": "^3.0.2",
     "stylelint": "^14.6.0",
     "stylelint-config-prettier": "^9.0.3",
