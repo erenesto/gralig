@@ -15,7 +15,6 @@
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 test.html
-package-lock.json
 
 # Folders
 .AppleDB
