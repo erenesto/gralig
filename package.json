@@ -1,8 +1,8 @@
 {
   "name": "gralig",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A clean, grayish CSS library",
-  "main": "index.js",
+  "main": "dist/gralig.css",
   "targets": {
     "main": false
   },
